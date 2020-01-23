@@ -1,0 +1,141 @@
+\documentclass[12pt,notitlepage]{article}
+\usepackage{bm,bbm,setspace,graphics,amsmath,rotating,amsfonts,amsxtra,amssymb,xcolor,hyperref,graphicx}
+
+
+\usepackage[small,compact]{titlesec}
+\usepackage{geometry}
+\usepackage{apptools}
+\usepackage{lipsum,footmisc}
+\usepackage{enumitem}
+\usepackage[authoryear]{natbib}
+
+\usepackage{textcomp}
+
+\setcounter{MaxMatrixCols}{10}
+\newcounter{theorem}
+\newtheorem{theorem}[theorem]{Theorem}
+\newtheorem{claim}[theorem]{Claim}
+\newcounter{cnj}
+\newtheorem{conjecture}[cnj]{Conjecture}
+\newcounter{cor}
+\newtheorem{corollary}[cor]{Corollary}
+\newcounter{def}
+\newtheorem{definition}[def]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newcounter{lma}
+\newtheorem{lemma}[lma]{Lemma}
+\newcounter{prp}
+\newtheorem{proposition}[prp]{Proposition}
+\newcounter{rmk}
+\newtheorem{remark}[rmk]{Remark}
+\newcounter{obs}
+\newtheorem{observation}[obs]{Observation}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\topmargin=0 in \headheight=0in \headsep=0in \topskip=0in \textheight=9in \oddsidemargin=0in \evensidemargin=0in \textwidth=6.5in
+
+\topmargin=0 in \headheight=0in \headsep=0in \topskip=0in \textheight=9in \oddsidemargin=0in \evensidemargin=0in \textwidth=6.5in
+
+
+
+\usepackage{placeins} %%%% for floatbarrier
+\usepackage{titling} %%% for title and abstract on same page
+
+%\usepackage{footmisc}
+%\renewcommand{\footnotelayout}{\doublespacing} % set spacing in footnotes
+%\newlength{\myfootnotesep}
+%\setlength{\myfootnotesep}{\baselineskip}
+%\addtolength{\myfootnotesep}{-\footnotesep}
+%\setlength{\footnotesep}{\myfootnotesep} % set spacing between footnotes
+
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[normal]{threeparttable}
+
+\usepackage{grffile}
+\usepackage{xr}
+
+%opening
+
+%% Landscape mode for online appendix see https://stackoverflow.com/questions/25849814/rstudio-rmarkdown-both-portrait-and-landscape-layout-in-a-single-pdf
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+	\newcommand{\elandscape}{\end{landscape}}
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+	\small	
+	\textbf{\textit{Keywords---}} #1
+}
+
+\usepackage{endnotes}
+
+
+\let\footnote=\endnote
+
+\begin{document}
+	
+	\title{Data and Methods for Analyzing Special Interest Influence in Rulemaking}
+	\author{
+		Daniel Carpenter \\
+		\texttt{Harvard University} \\
+		1737 Cambridge Street, 	 Room 405\\
+		Cambridge, Massachusetts 02138 \\
+		\and 
+		Devin Judge-Lord\\
+		\texttt{University of Wisconsin} \\
+		1059 Bascom Mall, 110 North Hall \\
+		Madison, WI 53706 \\
+		\and 
+		Brian Libgober \\
+		\texttt{Yale University}\\
+		115 Prospect Street, Room 113 \\
+		New Haven, CT 06520 \\
+		\and 
+		Steven Rashin\\
+		Corresponding Author \\
+		Steven.Rashin@NYU.edu \\
+		\texttt{New York University} \\
+		19 West 4th St, 2nd Floor \\
+		New York, NY 10012 \\
+	}
+	\date{}
+	
+	\maketitle
+	
+	\singlespacing
+	\begin{abstract}
+		The United States government creates astonishingly complete records relevant to policy creation in executive agencies.  In this article, we describe the major kinds of data that have proven useful to scholars studying interest group behavior in bureaucratic politics, how to obtain them, and also the major challenges that we as users have found in working with these data.  We discuss established databases such as regulations.gov, which contains comments on regulations issued by executive branch agencies, and new sources of data, such as ex-parte meeting logs, which describe the interest groups and individual lobbyists that bureaucrats are meeting face-to-face about rules, and individually-identified personnel records of nearly all federal employees since 1973.  One of the challenges in working with the newer datasets is that the whole databases are often not fully machine-readable.  We argue that a productive way forward is to invest in making all the datasets machine-readable and to create consistent way to link them to each other and to outside databases.   
+		
+	\end{abstract} \hspace{10pt}
+	
+	%TC:ignore
+	\keywords{Interest groups, administrative lobbying, bureaucratic politics, data sources} \\
+	
+	Submission ID: IGAD-D-19-00044
+	\thispagestyle{empty}
+	
+	\newpage
+	\clearpage
+	\pagenumbering{arabic} 
+	
+	\doublespacing
+	
+	$body$
+	
+	\newpage
+	
+	\theendnotes
+		
+	\begingroup
+	\parindent 0pt
+	\parskip 2ex
+	\def\enotesize{\normalsize}
+	\pdfbookmark{Endnotes}{Endnotes}
+	\endgroup
+	
+	\newpage
+		\singlespacing
+	\bibliographystyle{apsr2}
+	\bibliography{data_ig.bib}
+\end{document}
