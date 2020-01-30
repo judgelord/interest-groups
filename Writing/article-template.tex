@@ -20,10 +20,11 @@
 
 
 % --- type and typeface? -----------------------
+\usepackage{lmodern}
 
 % input
 \usepackage[utf8]{inputenc}
-
+\usepackage{upquote}
 % typography
 \usepackage{microtype}
 
@@ -153,7 +154,7 @@ $endif$
             linkcolor = $if(linkcolor)$$linkcolor$$else$magenta$endif$,
             pdfborder = {0 0 0}}
 
-% \urlstyle{same}  % don't use monospace font for urls
+\urlstyle{same}  % don't use monospace font for urls
 
 
 % set default figure placement to htbp
@@ -213,7 +214,7 @@ $endif$
   \renewcommand{\abstractname}{}    % clear the title
   \renewcommand{\absnamepos}{empty} % originally center
 
-  \newcommand*{\authorfont}{\sffamily\selectfont}
+ % \newcommand*{\authorfont}{\sffamily\selectfont}
 
 
 % section titles
@@ -245,7 +246,6 @@ $if(title)$
   \maketitle
 $endif$
 
-% \pagenumbering{gobble}
 $if(frontpage)$
   \pagenumbering{gobble}
 $endif$
