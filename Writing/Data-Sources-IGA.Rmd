@@ -59,8 +59,9 @@ Agencies are required to consider the comments but are not required to alter the
 
 Notice and comment rulemaking creates a unique feature in American democracy; the right for anyone to participate in, perhaps even influence, most policymaking processes at federal agencies. Participation in rulemaking activities is highly skewed. A few rules, such as the Federal Communication Commission's rules on net neutrality, receive millions of comments. In contrast, half of proposed rules open for comment on regulations.gov receive no comments at all [@LibgoberJOP]. Even the median rule designated as "economically significant" -- rules projected to have an annual economic impact of over $100 million -- receives fewer than ten comments [@judgelord2019SPSA]. Participants include businesses, public interest groups, trade associations, unions, law firms, and academics [@CuellarALR2005,@YackeeJOP2006]. 
 
-Scholarly interest in patterns of participation in the policymaking process relies on the notion that the participants in the process seek to influence the development of the rule. Participation in this process can begin even before a proposed rule is issued.
+Scholarly interest in patterns of participation in the policymaking process relies on the notion that the participants in the process seek to influence the development of the rule. 
 For example, @YouJOP2017 finds that half of all spending on lobbying legislation occurs *after* a bill becomes law.
+Participation in this process can begin even before a proposed rule is issued.
 De @deFigureidoKimICC2004 show that meetings between agency officials and firms spike before an agency issues a policy order.
 @LibgoberQJPS shows that firms that meet with federal regulators before a rule is issued may receive abnormally high stock market returns upon its release, a finding consistent with the analysis of qualitative researchers that commenters who participate early in the rulemaking process can shape the content of the rule [@NaughtonJPAM2009].
 In some cases, public participation can even initiate a rulemaking process via a petition for rulemaking.
@@ -78,7 +79,7 @@ Stuff removed for length
 
 ## Obtaining and working with data on comment participants {-}
 
-Scholars wishing to obtain data on comments and commenters from executive agencies are required to use the website regulations.gov.
+Scholars wishing to obtain data on comments and commenters from executive agencies generally use the website regulations.gov.
 Actually obtaining the data requires overcoming a number of technical and bureaucratic hurdles.
 First, bulk data from the website can only be accessed via an Application Programming Interface (API) which requires an API key.^[An API is a set of procedures that allow a user to access data from a website in a structured way.
 Some websites limit API usage by requiring users to get an API key; regulations.gov is one of those websites.]  Even after signing up for an API key,^[By emailing regulations@erulemakinghelpdesk.com with "your name, email address, organization, and intended use of the API."  See https://regulationsgov.github.io/developers/ for more details.
