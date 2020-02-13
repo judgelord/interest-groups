@@ -15,9 +15,9 @@ author:
   affiliation: New York University
   footnote: "Corresponding Author: Steven.Rashin@NYU.edu, 19 West 4th St, 2nd Floor, New York, NY 10012"
 
-abstract: The United States government creates astonishingly complete records relevant to policy creation in executive agencies. In this article, we describe the major kinds of data that have proven useful to scholars studying interest group behavior in bureaucratic politics, how to obtain them, and also the major challenges that we as users have found in working with these data. We discuss established databases such as regulations.gov, which contains comments on regulations issued by executive branch agencies, and new sources of data, such as ex-parte meeting logs, which describe the interest groups and individual lobbyists that bureaucrats are meeting face-to-face about rules, and individually-identified personnel records of nearly all federal employees since 1973. One of the challenges in working with the newer datasets is that the whole databases are often not fully machine-readable. We argue that a productive way forward is to invest in making all the datasets machine-readable and to create a consistent way to link them to each other as well as to outside databases.
+abstract: The United States government creates astonishingly complete records relevant to policy creation in executive agencies. In this article, we describe the major kinds of data that have proven useful to scholars studying interest group behavior in bureaucratic politics, how to obtain them, and also the major challenges that we as users have found in working with these data. We discuss established databases such as regulations.gov, which contains comments on draft rules proposed by executive branch agencies, and new sources of data, such as ex-parte meeting logs, which describe the interest groups and individual lobbyists that bureaucrats are meeting face-to-face about proposed rules, and individually-identified personnel records of nearly all federal employees since 1973. One of the challenges in working with the newer datasets is that much of these data are not machine-readable. We argue that a productive way forward is to invest in making all the datasets machine-readable and to create a consistent way to link them to each other as well as to outside databases.
 
-keywords: Interest groups, administrative lobbying, bureaucratic politics, data sources
+keywords: Interest groups, rulemaking, lobbying, bureaucratic politics, data sources
 
 output: 
    pdf_document:
@@ -216,14 +216,14 @@ Notably, @Workman2015 coded approximately 220,000 regulations by issue area; he 
 @WestJPART2012 assess the influences on agency discretion using a survey of bureaucratic "contact officers" and the Unified Agenda; they find that most agency decisions to issue rules "are made in the context of ongoing program implementation." 
 -->
 
-## Obtaining and working with the Unified Agenda and Press releases {-}
+## Obtaining and working with the Unified Agenda and Press releases
     
 Obtaining data from the Unified Agenda is relatively straightforward as all issues since 1995 are available online in machine-readable form.^[The Unified Agenda from 1983 through 1994 is available in the *Federal Register*.]. 
 The Unified Agenda contains all the proposed regulations an agency plans to issue in the near future, making it an extremely useful data source for studying questions about agenda setting and timing.
 There are, however, significant limitations to this data.
 First, agencies report their early-stage rulemaking to the Unified Agenda strategically [@NouSCLR2016].
 Second, agencies do not list "failed" rules that did not become final rules in the Unified Agenda [@YackeeGWLR2012].
-Third, @CoglianeseALR2016 note that the Unified Agenda misses most of the regulatory agency's work. 
+Third, @CoglianeseALR2016 note that the Unified Agenda misses much of the regulatory agency's work. 
 
 In addition to the disclosures mandated by law, agencies often issue press releases to notify the public of important agency actions.
 Much like the meetings data discussed above, the policies regarding their storage and dissemination differ from agency to agency.
@@ -237,7 +237,7 @@ Obtaining the press release metadata requires exploiting Really Simple Syndicati
 # Discussion: Assembling Complete Databases  
 
 The United States government releases troves of data on rulemaking but in forms that require substantial effort from scholars to be useful for research. Scholars working on bureaucratic politics face two primary data challenges going forward: assembling complete, machine-readable datasets of agency rulemaking activity and linking these datasets to one another.
-There are four fruitful data projects which could increase researcher efficiency by preventing duplicated efforts to download and clean data.
+We see four fruitful data projects which could increase researcher efficiency by preventing duplicated efforts to download and clean data.
 First, assembling a complete database of comment activity throughout the Federal government in one location that can be downloaded in bulk, including comment text and metadata.
 Second, creating a comprehensive database of revolving door rulemakers from the OPM personnel records, LDA disclosure forms, and FARA data.
 This database would be significantly improved by the addition of data from LinkedIn, but those data are not currently public.
