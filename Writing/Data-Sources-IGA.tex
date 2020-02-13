@@ -334,14 +334,14 @@ Management and Budget (OMB) or in judicial review. Interest groups lobby
 successfully in OMB review \citep{HaederYackee2015} Interest groups also
 use the rulemaking record but build a case for litigation. Yet, there
 are few large-N studies linking lobbying in rulemaking to litigation or
-court decisions. \citet{LibgoberRashin2018} analyzed comments submitted
-to financial regulators and found that threats of litigation were rare
-but, when they did occur, were often followed by court decisions.
-\citet{judgelord2016MPSA} found no relationship between the number of
-comments and the likelihood that the Supreme Court upheld or struck down
-an agency rule and, like \citet{SchuckElliott1990}, found that the court
-is more likely to strike down policies made through the notice and
-comment process.
+court decisions. \citet{LibgoberRashin2018SPSA} analyzed comments
+submitted to financial regulators and found that threats of litigation
+were rare but, when they did occur, were often followed by court
+decisions. \citet{judgelord2016MPSA} found no relationship between the
+number of comments and the likelihood that the Supreme Court upheld or
+struck down an agency rule and, like \citet{SchuckElliott1990}, found
+that the court is more likely to strike down policies made through the
+notice and comment process.
 
 To analyze patterns of participation, scholars use data from a variety
 of sources. Sources for data on participation are agency rulemaking
@@ -395,16 +395,16 @@ Not all federal agencies post rulemaking documents to regulations.gov.
 Scholars studying participation in these agencies can often obtain data
 on participation in rulemaking from the agency websites.\footnote{Some
   agencies have only some records on regulations.gov. For example, the
-  Federal Energy Regulatory Commission has often posted proposed rules
-  on regulations.gov, but directed comments to be submitted by email and
+  Federal Energy Regulatory Commission has posted proposed rules on
+  regulations.gov, but directed comments to be submitted by email and
   then posted them on its eLibrary website. Unlike regulations.gov, most
   agency sites do not have an API and thus require scholars to use
   bespoke web scrapers. We have examples of scrapers for several of
   these agencies on \url{https://github.com/libgober/regdata}. While
   these websites are not rate-limited or gated with API keys, we
-  recommend exercising caution with the rate at which a scholar solicits
-  information from the servers, as going too fast can trigger security
-  protocols resulting in a temporary ban.}
+  recommend caution with the rate at which scholars solicit information
+  from the servers to avoid security protocols that triggor a temporary
+  ban.}
 
 In addition to the challenges of obtaining the data, scholars also must
 choose how they want to preprocess the data before analyzing it. For
@@ -430,30 +430,28 @@ them. This procedure will assign a small distance between Goldman Sachs
 and Goldman, Sachs \& Co.~and a larger distance between Goldman Sachs
 and Merrill Lynch. The distances and optimal thresholds depend on the
 algorithm used. Fuzzy matching, however, is not a panacea as the same
-procedure will also show a small distance between the JP Morgan and
-Morgan Stanley, which are two separate entities. It will also not reveal
+procedure will also show a small distance between JP Morgan and Morgan
+Stanley, which are two separate entities. It will also not reveal
 whether an ABA letter is from the American Banker's Association or the
-American Bar Association, and many trade-associations active on similar
-rulemaking issues often share acronyms or have similar looking names. We
-note, however, that in expectation, additional noise generated from
-incorrect matching is likely to bias a scholar against finding any
-relationships within the data.
+American Bar Association. Many trade-associations active on similar
+rulemaking issues share acronyms or have similar names. In expectation,
+however, noise generated from incorrect matching is likely to bias a
+scholar against finding any relationships within the data.
 
 \hypertarget{who-writes-rules}{%
 \section{Who writes rules?}\label{who-writes-rules}}
 
-In the last decade, scholars have begun to study how the identities of
-the policymakers and the networks in which they are embedded affect the
-policymaking process. This recent scholarly attention is partially a
-function of the release of new data sources such as the U.S. Office of
-Personnel Management's (OPM) data on government employees
+Scholars recently began to study how policymakers' identities and
+networks affect the policymaking process. This is partially due to the
+release of new data sources such as the U.S. Office of Personnel
+Management's (OPM) data on government employees
 \citep[e.g.,][]{BoltonAMP2018},\footnote{Note that the dataset
-  \citet{BoltonAMP2018} used is not public, but there is a BuzzFeed
-  version that is substantially similar that we discuss below.} Open
-Secrets' lobbying \citep[e.g.,][]{Baumgartner2009} and revolving door
-databases \citep[e.g.,][\citet{BertrandAER2014}]{VidalAER2012},
-machine-readable lobbying disclosure act reports
-\citep[e.g.,][\citet{YouJOP2017}]{BoehmkeJPP2013}, meeting logs
+  \citet{BoltonAMP2018} used is not public like the similar BuzzFeed
+  data we discuss below.} Open Secrets' lobbying
+\citep[e.g.,][]{Baumgartner2009} and revolving door databases
+\citep[e.g.,][\citet{BertrandAER2014}]{VidalAER2012}, machine-readable
+lobbying disclosure act reports \citep[e.g.,][\citet{YouJOP2017},
+\citet{Dwidar2019SPSA}]{BoehmkeJPP2013}, meeting logs
 \citep{LibgoberQJPS}, and datasets of corporate board membership such as
 Boardex \citep[e.g.,][]{ShiveROF2016}. Scholars have also been able to
 study the identities of policymakers through the creative use of
@@ -486,13 +484,14 @@ BuzzFeed personnel data release. The BuzzFeed personnel data\footnote{Available
 contains information on federal employees such as their salaries, job
 titles, and basic demographic data from 1973 through 2016.\footnote{Updated
   personnel files are available through 2018 from the OPM itself here:
-  \url{https://www.fedscope.opm.gov/datadefn/index.asp}} These are the
-most complete personnel records publicly accessible, but they have
-several significant limitations. First, not all agencies and occupations
-are a part of this release.\footnote{The list includes at least 16
-  agencies and, within the covered agencies, law enforcement officers,
-  nuclear engineers, and certain investigators (Buzzfeed, 2017). See
-  \url{https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records}}
+  \url{https://www.fedscope.opm.gov/datadefn/index.asp}}\\
+These are the most complete personnel records publicly accessible, but
+they have several significant limitations. First, not all agencies and
+occupations are a part of this release.\footnote{The list includes at
+  least 16 agencies and, within the covered agencies, law enforcement
+  officers, nuclear engineers, and certain investigators (Buzzfeed,
+  2017). See
+  \url{https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records}}\\
 Second, some of the employees in these data do not have a unique
 identification number. This means that common names such as ``John
 Smith'' match multiple employes. The Veterans Health Administration
@@ -696,21 +695,21 @@ The United States government releases troves of data on rulemaking but
 in forms that require substantial effort from scholars to be useful for
 research. Scholars working on bureaucratic politics face two primary
 data challenges going forward: assembling complete, machine-readable
-datasets of agency rulemaking activity and linking these datasets to one
-another. We see four fruitful data projects which could increase
+datasets of agency rulemaking activity and linking observations across
+datasets. We see four fruitful data projects which could increase
 researcher efficiency by preventing duplicated efforts to download and
-clean data. First, assembling a complete database of comment activity
-throughout the Federal government in one location that can be downloaded
-in bulk, including comment text and metadata. Second, creating a
-comprehensive database of revolving door rulemakers from the OPM
-personnel records, LDA disclosure forms, and FARA data. This database
-would be significantly improved by the addition of data from LinkedIn,
-but those data are not currently public. Third, creating a database of
-all meeting activities throughout the federal government. Finally,
-creating unique identifiers for each commenter that allow researchers to
-link commenting behavior to firm characteristics and other datasets.
-These projects, once completed, will allow scholars to pursue novel
-research on political participation, influence, and public management.
+clean data. First, a complete database is needed to comment activity
+throughout the Federal government that can be downloaded in bulk,
+including comment text and metadata. Second, a comprehensive database
+could link revolving door rulemakers from the OPM personnel records, LDA
+disclosure forms, and FARA data. This database would be significantly
+improved by the addition of data from LinkedIn, but those data are not
+currently public. Third, creating a database of all meeting activities
+throughout the federal government. Finally, unique identifiers for each
+commenter would allow researchers to link commenting behavior to
+organizations across datasets. These projects, once completed, will
+allow scholars to pursue novel research on political participation,
+influence, and public management.
 
 \hypertarget{conflicts-of-interest}{%
 \section{Conflicts of Interest}\label{conflicts-of-interest}}
