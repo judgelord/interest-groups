@@ -403,20 +403,20 @@ on participation in rulemaking from the agency websites.\footnote{Some
   these agencies on \url{https://github.com/libgober/regdata}. While
   these websites are not rate-limited or gated with API keys, we
   recommend caution with the rate at which scholars solicit information
-  from the servers to avoid security protocols that triggor a temporary
+  from the servers to avoid security protocols that trigger a temporary
   ban.}
 
 In addition to the challenges of obtaining the data, scholars also must
 choose how they want to preprocess the data before analyzing it. For
 example, to answer questions about the types of organizations that
-participate in notice and comment rulemaking, scholars first need to
-accurately identify these organizations so that they can be assigned the
-correct covariate data. This process, however, is not trivial as the
-same firm can be identified in numerous ways. For example, Goldman Sachs
-submitted comments to the Securities and Exchange Commission (SEC) and
-Federal Reserve Board (FRB) as The Goldman Sachs Group, Inc, Goldman
-Sachs Co.~LLC, Goldman Sachs Bank USA, Goldman, Sachs \& Co., Goldman
-Sachs Execution \& Clearing, LP, among other identifiers. All of these
+participate in rulemaking, scholars first need to accurately identify
+these organizations so that they can be assigned the correct covariate
+data. This process, however, is not trivial as the same firm can be
+identified in numerous ways. For example, Goldman Sachs submitted
+comments to the Securities and Exchange Commission (SEC) and Federal
+Reserve Board (FRB) as The Goldman Sachs Group, Inc, Goldman Sachs
+Co.~LLC, Goldman Sachs Bank USA, Goldman, Sachs \& Co., Goldman Sachs
+Execution \& Clearing, LP, among other identifiers. All of these
 entities need to be accurately matched to Goldman Sachs, including the
 Goldman Sachs Execution \& Clearing comment which is on Goldman Sachs
 letterhead.\footnote{See
@@ -433,7 +433,7 @@ algorithm used. Fuzzy matching, however, is not a panacea as the same
 procedure will also show a small distance between JP Morgan and Morgan
 Stanley, which are two separate entities. It will also not reveal
 whether an ABA letter is from the American Banker's Association or the
-American Bar Association. Many trade-associations active on similar
+American Bar Association. Many organizations active on similar
 rulemaking issues share acronyms or have similar names. In expectation,
 however, noise generated from incorrect matching is likely to bias a
 scholar against finding any relationships within the data.
@@ -475,29 +475,26 @@ in a substantial loss of income for that lobbyist.
 \subsection{Obtaining and Working with personnel and lobbying
 data}\label{obtaining-and-working-with-personnel-and-lobbying-data}}
 
-Scholars wishing to analyze the extent to which personnel influence the
-development of the rulemaking process can obtain this data from the
-BuzzFeed personnel data release. The BuzzFeed personnel data\footnote{Available
-  at
+Scholars can obtain data on agency personnel from the BuzzFeed personnel
+data release. The BuzzFeed personnel data\footnote{Available at
   \url{https://archive.org/details/opm-federal-employment-data/page/n1}.
-  Note that the complete dataset is massive (\$\textgreater\$30GB).}
-contains information on federal employees such as their salaries, job
-titles, and basic demographic data from 1973 through 2016.\footnote{Updated
-  personnel files are available through 2018 from the OPM itself here:
+  (The complete dataset is over 30GB).} contains information on federal
+employees such as their salaries, job titles, and basic demographic data
+from 1973 through 2016.\footnote{Updated personnel files are available
+  through 2018 from the OPM itself here:
   \url{https://www.fedscope.opm.gov/datadefn/index.asp}}\\
-These are the most complete personnel records publicly accessible, but
-they have several significant limitations. First, not all agencies and
+These are the most comprehensive personnel records publicly available,
+but they have significant limitations. First, not all agencies and
 occupations are a part of this release.\footnote{The list includes at
   least 16 agencies and, within the covered agencies, law enforcement
   officers, nuclear engineers, and certain investigators (Buzzfeed,
   2017). See
   \url{https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records}}\\
-Second, some of the employees in these data do not have a unique
-identification number. This means that common names such as ``John
-Smith'' match multiple employes. The Veterans Health Administration
-(VHA) employed 24 John Smiths in 2014. Adding a middle initial still
-does not lead to unique identifiers as there are five John Smiths at the
-VHA with the same middle initial.
+Second, some of the employees in these data do not have unique
+identification numbers. This means that common names such as ``John
+Smith'' match multiple employees; the Veterans Health Administration
+(VHA) employed 24 John Smiths in 2014, five with the same middle
+initial.
 
 To obtain machine-readable data on the identities of domestic lobbyists,
 scholars use two databases from Open Secrets -- a nonprofit focused on
@@ -698,18 +695,18 @@ data challenges going forward: assembling complete, machine-readable
 datasets of agency rulemaking activity and linking observations across
 datasets. We see four fruitful data projects which could increase
 researcher efficiency by preventing duplicated efforts to download and
-clean data. First, a complete database is needed to comment activity
-throughout the Federal government that can be downloaded in bulk,
-including comment text and metadata. Second, a comprehensive database
-could link revolving door rulemakers from the OPM personnel records, LDA
-disclosure forms, and FARA data. This database would be significantly
-improved by the addition of data from LinkedIn, but those data are not
-currently public. Third, creating a database of all meeting activities
-throughout the federal government. Finally, unique identifiers for each
-commenter would allow researchers to link commenting behavior to
-organizations across datasets. These projects, once completed, will
-allow scholars to pursue novel research on political participation,
-influence, and public management.
+clean data. First, a complete database is needed to link commenting
+activity throughout the Federal government that can be downloaded in
+bulk, including comment text and metadata. Second, a comprehensive
+database could link revolving door rulemakers from the OPM personnel
+records, LDA disclosure forms, and FARA data. This database would be
+significantly improved by the addition of data from LinkedIn, but those
+data are not currently public. Third, creating a database of all meeting
+activities throughout the federal government. Finally, unique
+identifiers for each commenter would allow researchers to link
+commenting behavior to organizations across datasets. These projects,
+once completed, will allow scholars to pursue novel research on
+political participation, influence, and public management.
 
 \hypertarget{conflicts-of-interest}{%
 \section{Conflicts of Interest}\label{conflicts-of-interest}}
