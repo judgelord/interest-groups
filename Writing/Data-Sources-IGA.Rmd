@@ -95,11 +95,10 @@ First, bulk data from the website can only be accessed via an Application Progra
 Some websites limit API usage by requiring users to get an API key; regulations.gov is one of those websites.]  This requires requesting an API key.^[By emailing regulations@erulemakinghelpdesk.com with "your name, email address, organization, and intended use of the API."  See https://regulationsgov.github.io/developers/ for more details.
 Approval of API keys takes several days. We caution prospective users of the site that these keys can be deactivated without warning or acknowledgment of why they were deactivated.] Second, obtaining an accurate count of comments is not straightforward as agencies have different policies regarding duplicated comments^[The difference between the total number of reported comments and the number of comments on regulations.gov is often due to mass comment campaigns being grouped together.] and confidential business information.^[See e.g., @Lubbers2012 and https://www.regulations.gov/userNotice.] Third, obtaining the data is time-consuming.^[Regulations.gov is subject to a rate limit of 1,000 queries per hour which is especially problematic for scholars seeking to analyze the full text of comments, many of which are included only as attachments. Downloading an individual document requires calling the API twice, once for the docket information, which includes the attachment URL(s), and then a second time to download the linked file.]
 As of October 4, 2019, Regulations.gov has 11,238,958 public submission documents representing over 70 million public comments and almost 1.5 million rules and other documents.    
-
 <!--
 For example, on an EPA rule on clean water, regulations.gov notes that 1,123,388 million comments were submitted, but only 20,594 are available on the website itself.
+FDA is famous for this as well. Susan got them from FOIA.
 -->  
-
 Not all federal agencies post rulemaking documents to regulations.gov. 
 Scholars studying participation in these agencies can often obtain data on participation in rulemaking from the agency websites.^[Some agencies have only some records on regulations.gov. For example, the Federal Energy Regulatory Commission has posted proposed rules on regulations.gov, but directed comments to be submitted by email and then posted them on its eLibrary website.
 Unlike regulations.gov, most agency sites do not have an API and thus require scholars to use bespoke web scrapers.
