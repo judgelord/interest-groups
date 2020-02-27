@@ -1,21 +1,40 @@
 \@doanenote {1}
+macro:->These
+logs
+record
+who
+participated
+in
+face-to-face
+or
+telephone
+meetings
+between
+interest
+groups
+and
+bureaucrats,
+often
+including
+individual
+names.
+\@endanenote 
+\@doanenote {2}
 macro:->We
-have
-links
+link
 to
-all
-the
+more
 relevant
 data
 sources
 on
 our
-github
+GitHub
 page:
 \url
 {https://github.com/libgober/regdata/blob/master/README.md}.
 \@endanenote 
-\@doanenote {2}
+\@doanenote {3}
 macro:->An
 API
 is
@@ -57,14 +76,14 @@ of
 those
 websites.
 \@endanenote 
-\@doanenote {3}
+\@doanenote {4}
 macro:->By
 emailing
 \href
 {mailto:regulations@erulemakinghelpdesk.com}{\nolinkurl
 {regulations@erulemakinghelpdesk.com}}
 with
-`your
+``your
 name,
 email
 address,
@@ -74,37 +93,45 @@ intended
 use
 of
 the
-API.'
+API.''
 See
 \url
 {https://regulationsgov.github.io/developers/}
 for
 more
 details.
-The
-process
-to
-approve
+Approval
+of
+API
 keys
 takes
-a
-few
-days,
-though
-some
-do
-not
-get
-approved
-at
-all.
-\@endanenote 
-\@doanenote {4}
-macro:->We
-note
-that
-sometimes
+several
+days.
+We
+caution
+prospective
+users
+of
 the
+site
+that
+these
+keys
+can
+be
+deactivated
+without
+warning
+or
+acknowledgment
+of
+why
+they
+were
+deactivated.
+\@endanenote 
+\@doanenote {5}
+macro:->The
 difference
 between
 the
@@ -121,6 +148,7 @@ comments
 on
 regulations.gov
 is
+often
 due
 to
 mass
@@ -130,16 +158,16 @@ being
 grouped
 together.
 \@endanenote 
-\@doanenote {5}
+\@doanenote {6}
 macro:->See
 e.g.,
 \citet
-{Lubbers_2012}
+{Lubbers2012}
 and
 \url
 {https://www.regulations.gov/userNotice}.
 \@endanenote 
-\@doanenote {6}
+\@doanenote {7}
 macro:->Regulations.gov
 is
 subject
@@ -174,32 +202,6 @@ included
 only
 as
 attachments.
-As
-of
-October
-4,
-2019
-Regulations.gov
-has
-11,238,958
-public
-submission
-documents
-representing
-over
-70
-million
-public
-comments
-and
-almost
-1.5
-million
-more
-rules
-and
-other
-documents.
 Downloading
 an
 individual
@@ -213,7 +215,12 @@ once
 for
 the
 docket
-information
+information,
+which
+includes
+the
+attachment
+URL(s),
 and
 then
 a
@@ -225,53 +232,149 @@ the
 linked
 file.
 \@endanenote 
-\@doanenote {7}
+\@doanenote {8}
+macro:->Some
+agencies
+have
+only
+some
+records
+on
+regulations.gov.
+For
+example,
+the
+Federal
+Energy
+Regulatory
+Commission
+has
+posted
+proposed
+rules
+on
+regulations.gov,
+but
+directed
+comments
+to
+be
+submitted
+by
+email
+and
+then
+posted
+them
+on
+its
+eLibrary
+website.
+Unlike
+regulations.gov,
+most
+agency
+sites
+do
+not
+have
+an
+API
+and
+thus
+require
+scholars
+to
+use
+bespoke
+web
+scrapers.
+We
+have
+examples
+of
+scrapers
+for
+several
+of
+these
+agencies
+on
+\url
+{https://github.com/libgober/regdata}.
+While
+these
+websites
+are
+not
+rate-limited
+or
+gated
+with
+API
+keys,
+we
+recommend
+caution
+with
+the
+rate
+at
+which
+scholars
+solicit
+information
+from
+the
+servers
+to
+avoid
+security
+protocols
+that
+trigger
+a
+temporary
+ban.
+\@endanenote 
+\@doanenote {9}
 macro:->See
 \url
 {https://www.sec.gov/comments/s7-03-10/s70310-43.pdf}.
 \@endanenote 
-\@doanenote {8}
+\@doanenote {10}
 macro:->Note
 that
 the
 dataset
 \citet
-{Bolton_AMP_2018}
+{BoltonAMP2018}
 used
 is
 not
 public
-but
-there
-is
-a
-BuzzFeed
-version
-that
-is
-substantially
+like
+the
 similar
-that
+BuzzFeed
+data
 we
 discuss
 below.
 \@endanenote 
-\@doanenote {9}
+\@doanenote {11}
 macro:->Available
 at
 \url
 {https://archive.org/details/opm-federal-employment-data/page/n1}.
-Note
-that
-the
+(The
 complete
 dataset
 is
-massive
-(\$\textgreater
-\$30GB).
+over
+30GB).
 \@endanenote 
-\@doanenote {10}
+\@doanenote {12}
 macro:->Updated
 personnel
 files
@@ -287,7 +390,7 @@ here:
 \url
 {https://www.fedscope.opm.gov/datadefn/index.asp}
 \@endanenote 
-\@doanenote {11}
+\@doanenote {13}
 macro:->The
 list
 includes
@@ -314,14 +417,14 @@ See
 \url
 {https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records}
 \@endanenote 
-\@doanenote {12}
+\@doanenote {14}
 macro:->See
 \url
 {https://lobbyingdisclosure.house.gov/ldaguidance.pdf}
 for
 details.
 \@endanenote 
-\@doanenote {13}
+\@doanenote {15}
 macro:->Note
 that
 the
@@ -344,19 +447,19 @@ here:
 \url
 {https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}
 \@endanenote 
-\@doanenote {14}
+\@doanenote {16}
 macro:->See
 \url
 {https://www.gao.gov/assets/700/698103.pdf}
 \@endanenote 
-\@doanenote {15}
+\@doanenote {17}
 macro:->See
 \url
 {https://www.opensecrets.org/revolving/methodology.php}
 for
 details.
 \@endanenote 
-\@doanenote {16}
+\@doanenote {18}
 macro:->Note
 that
 they
@@ -365,7 +468,7 @@ academic
 work
 using
 their
-database
+database,
 so
 they
 do
@@ -376,28 +479,28 @@ scraping
 their
 database.
 \@endanenote 
-\@doanenote {17}
+\@doanenote {19}
 macro:->See
 \url
 {https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}
 \@endanenote 
-\@doanenote {18}
+\@doanenote {20}
 macro:->\url
 {https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::
 \@endanenote 
-\@doanenote {19}
+\@doanenote {21}
 macro:->The
 metadata
 -
-e.g.~dates,
+e.g.,
+dates,
 registratrants,
 clients
 -
 are
 available
 in
-machine
-readable
+machine-readable
 form
 through
 the
@@ -408,11 +511,11 @@ data
 downloads
 page.
 \@endanenote 
-\@doanenote {20}
+\@doanenote {22}
 macro:->\url
 {https://www.federalreserve.gov/regreform/communications-with-public.htm}
 \@endanenote 
-\@doanenote {21}
+\@doanenote {23}
 macro:->See
 \url
 {https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
@@ -420,7 +523,7 @@ and
 \url
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
-\@doanenote {22}
+\@doanenote {24}
 macro:->For
 issues
 from
@@ -448,7 +551,7 @@ a
 readable
 format.
 \@endanenote 
-\@doanenote {23}
+\@doanenote {25}
 macro:->However
 we
 still
@@ -463,15 +566,15 @@ server
 with
 requests.
 \@endanenote 
-\@doanenote {24}
+\@doanenote {26}
 macro:->We
 note
 that
 raw
-text
+texts
 of
 rules
-is
+are
 not
 available
 from
@@ -501,7 +604,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {25}
+\@doanenote {27}
 macro:->The
 Unified
 Agenda
@@ -517,7 +620,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {26}
+\@doanenote {28}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}

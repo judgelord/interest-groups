@@ -99,6 +99,9 @@ sources},
 
 
 % optional footnotes as endnotes
+  \usepackage{endnotes}
+  \renewcommand{\enotesize}{\normalsize}
+  \let\footnote = \endnote
 
 
 % ----- Pandoc wants this tightlist command ----------
@@ -250,9 +253,9 @@ sources emerge constantly. Thus, we also highlight sources of data that
 we believe are already or may soon become available, perhaps after
 enterprising researchers submit the necessary Freedom Of Information Act
 (FOIA) requests. Examples include agency press releases \citep[see,
-e.g.,][\citet{Libgober2018}]{LibgoberJOP} and the Foreign Agents
-Registration Act (FARA) reports \citep{ShepherdAPSR2019}.\footnote{We
-  link to more relevant data sources on our GitHub page:
+e.g.,][]{LibgoberJOP, Libgober2018} and the Foreign Agents Registration
+Act (FARA) reports \citep{ShepherdAPSR2019}.\footnote{We link to more
+  relevant data sources on our GitHub page:
   \url{https://github.com/libgober/regdata/blob/master/README.md}.} To
 orient potential students of agency policymaking to available sources of
 data, we identify four units of analysis: (1) participants, (2)
@@ -303,10 +306,10 @@ the median rule designated as ``economically significant'' -- rules
 projected to have an annual economic impact of over \$100 million --
 receives fewer than ten comments \citep{judgelord2019SPSA}. Participants
 include businesses, public interest groups, trade associations, unions,
-law firms, and academics \citep[\citet{YackeeJOP2006}]{CuellarALR2005}.
-While businesses are the most consistent and influential participants
-\citep[\citet{LibgoberJOP}]{YackeeJOP2006}, most comments are part of
-public pressure campaigns. Indeed, at least 39 million of the 48 million
+law firms, and academics \citep{CuellarALR2005, YackeeJOP2006}. While
+businesses are the most consistent and influential participants
+\citep{YackeeJOP2006, LibgoberJOP}, most comments are part of public
+pressure campaigns. Indeed, at least 39 million of the 48 million
 comments on proposed rules on regulations.gov were mobilized by just 100
 advocacy organizations such as the Sierra Club
 \citep{judgelord2019SPSA}.
@@ -315,7 +318,7 @@ The notion that interest groups seek to influence rules motivates
 scholarly interest in patterns of participation in rulemaking. For
 example, \citet{YouJOP2017} finds that half of all spending on lobbying
 legislation occurs \emph{after} a bill becomes law. Participation in
-this process can begin even before a proposed rule is issued. De
+this process can begin even before a proposed rule is issued.
 \citet{deFigureidoKimICC2004} show that meetings between agency
 officials and firms spike before an agency issues a policy.
 \citet{LibgoberQJPS} finds that firms that meet with federal regulators
@@ -334,29 +337,29 @@ U.S.C. § 553(e).
 Scholars are also interested in how participation in rulemaking may
 affect a rule's ultimate fate when sent to the White House Office of
 Management and Budget (OMB) or in judicial review. Interest groups lobby
-successfully in OMB review \citep{HaederYackee2015} Interest groups also
-use the rulemaking record but build a case for litigation. Yet, there
-are few large-N studies linking lobbying in rulemaking to litigation or
-court decisions. \citet{LibgoberRashin2018SPSA} analyzed comments
-submitted to financial regulators and found that threats of litigation
-were rare but, when they did occur, were often followed by court
-decisions. \citet{judgelord2016MPSA} found no relationship between the
-number of comments and the likelihood that the Supreme Court upheld or
-struck down an agency rule and, like \citet{SchuckElliott1990}, found
-that the court is more likely to strike down policies made through the
-notice and comment process.
+successfully in OMB review \citep{HaederYackee2015}. {[}NOTE: reference
+to IG\&A OMB article here{]}. Interest groups also use the rulemaking
+record but build a case for litigation. Yet, there are few large-N
+studies linking lobbying in rulemaking to litigation or court decisions.
+\citet{LibgoberRashin2018SPSA} analyzed comments submitted to financial
+regulators and found that threats of litigation were rare but, when they
+did occur, were often followed by court decisions.
+\citet{judgelord2016MPSA} found no relationship between the number of
+comments and the likelihood that the Supreme Court upheld or struck down
+an agency rule and, like \citet{SchuckElliott1990}, found that the court
+is more likely to strike down policies made through the notice and
+comment process.
 
 To analyze patterns of participation, scholars use data from a variety
 of sources. Sources for data on participation are agency rulemaking
 dockets
-\citep[\citet{YackeeJPART2006},\citet{YoungBP2017},\citet{BanBP2019}]{GoldenJPART1998},
-the \emph{Federal Register} \citep[\citet{WestPAR2004}]{BallaAPSR1998},
-and regulations.gov \citep[\citet{GordonRashinJOP}]{Balla2019}. Though
-commenters are not generally required to disclose their names and
-affiliations, many do. The best current data sources for obtaining the
-names of the organizations that submit comments on federal regulations
-are regulations.gov and the websites of the independent agencies
-themselves.
+\citep{GoldenJPART1998, YackeeJPART2006, YoungBP2017, BanBP2019}, the
+\emph{Federal Register} \citep{BallaAPSR1998, WestPAR2004}, and
+regulations.gov \citep{Balla2019, GordonRashinJOP}. Though commenters
+are not generally required to disclose their names and affiliations,
+many do. The best current data sources for obtaining the names of the
+organizations that submit comments on federal regulations are
+regulations.gov and the websites of the independent agencies themselves.
 
 \hypertarget{obtaining-and-working-with-data-on-comment-participants}{%
 \subsection{Obtaining and working with data on comment
@@ -452,12 +455,12 @@ Management's (OPM) data on government employees
   \citet{BoltonAMP2018} used is not public like the similar BuzzFeed
   data we discuss below.} Open Secrets' lobbying
 \citep[e.g.,][]{Baumgartner2009} and revolving door databases
-\citep[e.g.,][\citet{BertrandAER2014}]{VidalAER2012}, machine-readable
-lobbying disclosure act reports \citep[e.g.,][\citet{YouJOP2017},
-\citet{Dwidar2019SPSA}]{BoehmkeJPP2013}, meeting logs
-\citep{LibgoberQJPS}, and datasets of corporate board membership such as
-Boardex \citep[e.g.,][]{ShiveROF2016}. Scholars have also been able to
-study the identities of policymakers through the creative use of
+\citep[e.g.,][]{VidalAER2012, BertrandAER2014}, machine-readable
+lobbying disclosure act reports
+\citep[e.g.,][]{BoehmkeJPP2013, YouJOP2017, Dwidar2019SPSA}, meeting
+logs \citep{LibgoberQJPS}, and datasets of corporate board membership
+such as Boardex \citep[e.g.,][]{ShiveROF2016}. Scholars have also been
+able to study the identities of policymakers through the creative use of
 longstanding data sources such as the \emph{Federal Register}
 \citep[e.g.,][]{CarriganPAR2019}.
 
@@ -577,7 +580,7 @@ meetings in one place.\footnote{See
 All of the work discussed above relies on the notion that public
 participation and the rulewriters influence the content of rules;
 numerous studies have found that commenters influence rules \citep[see,
-e.g.,][\citet{YackeeJOP2006},\citet{NaughtonJPAM2009},\citet{HaederAPSR2015},\citet{HaederJPART2018}]{CuellarALR2005}
+e.g.,][]{CuellarALR2005, YackeeJOP2006, NaughtonJPAM2009, HaederAPSR2015, HaederJPART2018}
 at agencies such as the Department of Labor \citep{YackeeJOP2006}, the
 Department of Treasury \citep{CuellarALR2005}, the Environmental
 Protection Agency \citep{WagnerALR2011}, the Securities and Exchange
@@ -587,10 +590,10 @@ qualitative analysis \citep[e.g.,][]{CuellarALR2005}, and quantitative
 analysis \citep[e.g.,][]{YackeeJOP2006}. Firms and groups representing
 businesses' interests are influential in securing policy concessions
 from the rulemaking process
-\citep[\citet{YackeeJOP2006},\citet{Carpenter2013}]{YackeeJPART2006},
-particularly when they are unopposed. Other scholars have found that
-agencies respond to citizens \citep{BallaPI2019} and medical
-professionals \citep[\citet{GordonRashinJOP}]{BallaAPSR1998}.
+\citep{YackeeJPART2006, YackeeJOP2006, Carpenter2013}, particularly when
+they are unopposed. Other scholars have found that agencies respond to
+citizens \citep{BallaPI2019} and medical professionals
+\citep{BallaAPSR1998, GordonRashinJOP}.
 
 \hypertarget{obtaining-and-working-with-data-on-rule-text}{%
 \subsection{Obtaining and Working with Data on Rule
@@ -612,8 +615,8 @@ have any rate limits.\footnote{However we still recommend small delays
   to prevent flooding the server with requests.}
 
 While the raw text of rules is relatively straightforward to obtain,
-there are several thorny theoretical and methodological issues scholars
-must overcome.\footnote{We note that raw texts of rules are not
+there are several thorny theoretical and methodological issues that
+scholars must overcome.\footnote{We note that raw texts of rules are not
   available from regulations.gov or the independent agencies themselves.
   As these rules are often in PDF form, converting them to .txt for
   analysis introduces errors into the text.} First, the standard path
@@ -640,19 +643,18 @@ Often lengthy delays between statutory promulgation and the issuance of
 regulations are the subject of recent empirical scholarly interest.
 Scholars attribute various causes to regulatory delay including auditing
 \citep{ACSPSQ2013}; outside contacts \citep{BallaALR2011}; the political
-climate \citep[\citet{ThrowerPSQ2018}]{PotterJOP2017}; personnel types
+climate \citep{PotterJOP2017, ThrowerPSQ2018}; personnel types
 \citep{CarriganPAR2019}; ossification \citep{YackeeGWLR2012}; deadlines
-\citep[\citet{CarpenterAJPS2011},\citet{BertelliPAR2019}]{LavertuJPART2012};
-staffing levels \citep{BoltonJLEO2015}. These scholars relied on data
-from OIRA
-\citep[\citet{BallaALR2011},\citet{BoltonJLEO2015},\citet{CarriganPAR2019}]{ACSPSQ2013},
-the Unified Agenda
-\citep[\citet{PotterJOP2017},\citet{LavertuJPART2012},\citet{Potter2019}]{BertelliPAR2019},
-the \emph{Federal Register}
-\citep[\citet{ThrowerPSQ2018}]{YackeeGWLR2012}, and FDA's drug approval
-and postmarket experience \citep{CarpenterAJPS2011}. Scholars have also
-exploited rule metadata to show that publicly-traded banks that submit
-comments account for \$7 billion in excess returns \citep{Libgober2018}.
+\citep{LavertuJPART2012, CarpenterAJPS2011, BertelliPAR2019}; staffing
+levels \citep{BoltonJLEO2015}. These scholars relied on data from OIRA
+\citep{ACSPSQ2013, BallaALR2011, BoltonJLEO2015, CarriganPAR2019}, the
+Unified Agenda
+\citep{BertelliPAR2019, PotterJOP2017, LavertuJPART2012, Potter2019},
+the \emph{Federal Register} \citep{YackeeGWLR2012, ThrowerPSQ2018}, and
+FDA's drug approval and postmarket experience \citep{CarpenterAJPS2011}.
+Scholars have also exploited rule metadata to show that publicly-traded
+banks that submit comments account for \$7 billion in excess returns
+\citep{Libgober2018}.
 
 \hypertarget{obtaining-and-working-with-the-unified-agenda-and-press-releases}{%
 \subsection{Obtaining and working with the Unified Agenda and Press
@@ -717,6 +719,8 @@ political participation, influence, and public management.
 On behalf of all authors, the corresponding author states that there is
 no conflict of interest.
 % --- PAGE: endnotes -----------------------
+  \newpage 
+  \theendnotes
 % --- PAGE: refs -----------------------
 \newpage
 \singlespacing 
