@@ -58,11 +58,12 @@ These data sources do not exhaust the kinds of records relevant to researchers. 
 ## Background: Rulemaking and the Administrative Procedures Act
 
 For decades, the volume of legal requirements emerging from executive agencies has dwarfed the lawmaking activity of Congress, the Supreme Court, and the Presidency. 
-Each year, agencies publish four thousand or more regulations. In doing so, agencies must follow a process prescribed by the Administrative Procedures Act (APA), 5 U.S.C. § 553(c). 
+Each year, agencies publish three thousand or more regulations. In doing so, agencies must follow a process prescribed by the Administrative Procedures Act (APA), 5 U.S.C. § 553(c). 
 For each rule, agencies create a collection of documents at each stage of their policymaking process. Section 553 requires agencies to issue a Notice of Proposed Rulemaking (NPRM) in the *Federal Register* to notify potentially affected parties that the regulatory environment or program administration may change.
 Following the NPRM, agencies solicit comments on these regulations through regulations.gov (for executive agencies) or the agency websites themselves (for independent agencies).
 Agencies are required to consider public comments but are not required to alter the rules based on them. 
-These documents are organized in a "docket" folder with a unique name and ID number. Once kept in literal folders in each agency's "docket room," where visitors could make photocopies, these documents are now online. For example, the Centers for Medicare Medicaid Services rulemaking docket 0163 "Transparency in Coverage" can be found at regulations.gov/docket?D=CMS-2019-0163.
+These documents are organized in a "docket" folder with a unique name and ID number. Once kept in literal folders in each agency's "docket room," where visitors could make photocopies, these documents are now online. 
+For example, a recent Centers for Medicare & Medicaid Services Rulemaking docket on health plans disclosing health care costs can be found at regulations.gov/docket?D=CMS-2019-0163.
 The fact that the APA requires agencies to assemble a comprehensive record of who sought to influence the policymaking process, and that such records are relatively complete, is highly unusual and makes the agency policymaking particularly exciting for interest group scholars.
 
 # Who participates in the rulemaking process?
