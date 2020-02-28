@@ -15,11 +15,11 @@ author:
   affiliation: New York University
   footnote: "Corresponding Author: Steven.Rashin@NYU.edu, 19 West 4th St, 2nd Floor, New York, NY 10012"
 
-abstract: The United States government creates astonishingly complete records relevant to policy creation in executive agencies. In this article, we describe the major kinds of data that have proven useful to scholars studying interest group behavior in bureaucratic politics, how to obtain them, and challenges that we as users have encountered in working with these data. We discuss databases such as regulations.gov, which contains comments on draft rules proposed by executive branch agencies, and new sources of data, such as ex-parte meeting logs, which describe the interest groups and individual lobbyists that bureaucrats are meeting face-to-face about proposed policies. One challenge is that some of these data are not machine-readable. We argue that a productive way forward is to invest in making all the datasets machine-readable and to create a consistent way to link them to each other as well as to outside databases.
+abstract: The United States government creates astonishingly complete records relevant to policy creation in executive agencies. In this article, we describe the major kinds of data that have proven useful to scholars studying interest group behavior in bureaucratic politics, how to obtain them, and challenges that we as users have encountered in working with these data. We discuss established databases such as regulations.gov, which contains comments on draft rules proposed by executive branch agencies, and new sources of data, such as ex-parte meeting logs, which describe the interest groups and individual lobbyists that bureaucrats are meeting face-to-face about proposed policies. One challenge is that some of these data are not machine-readable. We argue that a productive way forward is to invest in making all the datasets machine-readable and to create a consistent way to link them to each other as well as to outside databases.
 
 keywords: Interest groups, rulemaking, lobbying, bureaucratic politics, data sources
 
-output: 
+output:
    pdf_document:
       template: article-template.tex
       keep_tex: true
@@ -29,7 +29,7 @@ output:
 spacing: doublespacing
 biblio-style: agsm
 bibliography: dataig.bib
-endnotes: true # CHANGE THIS TO true BEFORE SUBMISSION 
+endnotes: true # CHANGE THIS TO true BEFORE SUBMISSION
 frontpage: true
 
 ---
@@ -53,30 +53,30 @@ The primary style goals are clarity and consistency. Authors may use either UK o
 - placing all inverted commas within other punctuation
 - for the grammatical dash, using an en dash with a single space before and after the en dash (rather than an em dash without spaces)
 
-R&R RESPONSE: 
+R&R RESPONSE:
 https://docs.google.com/document/d/1qxUJxtnuc4kl1-oEB7_ksZKmAxPtD9OVqogOmIFN8gs/edit?usp=sharing
 -->
 
 # Introduction
 
 If the U.S. federal government is unquestionably good at one thing, it is pushing out paper.
-In theory, governmental records relevant to the creation of policy in executive agencies have long been available to researchers. 
+In theory, governmental records relevant to the creation of policy in executive agencies have long been available to researchers.
 Practically speaking, obtaining such data has been a costly and challenging undertaking. In the 1990s and early 2000s, leading research was limited to data on just a few rules [e.g., @GoldenJPART1998] or using surveys [e.g., @FurlongJPART2004].
-Since 1994, when the government first released the *Federal Register* online, scholars have had access to increasingly detailed data on the notice-and-comment rulemaking process, including draft policies, the activities of policymakers, and interest group advocacy (see @Yackee2019 for a recent review). 
+Since 1994, when the government first released the *Federal Register* online, scholars have had access to increasingly detailed data on the notice-and-comment rulemaking process, including draft policies, the activities of policymakers, and interest group advocacy (see @Yackee2019 for a recent review).
 
-In this article, we describe the kinds of data that have proven useful to scholars studying interest group lobbying of federal agencies, how to obtain them, and also challenges that we have found in working with these data. Examples of data sources that fit this description are machine-readable records of all agency rules published in the Federal Register, comments posted on regulations.gov, metadata about rules contained in the Unified Agenda, and Office of Management and Budget reports. We also describe sources that have become more available in recent years, such as ex-parte meeting logs^[These logs record who participated in face-to-face or telephone meetings between interest groups and bureaucrats, often including individual names.] and individually-identified personnel records of nearly all federal employees since 1973 [@Singer-Vine2017]. 
+In this article, we describe the kinds of data that have proven useful to scholars studying interest group lobbying of federal agencies, how to obtain them, and also challenges that we have found in working with these data. Examples of data sources that fit this description are machine-readable records of all agency rules published in the Federal Register, comments posted on regulations.gov, metadata about rules contained in the Unified Agenda, and Office of Management and Budget reports. We also describe sources that have become more available in recent years, such as ex-parte meeting logs^[These logs record who participated in face-to-face or telephone meetings between interest groups and bureaucrats, often including individual names.] and individually-identified personnel records of nearly all federal employees since 1973 [@Singer-Vine2017].
 
 These data sources do not exhaust the kinds of records relevant to researchers. They reflect what is available at present, but new data sources emerge constantly. Thus, we also highlight sources of data that may soon become available, perhaps after enterprising researchers submit the necessary Freedom Of Information Act (FOIA) requests. Examples include agency press releases [see, e.g., @LibgoberJOP;@Libgober2018] and the Foreign Agents Registration Act (FARA) reports [@ShepherdAPSR2019].^[We link to more relevant data sources on our GitHub page: https://github.com/libgober/regdata/blob/master/README.md.]  To orient potential students of agency policymaking to available sources of data, we identify four units of analysis: (1) participants, (2) policymakers, (3) policy texts, and (4) metadata such as policy timing. We describe where to find data on each in roughly the order that they appear in the process of developing a rule.
 
 ## Background: Rulemaking and the Administrative Procedures Act
 
-For decades, the volume of legal requirements emerging from executive agencies has dwarfed the lawmaking activity of Congress, the Supreme Court, and the Presidency. 
-Each year, agencies publish three thousand or more regulations. In doing so, agencies must follow a process prescribed by the Administrative Procedures Act (APA), 5 U.S.C. § 553(c). 
-For each rule, agencies create a collection of documents at each stage of their policymaking process. 
+For decades, the volume of legal requirements emerging from executive agencies has dwarfed the lawmaking activity of Congress, the Supreme Court, and the Presidency.
+Each year, agencies publish three thousand or more regulations. In doing so, agencies must follow a process prescribed by the Administrative Procedures Act (APA), 5 U.S.C. § 553(c).
+For each rule, agencies create a collection of documents at each stage of their policymaking process.
 Section 553 requires agencies to issue a Notice of Proposed Rulemaking (NPRM) in the *Federal Register* to notify potentially affected parties that the regulatory environment or program administration may change.
 Following the NPRM, agencies solicit comments on these regulations through regulations.gov (for executive agencies) or the agency websites themselves (for independent agencies).
-Agencies are required to consider public comments but are not required to alter the rules based on them. 
-These documents are organized in a 'docket' folder with a unique name and ID number. Once kept in literal folders in each agency's 'docket room', where visitors could make photocopies, these documents are now online. 
+Agencies are required to consider public comments but are not required to alter the rules based on them.
+These documents are organized in a 'docket' folder with a unique name and ID number. Once kept in literal folders in each agency's 'docket room', where visitors could make photocopies, these documents are now online.
 For example, a recent Centers for Medicare & Medicaid Services Rulemaking docket on health plans disclosing health care costs can be found at regulations.gov/docket?D=CMS-2019-0163.
 The fact that the APA requires agencies to assemble a comprehensive record of who sought to influence the policymaking process, and that such records are relatively complete, is highly unusual and makes the agency policymaking particularly exciting for interest group scholars.
 
@@ -91,19 +91,19 @@ Participation in this process can begin even before a proposed rule is issued.
 @LibgoberQJPS finds that firms that meet with federal regulators before a rule is issued may receive abnormally high stock market returns upon its release. Leveraging high-frequency trading data, Libgober shows that in the minutes and hours following the publication of proposed rules at the Federal Reserve, the firms that met with the Board during rule-development significantly outperformed matched market competitors that did not obtain such early access.^[This working paper can be found [here](https://libgober.files.wordpress.com/2018/09/libgober-and-carpenter-unblinded-what-at-stake-in-rulemaking.pdf)] These findings are consistent with the analysis of qualitative researchers that commenters who participate early in the rulemaking process can shape the content of the rule [@NaughtonJPAM2009].
 Interest groups and firms may even initiate a rulemaking process through a petition for rulemaking under 5 U.S.C. § 553(e).
 
-Scholars are also interested in how participation in rulemaking may affect a rule's ultimate fate when it is sent to the White House Office of Management and Budget (OMB) or in judicial review. 
-Interest groups lobby successfully in OMB review [@HaederAPSR2015].  Interest groups also use the rulemaking record to build a case for litigation. 
-Yet, there are few large-N studies linking lobbying in rulemaking to litigation or court decisions. 
-@LibgoberRashin2018SPSA analyzed comments submitted to financial regulators and found that threats of litigation were rare but, when they did occur, were often followed by court decisions. 
+Scholars are also interested in how participation in rulemaking may affect a rule's ultimate fate when it is sent to the White House Office of Management and Budget (OMB) or in judicial review.
+Interest groups lobby successfully in OMB review [@HaederAPSR2015].  Interest groups also use the rulemaking record to build a case for litigation.
+Yet, there are few large-N studies linking lobbying in rulemaking to litigation or court decisions.
+@LibgoberRashin2018SPSA analyzed comments submitted to financial regulators and found that threats of litigation were rare but, when they did occur, were often followed by court decisions.
 @judgelord2016MPSA found no relationship between the number of comments and the likelihood that the Supreme Court upheld or struck down an agency rule and, like @SchuckElliott1990, found that the court is more likely to strike down agency policies made through the notice and comment process.
 
 To analyze patterns of participation, scholars use data from a variety of sources.
-Sources for data on participation are agency rulemaking dockets [@GoldenJPART1998;@YackeeJPART2006;@YoungBP2017;@BanBP2019], the *Federal Register* [@BallaAPSR1998;@WestPAR2004], and regulations.gov [@BallaPI2019;@GordonRashinJOP]. 
+Sources for data on participation are agency rulemaking dockets [@GoldenJPART1998;@YackeeJPART2006;@YoungBP2017;@BanBP2019], the *Federal Register* [@BallaAPSR1998;@WestPAR2004], and regulations.gov [@BallaPI2019;@GordonRashinJOP].
 Though commenters are not generally required to disclose their names and affiliations, many do. The best current data sources for obtaining the names of the organizations that submit comments on federal regulations are regulations.gov and the websites of the independent agencies themselves.
 
 <!--
 Stuff removed for length
-^[One guide to effective commenting notes that organized interests should tell the regulators exactly who they are and why the regulators should alter a rule based on their comment [@Stoll2011].] 
+^[One guide to effective commenting notes that organized interests should tell the regulators exactly who they are and why the regulators should alter a rule based on their comment [@Stoll2011].]
 ^[Individual states also have rulemaking procedures; every state now has a version of the Administrative Procedures Act in place [see, e.g., @JensenPRQ2010]. Scholarly work has analyzed commenting and lobbying behavior in Minnesota [@BoehmkeJPP2013] and California [@JewellJPART2006] among other states.]
 
 -->
@@ -120,7 +120,7 @@ As of October 4, 2019, Regulations.gov has 11,238,958 public submission document
 For example, on an EPA rule on clean water, regulations.gov notes that 1,123,388 million comments were submitted, but only 20,594 are available on the website itself.
 FDA is famous for this as well. Susan got them from FOIA.
 -->  
-Not all federal agencies post rulemaking documents to regulations.gov. 
+Not all federal agencies post rulemaking documents to regulations.gov.
 Scholars studying participation in these agencies can often obtain data on participation in rulemaking from the agency websites.^[Some agencies have only some records on regulations.gov. For example, the Federal Energy Regulatory Commission has posted proposed rules on regulations.gov, but directed comments to be submitted by email and then posted them on its eLibrary website.
 Unlike regulations.gov, most agency sites do not have an API and thus require scholars to use bespoke web scrapers.
 We have examples of scrapers for several of these agencies on https://github.com/libgober/regdata.
@@ -130,13 +130,13 @@ While these websites are not rate-limited or gated with API keys, we recommend c
 Based on experience, we have found that attachments cannot be downloaded at a rate of 1,000 per hour as some documents will fail to download or download as files with 0 bytes.
 Instead, we recommend a delay of several seconds in between each iteration.
 This approach, however, vastly increases the time required to scrape large numbers of comments.
-The OCC, for example, allows confidential business information to be withheld while HHS and IRS do not.^[See e.g., https://www.federalregister.gov/documents/2019/09/04/2019-18992/agency-information-collection-activities-information-collection-renewal-comment-request-joint and https://www.federalregister.gov/documents/2019/05/03/2019-09121/request-for-information-regarding-state-relief-and-empowerment-waivers.] 
+The OCC, for example, allows confidential business information to be withheld while HHS and IRS do not.^[See e.g., https://www.federalregister.gov/documents/2019/09/04/2019-18992/agency-information-collection-activities-information-collection-renewal-comment-request-joint and https://www.federalregister.gov/documents/2019/05/03/2019-09121/request-for-information-regarding-state-relief-and-empowerment-waivers.]
 -->  
 
 <!--
 ^[We recommend using rvest if coding in R and Scrapy in Python.
 We have tutorials on how to scrape comments from regulations.gov and FERC.]
---> 
+-->
 
 In addition to the challenges of obtaining the data, scholars also must choose how they want to preprocess the data before analyzing it.
 For example, to answer questions about the types of organizations that participate in rulemaking, scholars first need to accurately identify these organizations so that they can be assigned the correct covariate data.
@@ -146,18 +146,18 @@ All of these entities need to be accurately matched to Goldman Sachs, including 
 Fuzzy matching is a process that compares two strings of text and gives a distance between them.
 This procedure will assign a small distance between Goldman Sachs and Goldman, Sachs & Co. and a larger distance between Goldman Sachs and Merrill Lynch.
 The distances and optimal thresholds depend on the algorithm used.
-Fuzzy matching, however, is not a panacea as the same procedure will also show a small distance between JP Morgan and Morgan Stanley, which are two separate entities. It will also not reveal whether an ABA letter is from the American Banker's Association or the American Bar Association. 
+Fuzzy matching, however, is not a panacea as the same procedure will also show a small distance between JP Morgan and Morgan Stanley, which are two separate entities. It will also not reveal whether an ABA letter is from the American Banker's Association or the American Bar Association.
 Many organizations active on similar rulemaking issues share acronyms or have similar names. In expectation, however, noise generated from incorrect matching is likely to bias a scholar against finding any relationships within the data.
 
 <!--
 ^[This process is particularly difficult for comments submitted by a coalition.
 Suppose a scholar is interested in the relationship between assets and commenting behavior.
-If a coalition of the Bank of America and Wells Fargo comment on a rule, should the scholar use their combined assets as their independent variable of interest, their average assets, or not assign covariate data to this coalition?  There is no obvious answer to this question] 
+If a coalition of the Bank of America and Wells Fargo comment on a rule, should the scholar use their combined assets as their independent variable of interest, their average assets, or not assign covariate data to this coalition?  There is no obvious answer to this question]
 -->
 
-# Who writes rules? 
+# Who writes rules?
 
-Scholars recently began to study how policymakers' identities and networks affect the policymaking process. 
+Scholars recently began to study how policymakers' identities and networks affect the policymaking process.
 This is partially due to the release of new data sources such as the U.S. Office of Personnel Management's (OPM) data on government employees [e.g., @BoltonAMP2018],^[Note that the dataset @BoltonAMP2018 used is not public like the similar BuzzFeed data we discuss below.] Open Secrets' lobbying [e.g., @Baumgartner2009] and revolving door databases [e.g.,  @VidalAER2012;@BertrandAER2014], machine-readable lobbying disclosure act reports [e.g.,  @BoehmkeJPP2013;@YouJOP2017;@Dwidar2019SPSA], meeting logs [@LibgoberQJPS], and datasets of corporate board membership such as Boardex [e.g., @ShiveROF2016].
 Scholars have also been able to study the identities of policymakers through the creative use of longstanding data sources such as the *Federal Register* [e.g., @CarriganPAR2019].
 
@@ -169,7 +169,7 @@ In fact, when a former Senate aide becomes a lobbyist, the Senator's retirement 
 
 
 <!-- Lobbying also increases the time it takes for agencies to discover corporate malfeasance [@YuJFQA2011].
- 
+
 -->
 
 ## Obtaining and working with personnel and lobbying data
@@ -179,7 +179,7 @@ Scholars can obtain data on agency personnel from the BuzzFeed personnel data re
 These are the most comprehensive personnel records publicly available, but they have significant limitations.
 First, not all agencies and occupations are a part of this release.^[ The list includes at least 16 agencies and, within the covered agencies, law enforcement officers, nuclear engineers, and certain investigators (Buzzfeed, 2017).
 See https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records]  
-Second, some of the employees in these data do not have unique identification numbers. 
+Second, some of the employees in these data do not have unique identification numbers.
 This means that common names such as 'John Smith' match multiple employees; the Veterans Health Administration (VHA) employed 24 John Smiths in 2014, five with the same middle initial.
 
 To obtain machine-readable data on the identities of domestic lobbyists, scholars use two databases from Open Secrets -- a nonprofit focused on tracking spending on politics in the US -- on administrative and Congressional lobbying.
@@ -204,18 +204,18 @@ Obtaining these data requires writing a web scraper for each agency that holds t
 Since there are no uniform standards for reporting meeting data, the data differ substantially from agency to agency in both content and organization.
 The Federal Reserve, for example, groups meetings by subject but not by rule,^[https://www.federalreserve.gov/regreform/communications-with-public.htm] the SEC groups meetings by rule, and the CFTC and FCC has all their meetings in one place.^[See https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6 and https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings]   
 
-# What do the rules say? 
+# What do the rules say?
 
 All of the work discussed above relies on the notion that public participation and the rulewriters influence the content of rules; numerous studies have found that commenters influence rules [see, e.g., @CuellarALR2005;@YackeeJOP2006;@NaughtonJPAM2009;@HaederAPSR2015;@HaederJPART2018] at agencies such as the Department of Labor [@YackeeJOP2006], the Department of Treasury [@CuellarALR2005], the Environmental Protection Agency [@WagnerALR2011], the Securities and Exchange Commission [@Rashin2019], and numerous other agencies. This finding is consistent across interviews [e.g., @FurlongJPART1998], qualitative analysis [e.g., @CuellarALR2005], and quantitative analysis [e.g., @YackeeJOP2006].
 Firms and groups representing businesses' interests are influential in securing policy concessions from the rulemaking process [@YackeeJPART2006;@YackeeJOP2006;@Carpenter2013], particularly when they are unopposed.
 Other scholars have found that agencies respond to citizens [@BallaPI2019] and medical professionals [@BallaAPSR1998;@GordonRashinJOP].
-  
-   
+
+
 <!--
-^[However, see @GoldenJPART1998 and @ElliottDLJ1992 for evidence that rules do not change substantially.] 
+^[However, see @GoldenJPART1998 and @ElliottDLJ1992 for evidence that rules do not change substantially.]
 -->
 
-## Obtaining and Working with Data on Rule Text 
+## Obtaining and Working with Data on Rule Text
 
 One of the most basic functions of the bureaucracy is to issue regulations that set specific, enforceable requirements implementing a law.
 The federal government publishes all rules in the *Federal Register*, accessible via FederalRegister.gov.
@@ -229,10 +229,10 @@ Second, scholars must decide whether, and to what extent, they should preprocess
 
 
 <!--
-^[See, for example, the prudential standards rule issued by the Federal Reserve to improve financial stability.] 
+^[See, for example, the prudential standards rule issued by the Federal Reserve to improve financial stability.]
 -->
 
-# Obtaining and working with rule metadata 
+# Obtaining and working with rule metadata
 
 Rulemaking metadata, such as the time rules are released, allow scholars to answer questions about factors that affect the rulemaking environment.
 Scholars have exploited this data to study questions about regulatory delay, agenda-setting, and the financial impact of rules.
@@ -246,24 +246,24 @@ Scholars have also exploited rule metadata to show that publicly-traded banks th
 Workman's data isn't public, so I'm going to ax this graf
 Scholars have also exploited the Unified Agenda to study agenda setting.
 Notably, @Workman2015 coded approximately 220,000 regulations by issue area; he exploits this novel dataset to advance a theory of the "dual dynamics" of the administrative state where agenda-setting over the rulemaking process is a function of information generated by bureaucrats and Congressional "tuning" of the information.
-@WestJPART2012 assess the influences on agency discretion using a survey of bureaucratic "contact officers" and the Unified Agenda; they find that most agency decisions to issue rules "are made in the context of ongoing program implementation." 
+@WestJPART2012 assess the influences on agency discretion using a survey of bureaucratic "contact officers" and the Unified Agenda; they find that most agency decisions to issue rules "are made in the context of ongoing program implementation."
 -->
 
 \bigskip
-\noindent 
+\noindent
 **The Unified Agenda**: Obtaining data from the Unified Agenda is relatively straightforward as all of these documents since 1995 are available online in machine-readable form.^[The Unified Agenda from 1983 through 1994 is available in the *Federal Register*.]
 The Unified Agenda contains many of the proposed regulations an agency plans to issue in the near future, making it an extremely useful data source for studying questions about agenda setting and timing (e.g., @Potter2019).
 There are, however, significant limitations to these data.
 First, agencies report their early-stage rulemaking to the Unified Agenda strategically [@NouSCLR2016].
 Second, agencies do not list all 'failed' rules that did not become final rules in the Unified Agenda [@YackeeGWLR2012].
-Third, @CoglianeseALR2016 note that the Unified Agenda misses much of the regulatory agency's work, including enforcement actions, adjudicatory actions, and decisions not to act. 
+Third, @CoglianeseALR2016 note that the Unified Agenda misses much of the regulatory agency's work, including enforcement actions, adjudicatory actions, and decisions not to act.
 
 \bigskip
-\noindent 
-**Office of Management and Budget (OMB) data:** As addressed elsewhere in this issue [NOTE: reference to OMB article here], many rules, especially rules that are controversial or deemed economically significant, are reviewed by OMB's Office of Information and Regulatory Affairs (ORIA). Obtaining ORIA data is relatively straightforward, as all of these documents since 1981 are available online in machine-readable form. These data include the date on which ORIA received the rule from the agency, whether the review was expedited, and whether the rule is determined to by 'economically significant' or affect 'federalism'. 
+\noindent
+**Office of Management and Budget (OMB) data:** As addressed elsewhere in this issue [NOTE: reference to OMB article here], many rules, especially rules that are controversial or deemed economically significant, are reviewed by OMB's Office of Information and Regulatory Affairs (ORIA). Obtaining ORIA data is relatively straightforward, as all of these documents since 1981 are available online in machine-readable form. These data include the date on which ORIA received the rule from the agency, whether the review was expedited, and whether the rule is determined to by 'economically significant' or affect 'federalism'.
 
 \bigskip
-\noindent 
+\noindent
 **Press releases**: In addition to disclosures mandated by law, agencies often issue press releases for agency actions.
 Much like the meetings data discussed above, policies regarding the storage and dissemination of press releases differ from agency to agency.
 The Federal Reserve, for example, lists all press releases since 1996 on their website, while the SEC only has them from 2012.^[See https://www.federalreserve.gov/newsevents/pressreleases.htm and https://www.sec.gov/news/pressreleases]  When working with press releases, scholars often need data on the exact time documents were made available to the general public [see, e.g., @LibgoberJOP].
@@ -271,7 +271,7 @@ Press release metadata, such as the exact time a press release becomes public, c
 
 **Completeness:** Each data source has different types of missingness and different limitations regarding the information it contains about each rule. For example, data from the Office of Information and Regulatory Affairs (OIRA) only contains rules reviewed by OMB. The Unified Agenda (UA) covers a broader scope of policies, but due to strategic reporting and frequent reporting errors, desired cases may be missing. For published rules, these missing cases may be found in a more reliable source like the Federal Register, which is more reliable than the UA, ORIA reports, or regulations.gov, and thus the best source for rule texts. However, the Federal Register contains the least amount of rule metadata and only published drafts and rules. This means that some rulemaking projects that were never finalized may be missing from all datasets. More importantly, the diversity of these data sources means that, for a given query, one source will often include cases that a second does not, while the second source includes variables that first does not.
 <!--
-^[We have used Feedly, but any RSS reader should have accessible timing metadata.] 
+^[We have used Feedly, but any RSS reader should have accessible timing metadata.]
 -->  
 
 # Discussion: Assembling Complete Databases  
@@ -283,7 +283,7 @@ Second, a comprehensive database could link revolving door rulemakers from the O
 This database would be significantly improved by the addition of data from LinkedIn, but those data are not currently public.
 Third, creating a database of all meeting activities throughout the federal government.
 Finally, unique identifiers for each commenter would allow researchers to link commenting behavior to organizations across datasets.
-These projects, once completed, will allow scholars to pursue novel research on political participation, influence, and public management. 
+These projects, once completed, will allow scholars to pursue novel research on political participation, influence, and public management.
 
-# Conflicts of Interest 
+# Conflicts of Interest
 On behalf of all authors, the corresponding author states that there is no conflict of interest.
