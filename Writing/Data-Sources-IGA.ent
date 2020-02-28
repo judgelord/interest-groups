@@ -250,7 +250,8 @@ Federal
 Energy
 Regulatory
 Commission
-posts
+has
+posted
 all
 comments
 they
@@ -260,9 +261,11 @@ their
 eLibrary
 website
 but
-only
-posts
-some
+not
+all
+of
+these
+appear
 on
 regulations.gov.
 Unlike
@@ -406,11 +409,8 @@ engineers,
 and
 certain
 investigators
-(Buzzfeed,
-2017).
-See
-\url
-{https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records}
+\citet
+{Singer-Vine2017}.
 \@endanenote 
 \@doanenote {15}
 macro:->See
