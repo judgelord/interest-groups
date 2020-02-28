@@ -229,27 +229,13 @@ macro:->\url
 {https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::
 \@endanenote 
 \@doanenote {14}
-macro:->The
-metadata
--
-e.g.,
-dates,
-registratrants,
-clients
--
-are
-available
-in
-machine-readable
-form
-through
+macro:->Only
 the
-API
-or
-bulk
-data
-downloads
-page.
+metadata
+(e.g.~names)
+are
+machine
+readable.
 \@endanenote 
 \@doanenote {15}
 macro:->Note

@@ -302,20 +302,17 @@ Public attention in rulemaking is remarkably skewed. A few rules, such
 as the Federal Communication Commission's rules on net neutrality,
 receive millions of comments. In contrast, half of the proposed rules
 open for comment on regulations.gov received no comments at all
-\citep{LibgoberJOP}. Even the median rule designated as `economically
-significant' -- rules projected to have an annual economic impact of
-over \$100 million -- receives fewer than ten comments
-\citep{judgelord2019SPSA}. Such dramatic variation in public
-participation makes it difficult to think about the representative rule
-or rulemaking participant. Clearly, important participants include
-businesses, public interest groups, trade associations, unions, law
-firms, and academics \citep{CuellarALR2005, YackeeJOP2006}. While
-businesses seem to be the most consistent and influential participants
-in most rulemakings \citep{YackeeJOP2006, LibgoberJOP}, most comments
-are part of public pressure campaigns and target a relatively small
-number of rules. Indeed, at least 39 million of the 48 million comments
-on proposed rules on regulations.gov were mobilized by just 100 advocacy
-organizations such as the Sierra Club \citep{judgelord2019SPSA}.
+\citep{LibgoberJOP}. Such dramatic variation in public participation
+makes it difficult to think about the representative rule or rulemaking
+participant. Clearly, important participants include businesses, public
+interest groups, trade associations, unions, law firms, and academics
+\citep{CuellarALR2005, YackeeJOP2006}. While businesses seem to be the
+most consistent and influential participants in most rulemakings
+\citep{YackeeJOP2006, LibgoberJOP}, most comments are part of public
+pressure campaigns and target a relatively small number of rules.
+Indeed, at least 39 million of the 48 million comments on proposed rules
+on regulations.gov were mobilized by just 100 advocacy organizations
+such as the Sierra Club \citep{judgelord2019SPSA}.
 
 Because interest groups seek to influence rules, scholars are interested
 in patterns of participation in rulemaking. For example,
@@ -349,9 +346,7 @@ overwhelming majority of court decisions involving challenges to rules
 were preceded by comments that threatened litigation.
 \citet{judgelord2016MPSA} found no relationship between the number of
 comments and the likelihood that the Supreme Court upheld or struck down
-an agency rule and, like \citet{SchuckElliott1990}, found that the court
-is more likely to strike down agency policies made through the notice
-and comment process.
+an agency rule
 
 To analyze patterns of participation, scholars use data from a variety
 of sources. Sources for data on participation are agency rulemaking
@@ -400,34 +395,20 @@ websites.\footnote{For example, the Federal Energy Regulatory Commission
   scrapers. We have examples of scrapers for regulations.gov and several
   of these agencies on \url{https://github.com/libgober/regdata}.}
 
-\indent In addition to the challenges of obtaining the data, scholars
-also must choose how they want to preprocess the data before analyzing
-it. These decisions can have a substantial impact on the analysis as
-they affect the organizations that appear in the analysis. For example,
-to answer questions about the types of organizations that participate in
-rulemaking, scholars first need to accurately identify these
-organizations so that they can be assigned the correct covariate data.
-This process, however, is not trivial as the same firm can be identified
-in numerous ways. For example, Goldman Sachs submitted comments as The
-Goldman Sachs Group, Inc, Goldman Sachs Co.~LLC, Goldman Sachs Bank USA,
-Goldman, Sachs \& Co., Goldman Sachs Execution \& Clearing, LP, among
-other identifiers. All of these entities must be accurately matched to
-Goldman Sachs, including the Goldman Sachs Execution \& Clearing comment
-which is on Goldman Sachs letterhead. The problem can be more acute with
-associations such as the American Bar Association (ABA) sometimes
-commenting as itself and other times as individual sections of the ABA.
-One way scholars have been able to get around this problem is to use
-fuzzy matching. Fuzzy matching is a process that compares two strings of
-text and gives a distance between them. This procedure will assign a
-small distance between Goldman Sachs and Goldman, Sachs \& Co.~and a
-larger distance between Goldman Sachs and Merrill Lynch. The distances
-and optimal thresholds depend on the algorithm used. Fuzzy matching,
-however, is not a panacea as the same procedure will also show a small
-distance between JP Morgan and Morgan Stanley, which are two separate
-entities. It will also not reveal whether an ABA letter is from the
-American Banker's Association or the American Bar Association. Many
-organizations active on similar rulemaking issues share acronyms or have
-similar names.
+\indent After obtaining comment data, scholars must choose how they want
+to preprocess the names of the organizations that comment.\\
+This step is vital as organizations such as Goldman Sachs and the
+American Bar Association, for example, submit comments using multiple
+versions of their names. These decisions can have a substantial impact
+on the analysis as misidentifying organizations may result in them being
+dropped or double-counted.\\
+Scholars can ameliorate this issue by using fuzzy matching - a process
+that compares two strings of text and gives a distance between them.
+Choosing the optimal distance and thresholds is up to the researcher and
+usually an iterative process. Fuzzy matching, however, is not a panacea
+as the algorithm will show small distances between distinct entities
+(e.g.~JP Morgan and Morgan Stanley) and it cannot separate multiple
+organizations with the same acronym (e.g.~ABA).
 
 \hypertarget{who-writes-rules}{%
 \section{Who writes rules?}\label{who-writes-rules}}
@@ -510,32 +491,20 @@ to download it using bulk data.
 
 Lobbyists advocating for foreign clients are required to disclose these
 contacts under the Foreign Agent Registration Act. Foreign agents often
-lobby bureaucratic agencies; for example, the state Israel retained law
-firm, Arnold \& Porter, for advice on, among other issues, registering
-securities with the SEC.\footnote{See
+lobby bureaucratic agencies; Israel, for example, retained law firm
+Arnold \& Porter for advice on registering securities with the
+SEC.\footnote{See
   \url{https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}}
-The reports contain a multitude of data including the names of foreign
-entities, the firms representing them, the nature of the contact, and
-the specific officials contacted. The data are astonishingly complete -
-the website contains all 6264 FARA registrants and their foreign
-contacts since July 3, 1942. The FARA data can be accessed online
-through the Department of Justice.\footnote{\url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::}
+In addition to the participants, the reports also contain the nature of
+the contact and the specific officials contacted. The data are
+astonishingly complete - the website contains all 6264 FARA registrants
+and their foreign contacts since 1942.\footnote{\url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::}\\
 Unlike other data discussed in this essay, the FARA data is \emph{not}
-all in machine-readable form;\footnote{The metadata - e.g., dates,
-  registratrants, clients - are available in machine-readable form
-  through the API or bulk data downloads page.} converting from PDF to a
-machine-readable format (e.g., .csv) is neither easy nor error-free. As
-a result, scholars using the data only focus on a subset such as
-\citet{You2019} who focuses on lobbying activities by the governments of
-Colombia, Panama, and South Korea on their free trade agreements from
-2003 through 2012. In the absence of a completely digitized archive,
-scholars can exploit the search functions to search by lobbying
-registrant (e.g., lobbying firm Squire Patton Boggs) or foreign
-principal (e.g., the government of Afghanistan). Similar to the
-discussion of the diversity of names above, the same actor can
-participate under different names. For example, the Embassy of the
-Islamic Republic of Afghanistan and the Embassy of Afghanistan are
-designated as separate entities under FARA.
+all in machine-readable form.\footnote{Only the metadata (e.g.~names)
+  are machine readable.} Consequently, scholars using the data only
+focus on a subset such as \citet{You2019} who focuses on lobbying
+activities by Colombia, Panama, and South Korea. We caution users that
+the same participant can be listed under multiple names.
 
 Corporate executives, lawyers, and lobbyists often have contacts with
 agency officials, called \emph{ex parte} communications
@@ -619,25 +588,16 @@ metadata}\label{obtaining-and-working-with-rule-metadata}}
 
 Rulemaking metadata, such as the time rules are released, allow scholars
 to answer questions about factors that affect the rulemaking
-environment. Scholars have exploited this data to study questions about
-regulatory delay, agenda-setting, and the financial impact of rules.
-Often lengthy delays between statutory promulgation and the issuance of
-regulations are the subject of recent empirical scholarly interest.
-Scholars attribute various causes to regulatory delay including auditing
-\citep{ACSPSQ2013}; outside contacts \citep{BallaALR2011}; the political
-climate \citep{PotterJOP2017, ThrowerPSQ2018}; personnel types
-\citep{CarriganPAR2019}; ossification \citep{YackeeGWLR2012}; deadlines
-\citep{LavertuJPART2012, CarpenterAJPS2011, BertelliPAR2019}; and
-staffing levels \citep{BoltonJLEO2015}. These scholars relied on data
-from the Office of Information and Regulatory Affairs (OIRA)
-\citep{ACSPSQ2013, BallaALR2011, BoltonJLEO2015, CarriganPAR2019}, the
-Unified Agenda
-\citep{BertelliPAR2019, PotterJOP2017, LavertuJPART2012, Potter2019},
-the \emph{Federal Register} \citep{YackeeGWLR2012, ThrowerPSQ2018}, and
-FDA's drug approval and postmarket experience \citep{CarpenterAJPS2011}.
-Scholars have also exploited rule metadata to show that publicly-traded
-banks that submit comments account for \$7 billion in excess returns
-\citep{Libgober2018}.
+environment. Scholars use this data to study questions about regulatory
+delay
+\citep[e.g.,][]{ACSPSQ2013, ThrowerPSQ2018, PotterJOP2017, CarriganPAR2019, CarpenterAJPS2011},
+agenda-setting\citep[e.g.,][]{Coglianese_ALR_2016}, and the financial
+impact of rules \citep[e.g.,][]{Libgober2018}. These scholars relied on
+data from the Office of Information and Regulatory Affairs (OIRA)
+\citep{ACSPSQ2013, CarriganPAR2019}, the Unified Agenda
+\citep{Coglianese_ALR_2016, PotterJOP2017}, the \emph{Federal Register}
+\citep{ThrowerPSQ2018}, press releases \citep{Libgober2018}, and FDA's
+drug approval and postmarket experience \citep{CarpenterAJPS2011}.
 
 Obtaining data from the Unified Agenda is relatively straightforward as
 all of these documents since 1995 are available online in
