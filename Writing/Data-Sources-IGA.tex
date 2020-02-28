@@ -398,30 +398,30 @@ and almost 1.5 million rules and other documents. Not all federal
 agencies post rulemaking documents to regulations.gov. Scholars studying
 participation in these agencies can often obtain data on participation
 in rulemaking from the agency websites.\footnote{For example, the
-  Federal Energy Regulatory Commission posts all comments they receive
-  on their eLibrary website but only posts some on regulations.gov.
-  Unlike regulations.gov, most agency sites do not have an API and thus
-  require scholars to use bespoke web scrapers. We have examples of
-  scrapers for several of these agencies on
+  Federal Energy Regulatory Commission has posted all comments they
+  receive on their eLibrary website but not all of these appear on
+  regulations.gov. Unlike regulations.gov, most agency sites do not have
+  an API and thus require scholars to use bespoke web scrapers. We have
+  examples of scrapers for several of these agencies on
   \url{https://github.com/libgober/regdata}. While these websites are
   not rate-limited or gated with API keys, we recommend caution with the
   rate at which scholars solicit information from the servers to avoid
   security protocols that trigger a temporary ban.}\\
-
-In addition to the challenges of obtaining the data, scholars also must
-choose how they want to preprocess the data before analyzing it. For
-example, to answer questions about the types of organizations that
-participate in rulemaking, scholars first need to accurately identify
-these organizations so that they can be assigned the correct covariate
-data. This process, however, is not trivial as the same firm can be
-identified in numerous ways. For example, Goldman Sachs submitted
-comments to the Securities and Exchange Commission (SEC) and Federal
-Reserve Board (FRB) as The Goldman Sachs Group, Inc, Goldman Sachs
-Co.~LLC, Goldman Sachs Bank USA, Goldman, Sachs \& Co., Goldman Sachs
-Execution \& Clearing, LP, among other identifiers. All of these
-entities need to be accurately matched to Goldman Sachs, including the
-Goldman Sachs Execution \& Clearing comment which is on Goldman Sachs
-letterhead.\footnote{See
+ \indent In addition to the challenges of obtaining the data, scholars
+also must choose how they want to preprocess the data before analyzing
+it. These decisions can have a substantial impact on the analysis as
+they affect the organizations that appear in the analysis. For example,
+to answer questions about the types of organizations that participate in
+rulemaking, scholars first need to accurately identify these
+organizations so that they can be assigned the correct covariate data.
+This process, however, is not trivial as the same firm can be identified
+in numerous ways. For example, Goldman Sachs submitted comments to the
+Securities and Exchange Commission (SEC) and Federal Reserve Board (FRB)
+as The Goldman Sachs Group, Inc, Goldman Sachs Co.~LLC, Goldman Sachs
+Bank USA, Goldman, Sachs \& Co., Goldman Sachs Execution \& Clearing,
+LP, among other identifiers. All of these entities need to be accurately
+matched to Goldman Sachs, including the Goldman Sachs Execution \&
+Clearing comment which is on Goldman Sachs letterhead.\footnote{See
   \url{https://www.sec.gov/comments/s7-03-10/s70310-43.pdf}.} The
 problem can be more acute with associations such as the American Bar
 Association (ABA) sometimes commenting as itself and other times as
@@ -461,9 +461,7 @@ longstanding data sources such as the \emph{Federal Register}
 \citep[e.g.,][]{CarriganPAR2019}.
 
 Work on the networks between policymakers and private interests has
-reshaped our understanding of the policymaking space. By exploiting
-meeting logs, \citet{LibgoberQJPS} finds that comments and meetings with
-policymakers are associated with abnormal returns in the billions.
+reshaped our understanding of the policymaking space.
 \citet{CarriganPAR2019} find that the number of job functions of the
 bureaucrats who write the rules is associated with both decreases in the
 time an agency takes to promulgate a rule and increases in the
@@ -484,34 +482,31 @@ data release. The BuzzFeed personnel data\footnote{Available at
 employees such as their salaries, job titles, and basic demographic data
 from 1973 through 2016.\footnote{Updated personnel files are available
   through 2018 from the OPM itself here:
-  \url{https://www.fedscope.opm.gov/datadefn/index.asp}}\\
-These are the most comprehensive personnel records publicly available,
-but they have significant limitations. First, not all agencies and
-occupations are a part of this release.\footnote{The list includes at
-  least 16 agencies and, within the covered agencies, law enforcement
-  officers, nuclear engineers, and certain investigators (Buzzfeed,
-  2017). See
-  \url{https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records}}\\
-Second, some of the employees in these data do not have unique
-identification numbers. This means that common names such as `John
-Smith' match multiple employees; the Veterans Health Administration
-(VHA) employed 24 John Smiths in 2014, five with the same middle
-initial.
+  \url{https://www.fedscope.opm.gov/datadefn/index.asp}} These are the
+most comprehensive personnel records publicly available, but they have
+significant limitations. First, not all agencies and occupations are a
+part of this release.\footnote{The list includes at least 16 agencies
+  and, within the covered agencies, law enforcement officers, nuclear
+  engineers, and certain investigators \citet{Singer-Vine2017}.} Second,
+some of the employees in these data do not have unique identification
+numbers. This means that common names such as `John Smith' match
+multiple employees; the Veterans Health Administration employed 24 John
+Smiths in 2014, five with the same middle initial.
 
 To obtain machine-readable data on the identities of domestic lobbyists,
-scholars use two databases from Open Secrets -- a nonprofit focused on
-tracking spending on politics in the US -- on administrative and
-Congressional lobbying. Downloading the lobbying data is
-straightforward; it only requires an account to access the `bulk data'
-page. The lobbying data comes from the required disclosures under the
-Lobbying Disclosure Act of 1995 (LDA). Note that the reporting threshold
-varies by type of firm (in-house have a higher minimum reporting
-threshold than lobbying firms) and over time.\footnote{See
+scholars use two databases from Open Secrets -- a nonprofit that tracks
+spending on politics -- on administrative and Congressional lobbying.
+Downloading the lobbying data is straightforward; it only requires an
+account to access the `bulk data' page. The lobbying data comes from the
+required disclosures under the Lobbying Disclosure Act of 1995 (LDA).
+Note that the reporting threshold varies by type of firm (in-house have
+a higher minimum reporting threshold than lobbying firms) and over
+time.\footnote{See
   \url{https://lobbyingdisclosure.house.gov/ldaguidance.pdf} for
   details.} The lobbying data covers 1999 through 2018 and is broken up
-into seven tables that can easily be loaded into R or Python.\footnote{Note
-  that the raw data can be downloaded from the Secretary of the Senate's
-  Office of Public Records here:
+into seven machine-readable tables.\footnote{Note that the raw data can
+  be downloaded from the Secretary of the Senate's Office of Public
+  Records here:
   \url{https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}}
 We note, however, that the data is not complete as some lobbyists do not
 disclose required contacts and the data does not contain exact monetary
@@ -654,45 +649,37 @@ Scholars have also exploited rule metadata to show that publicly-traded
 banks that submit comments account for \$7 billion in excess returns
 \citep{Libgober2018}.
 
-\bigskip
+Obtaining data from the Unified Agenda is relatively straightforward as
+all of these documents since 1995 are available online in
+machine-readable form.\footnote{The Unified Agenda from 1983 through
+  1994 is available in the \emph{Federal Register}.} The Unified Agenda
+contains many of the proposed regulations an agency plans to issue in
+the near future, making it an extremely useful data source for studying
+questions about agenda setting and timing \citep[e.g.,][]{Potter2019}.
+There are, however, significant limitations to these data. First,
+agencies report their early-stage rulemaking to the Unified Agenda
+strategically \citep{NouSCLR2016}. Second, agencies do not list all
+`failed' rules that did not become final rules in the Unified Agenda
+\citep{YackeeGWLR2012}. Third, \citet{CoglianeseALR2016} note that the
+Unified Agenda misses much of the regulatory agency's work, including
+enforcement actions, adjudicatory actions, and decisions not to act.
 
-\noindent \textbf{The Unified Agenda}: Obtaining data from the Unified
-Agenda is relatively straightforward as all of these documents since
-1995 are available online in machine-readable form.\footnote{The Unified
-  Agenda from 1983 through 1994 is available in the \emph{Federal
-  Register}.} The Unified Agenda contains many of the proposed
-regulations an agency plans to issue in the near future, making it an
-extremely useful data source for studying questions about agenda setting
-and timing (e.g., \citet{Potter2019}). There are, however, significant
-limitations to these data. First, agencies report their early-stage
-rulemaking to the Unified Agenda strategically \citep{NouSCLR2016}.
-Second, agencies do not list all `failed' rules that did not become
-final rules in the Unified Agenda \citep{YackeeGWLR2012}. Third,
-\citet{CoglianeseALR2016} note that the Unified Agenda misses much of
-the regulatory agency's work, including enforcement actions,
-adjudicatory actions, and decisions not to act.
-
-\bigskip
-
-\noindent \textbf{Office of Management and Budget (OMB) data:} As
-addressed elsewhere in this issue {[}NOTE: reference to OMB article
+As addressed elsewhere in this issue {[}NOTE: reference to OMB article
 here{]}, many rules, especially rules that are controversial or deemed
 economically significant, are reviewed by OMB's Office of Information
-and Regulatory Affairs (ORIA). Obtaining ORIA data is relatively
+and Regulatory Affairs (OIRA). Obtaining OIRA data is relatively
 straightforward, as all of these documents since 1981 are available
 online in machine-readable form. These data include the date on which
-ORIA received the rule from the agency, whether the review was
+OIRA received the rule from the agency, whether the review was
 expedited, and whether the rule is determined to by `economically
 significant' or affect `federalism'.
 
-\bigskip
-
-\noindent \textbf{Press releases}: In addition to disclosures mandated
-by law, agencies often issue press releases for agency actions. Much
-like the meetings data discussed above, policies regarding the storage
-and dissemination of press releases differ from agency to agency. The
-Federal Reserve, for example, lists all press releases since 1996 on
-their website, while the SEC only has them from 2012.\footnote{See
+In addition to disclosures mandated by law, agencies often issue press
+releases for agency actions. Much like the meetings data discussed
+above, policies regarding the storage and dissemination of press
+releases differ from agency to agency. The Federal Reserve, for example,
+lists all press releases since 1996 on their website, while the SEC only
+has them from 2012.\footnote{See
   \url{https://www.federalreserve.gov/newsevents/pressreleases.htm} and
   \url{https://www.sec.gov/news/pressreleases}} When working with press
 releases, scholars often need data on the exact time documents were made
@@ -700,22 +687,21 @@ available to the general public \citep[see, e.g.,][]{LibgoberJOP}. Press
 release metadata, such as the exact time a press release becomes public,
 can often be extracted from Really Simple Syndication (RSS) feeds.
 
-\textbf{Completeness:} Each data source has different types of
-missingness and different limitations regarding the information it
-contains about each rule. For example, data from the Office of
-Information and Regulatory Affairs (OIRA) only contains rules reviewed
-by OMB. The Unified Agenda (UA) covers a broader scope of policies, but
-due to strategic reporting and frequent reporting errors, desired cases
-may be missing. For published rules, these missing cases may be found in
-a more reliable source like the Federal Register, which is more reliable
-than the UA, ORIA reports, or regulations.gov, and thus the best source
-for rule texts. However, the Federal Register contains the least amount
-of rule metadata and only published drafts and rules. This means that
-some rulemaking projects that were never finalized may be missing from
-all datasets. More importantly, the diversity of these data sources
-means that, for a given query, one source will often include cases that
-a second does not, while the second source includes variables that first
-does not.
+Each data source has different types of missingness and different
+limitations regarding the information it contains about each rule. For
+example, data from the Office of Information and Regulatory Affairs
+(OIRA) only contains rules reviewed by OMB. The Unified Agenda (UA)
+covers a broader scope of policies, but due to strategic reporting and
+frequent reporting errors, desired cases may be missing. For published
+rules, these missing cases may be found in a more reliable source like
+the \emph{Federal Register}, which is more reliable than the UA, OIRA
+reports, or regulations.gov, and thus the best source for rule texts.
+However, the Federal Register contains the least amount of rule metadata
+and only published drafts and rules. This means that some rulemaking
+projects that were never finalized may be missing from all datasets.
+More importantly, the diversity of these data sources means that, for a
+given query, one source will often include cases that a second does not,
+while the second source includes variables that first does not.
 
 \hypertarget{discussion-assembling-complete-databases}{%
 \section{Discussion: Assembling Complete
