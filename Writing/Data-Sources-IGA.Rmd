@@ -79,13 +79,13 @@ Participation in this process can begin even before a proposed rule is issued.
 Interest groups and firms may even initiate a rulemaking process through a petition for rulemaking under 5 U.S.C. § 553(e).
 
 Scholars are also interested in how participation in rulemaking may affect a rule's ultimate fate when it is sent to the White House Office of Management and Budget (OMB) or in judicial review. 
-Interest groups lobby successfully in OMB review [@HaederYackee2015]. [NOTE: reference to IG&A OMB article here].  Interest groups also use the rulemaking record to build a case for litigation. 
+Interest groups lobby successfully in OMB review [@HaederAPSRYackee2015]. [NOTE: reference to IG&A OMB article here].  Interest groups also use the rulemaking record to build a case for litigation. 
 Yet, there are few large-N studies linking lobbying in rulemaking to litigation or court decisions. 
 @LibgoberRashin2018SPSA analyzed comments submitted to financial regulators and found that threats of litigation were rare but, when they did occur, were often followed by court decisions. 
 @judgelord2016MPSA found no relationship between the number of comments and the likelihood that the Supreme Court upheld or struck down an agency rule and, like @SchuckElliott1990, found that the court is more likely to strike down agency policies made through the notice and comment process.
 
 To analyze patterns of participation, scholars use data from a variety of sources.
-Sources for data on participation are agency rulemaking dockets [@GoldenJPART1998;@YackeeJPART2006;@YoungBP2017;@BanBP2019], the *Federal Register* [@BallaAPSR1998;@WestPAR2004], and regulations.gov [@Balla2019;@GordonRashinJOP]. 
+Sources for data on participation are agency rulemaking dockets [@GoldenJPART1998;@YackeeJPART2006;@YoungBP2017;@BanBP2019], the *Federal Register* [@BallaAPSR1998;@WestPAR2004], and regulations.gov [@BallaPI2019;@GordonRashinJOP]. 
 Though commenters are not generally required to disclose their names and affiliations, many do. The best current data sources for obtaining the names of the organizations that submit comments on federal regulations are regulations.gov and the websites of the independent agencies themselves.
 
 <!--
