@@ -116,7 +116,7 @@ an
 API
 and
 thus
-requre
+require
 bespoke
 web
 scrapers.
@@ -232,10 +232,10 @@ macro:->\url
 macro:->Only
 the
 metadata
-(e.g.~names)
+(e.g.,
+names)
 are
-machine
-readable.
+machine-readable.
 \@endanenote 
 \@doanenote {15}
 macro:->Note

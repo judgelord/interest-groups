@@ -346,7 +346,7 @@ overwhelming majority of court decisions involving challenges to rules
 were preceded by comments that threatened litigation.
 \citet{judgelord2016MPSA} found no relationship between the number of
 comments and the likelihood that the Supreme Court upheld or struck down
-an agency rule
+an agency rule.
 
 To analyze patterns of participation, scholars use data from a variety
 of sources. Sources for data on participation are agency rulemaking
@@ -377,23 +377,23 @@ different policies regarding duplicated comments\footnote{The difference
   comments on regulations.gov is often because mass comment campaigns
   are grouped together.} and confidential business information
 \citep{Lubbers2012}. Third, obtaining the data is time-consuming.
-Regulations.gov is subject to a rate limit of 1,000 queries per hour
-which is especially problematic for scholars seeking to analyze the full
-text of comments, many of which are included only as attachments.
-Downloading an individual document requires calling the API twice, once
-for the docket information, which includes the attachment URL(s), and
-then a second time to download the linked file. As of October 4, 2019,
-Regulations.gov has 11,238,958 public submission documents representing
-over 70 million public comments and almost 1.5 million rules and other
-documents. Not all federal agencies post rulemaking documents to
-regulations.gov. Scholars studying participation in these agencies can
-often obtain data on participation in rulemaking from the agency
-websites.\footnote{For example, the Federal Energy Regulatory Commission
-  has posted all comments they receive on their eLibrary website, but
-  not all of these appear on regulations.gov. Unlike regulations.gov,
-  most agency sites do not have an API and thus requre bespoke web
-  scrapers. We have examples of scrapers for regulations.gov and several
-  of these agencies on \url{https://github.com/libgober/regdata}.}
+Regulations.gov is subject to a rate limit of 1,000 queries per hour,
+problematic for scholars seeking to analyze the full text of comments,
+many of which are as attachments. Downloading an individual document
+requires calling the API twice, once for the docket information, which
+includes the attachment URL(s), and then a second time to download the
+linked file. As of October 4, 2019, Regulations.gov has 11,238,958
+public submission documents representing over 70 million public comments
+and almost 1.5 million rules and other documents. Not all federal
+agencies post rulemaking documents to regulations.gov. Scholars studying
+participation in these agencies can often obtain data on participation
+in rulemaking from the agency websites.\footnote{For example, the
+  Federal Energy Regulatory Commission has posted all comments they
+  receive on their eLibrary website, but not all of these appear on
+  regulations.gov. Unlike regulations.gov, most agency sites do not have
+  an API and thus require bespoke web scrapers. We have examples of
+  scrapers for regulations.gov and several of these agencies on
+  \url{https://github.com/libgober/regdata}.}
 
 \indent After obtaining comment data, scholars must choose how they want
 to preprocess the names of the organizations that comment.\\
@@ -407,8 +407,8 @@ that compares two strings of text and gives a distance between them.
 Choosing the optimal distance and thresholds is up to the researcher and
 usually an iterative process. Fuzzy matching, however, is not a panacea
 as the algorithm will show small distances between distinct entities
-(e.g.~JP Morgan and Morgan Stanley) and it cannot separate multiple
-organizations with the same acronym (e.g.~ABA).
+(e.g., JP Morgan and Morgan Stanley), and it cannot separate multiple
+organizations with the same acronym (e.g., ABA).
 
 \hypertarget{who-writes-rules}{%
 \section{Who writes rules?}\label{who-writes-rules}}
@@ -477,7 +477,7 @@ time.\footnote{See
 into seven machine-readable tables.\footnote{These data can be
   downloaded here:
   \url{https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}}
-However, these data does not contain exact monetary amounts and some
+However, these data do not contain exact monetary amounts, and some
 lobbyists do not disclose required contacts.\footnote{See
   \url{https://www.gao.gov/assets/700/698103.pdf}} Open Secret's
 database is easier to use than the raw data. Open Secrets also has a
@@ -491,8 +491,8 @@ to download it using bulk data.
 
 Lobbyists advocating for foreign clients are required to disclose these
 contacts under the Foreign Agent Registration Act. Foreign agents often
-lobby bureaucratic agencies; Israel, for example, retained law firm
-Arnold \& Porter for advice on registering securities with the
+lobby bureaucratic agencies; Israel, for example, retained law firm,
+Arnold \& Porter, for advice on registering securities with the
 SEC.\footnote{See
   \url{https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}}
 In addition to the participants, the reports also contain the nature of
@@ -500,8 +500,8 @@ the contact and the specific officials contacted. The data are
 astonishingly complete - the website contains all 6264 FARA registrants
 and their foreign contacts since 1942.\footnote{\url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::}\\
 Unlike other data discussed in this essay, the FARA data is \emph{not}
-all in machine-readable form.\footnote{Only the metadata (e.g.~names)
-  are machine readable.} Consequently, scholars using the data only
+all in machine-readable form.\footnote{Only the metadata (e.g., names)
+  are machine-readable.} Consequently, scholars using the data only
 focus on a subset such as \citet{You2019} who focuses on lobbying
 activities by Colombia, Panama, and South Korea. We caution users that
 the same participant can be listed under multiple names.
