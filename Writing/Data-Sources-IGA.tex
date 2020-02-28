@@ -391,8 +391,8 @@ requires requesting an API key.\footnote{By emailing
 Second, obtaining an accurate count of comments is not straightforward
 as agencies have different policies regarding duplicated
 comments\footnote{The difference between the total number of reported
-  comments and the number of comments on regulations.gov is often due to
-  mass comment campaigns being grouped together.} and confidential
+  comments and the number of comments on regulations.gov is often
+  because mass comment campaigns are grouped together.} and confidential
 business information.\footnote{See e.g., \citet{Lubbers2012} and
   \url{https://www.regulations.gov/userNotice}.} Third, obtaining the
 data is time-consuming.\footnote{Regulations.gov is subject to a rate
@@ -424,13 +424,12 @@ to answer questions about the types of organizations that participate in
 rulemaking, scholars first need to accurately identify these
 organizations so that they can be assigned the correct covariate data.
 This process, however, is not trivial as the same firm can be identified
-in numerous ways. For example, Goldman Sachs submitted comments to the
-Securities and Exchange Commission (SEC) and Federal Reserve Board (FRB)
-as The Goldman Sachs Group, Inc, Goldman Sachs Co.~LLC, Goldman Sachs
-Bank USA, Goldman, Sachs \& Co., Goldman Sachs Execution \& Clearing,
-LP, among other identifiers. All of these entities need to be accurately
-matched to Goldman Sachs, including the Goldman Sachs Execution \&
-Clearing comment which is on Goldman Sachs letterhead.\footnote{See
+in numerous ways. For example, Goldman Sachs submitted comments as The
+Goldman Sachs Group, Inc, Goldman Sachs Co.~LLC, Goldman Sachs Bank USA,
+Goldman, Sachs \& Co., Goldman Sachs Execution \& Clearing, LP, among
+other identifiers. All of these entities must be accurately matched to
+Goldman Sachs, including the Goldman Sachs Execution \& Clearing comment
+which is on Goldman Sachs letterhead.\footnote{See
   \url{https://www.sec.gov/comments/s7-03-10/s70310-43.pdf}.} The
 problem can be more acute with associations such as the American Bar
 Association (ABA) sometimes commenting as itself and other times as
@@ -445,9 +444,7 @@ procedure will also show a small distance between JP Morgan and Morgan
 Stanley, which are two separate entities. It will also not reveal
 whether an ABA letter is from the American Banker's Association or the
 American Bar Association. Many organizations active on similar
-rulemaking issues share acronyms or have similar names. In expectation,
-however, noise generated from incorrect matching is likely to bias a
-scholar against finding any relationships within the data.
+rulemaking issues share acronyms or have similar names.
 
 \hypertarget{who-writes-rules}{%
 \section{Who writes rules?}\label{who-writes-rules}}
@@ -561,44 +558,44 @@ Islamic Republic of Afghanistan and the Embassy of Afghanistan are
 designated as separate entities under FARA.
 
 Corporate executives, lawyers, and lobbyists often have contacts with
-agency officials to discuss rules. Such non-commenting contacts are
-often called \emph{ex parte} communications \citep{BonStefalli}. While
-record-keeping practices for these meetings vary considerably, they are
-often publicly available on agency websites\footnote{Note that available
-  does not mean conspicuous, as these logs are often hard to find by
-  directly navigating the agency homepage.} Obtaining these data
-requires writing a web scraper for each agency that holds the meetings
-data since the data are held in different places on each website. Since
-there are no uniform standards for reporting meeting data, the data
-differ substantially from agency to agency in both content and
-organization. The Federal Reserve, for example, groups meetings by
-subject but not by rule,\footnote{\url{https://www.federalreserve.gov/regreform/communications-with-public.htm}}
+agency officials, called \emph{ex parte} communications
+\citep{BonStefalli}, to discuss rules outside of the public comment
+process. While record-keeping practices for these meetings vary
+considerably, they are often publicly available on agency
+websites\footnote{Note that available does not mean conspicuous, as
+  these logs are often hard to find by directly navigating the agency
+  homepage.} Because meetings data are held in different places on each
+agency's website, obtaining these data requires writing a web scraper
+for each agency. As there are no uniform standards for reporting meeting
+data, these data differ substantially from agency to agency in both
+content and organization. The Federal Reserve, for example, groups
+meetings by subject but not by rule,\footnote{\url{https://www.federalreserve.gov/regreform/communications-with-public.htm}}
 the SEC groups meetings by rule, and the CFTC and FCC has all their
 meetings in one place.\footnote{See
   \url{https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
   and
   \url{https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}}
-In all these cases, the data are typically individually identified,
-although some agencies will only report the names of the organization
-represented or even that there was a meeting. There is no study that
-establishes the comprehensiveness of these record disclosures, and we
-suspect that it varies by agency as well.
+Meeting participants are typically individually identified, but some
+agencies only report the names of the organization represented, and
+others report meeting topics but not participants. No study evaluates
+the comprehensiveness of these record disclosures. We suspect that
+missingness varies by agency.
 
 \hypertarget{what-do-the-rules-say}{%
 \section{What do the rules say?}\label{what-do-the-rules-say}}
 
-Much of the scholarly literature on rulemaking in political science and
-public administration has examined whether public participation and
-influences the content of rules \citetext{\citealp[see,
-e.g.,][]{BallaAPSR1998}; \citealp{CuellarALR2005}; \citealp{YackeeJOP2006}; \citealp{NaughtonJPAM2009}; \citealp[\citet{HaederAPSR2015}]{Wagner2011}; \citealp[\citet{GordonRashinJOP}]{HaederJPART2018}}.
+The literature on rulemaking in political science and public
+administration has focused on whether public participation influences
+the content of rules
+\citetext{\citealp[e.g.,][]{BallaAPSR1998}; \citealp{CuellarALR2005}; \citealp{YackeeJOP2006}; \citealp{NaughtonJPAM2009}; \citealp[\citet{HaederAPSR2015}]{Wagner2011}; \citealp[\citet{GordonRashinJOP}]{HaederJPART2018}}.
 Crucial to such commenter influence studies is knowing what the rules
 say and how these texts have changed from proposal to finalization.
 Especially useful to scholars is the rule's preamble, which describes in
 detail what the agency has tried to accomplish and how it has engaged
-with stakeholders. The legally operative text of the rule is often less
-useful to social scientists since interpreting legal text often requires
+with stakeholders. The legally operative text is often less useful to
+social scientists since interpreting legal text often requires
 substantial domain expertise. However, where interpretation is
-straightforward, such as rate-setting scholars can capture variation in
+straightforward, such as rate-setting, scholars can capture variation in
 legally operative texts \citep[ and
 \citet{GordonRashinJOP}]{BallaAPSR1998}.
 
@@ -609,19 +606,12 @@ Text}\label{obtaining-and-working-with-data-on-rule-text}}
 The federal government publishes all rules in the \emph{Federal
 Register}, accessible via FederalRegister.gov. This database is
 comprehensive and has machine-readable records of all regulations
-published after 1994.\footnote{For issues from March 1939 through 1993,
-  see \url{https://www.govinfo.gov/app/collection/fr/}, although note
-  that they might require optical character recognition to make them in
-  a readable format.} Scholars can search for regulations by the
-\emph{Federal Register} citation, e.g., 47 FR 3431, \emph{Federal
-Register} number, or, more usefully, through their API; unlike other
-APIs mentioned in this essay, the \emph{Federal Register} API does not
-have any rate limits.\footnote{However we still recommend small delays
-  to prevent flooding the server with requests.} Indeed, the Federal
-Register office also assigns every regulatory action a document number.
-In our experience, this FR Doc Number is the only truly unique and
-consistently maintained identifier for proposals, final rules, and
-various other kinds of documents.
+published after 1994 and optical versions form 1939-1993
+(\url{https://www.govinfo.gov/app/collection/fr/}). The \emph{Federal
+Register} API does not have any rate limits. The Federal Register office
+assigns every regulatory action a document number. In our experience,
+this `FR Doc Number' is the only truly unique and consistently
+maintained identifier for proposed and final rules.
 
 While the raw text of rules is relatively straightforward to obtain,
 there are several thorny theoretical and methodological issues that

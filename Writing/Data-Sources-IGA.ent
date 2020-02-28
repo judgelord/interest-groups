@@ -159,12 +159,11 @@ on
 regulations.gov
 is
 often
-due
-to
+because
 mass
 comment
 campaigns
-being
+are
 grouped
 together.
 \@endanenote 
@@ -542,49 +541,6 @@ and
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
 \@doanenote {26}
-macro:->For
-issues
-from
-March
-1939
-through
-1993,
-see
-\url
-{https://www.govinfo.gov/app/collection/fr/},
-although
-note
-that
-they
-might
-require
-optical
-character
-recognition
-to
-make
-them
-in
-a
-readable
-format.
-\@endanenote 
-\@doanenote {27}
-macro:->However
-we
-still
-recommend
-small
-delays
-to
-prevent
-flooding
-the
-server
-with
-requests.
-\@endanenote 
-\@doanenote {28}
 macro:->We
 note
 that
@@ -622,7 +578,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {29}
+\@doanenote {27}
 macro:->The
 Unified
 Agenda
@@ -638,7 +594,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {30}
+\@doanenote {28}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}
