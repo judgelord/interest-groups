@@ -47,7 +47,7 @@ Notes
 Explanatory notes should be kept to an absolute minimum. Final versions of articles must use endnotes, not footnotes.
 
 Style
-The primary style goals are clarity and consistency. Authors may use either UK or US spelling, but they must do so consistently. For punctuation, please follow the standards for UK English. This entails:
+The original style goals are clarity and consistency. Authors may use either UK or US spelling, but they must do so consistently. For punctuation, please follow the standards for UK English. This entails:
 
 - using single inverted commas (rather than double quotation marks) for quotes
 - placing all inverted commas within other punctuation
@@ -148,7 +148,7 @@ The OCC, for example, allows confidential business information to be withheld wh
 We have tutorials on how to scrape comments from regulations.gov and FERC.]
 -->
 
-\indent After obtaining comment data, scholars must choose how they want to preprocess the names of the organizations that comment.  This step is vital as organizations such as Goldman Sachs and the American Bar Association, for example, submit comments using multiple versions of their names. These decisions can have a substantial impact on the analysis as misidentifying organizations may result in them being dropped or double-counted.  Scholars can ameliorate this issue by using fuzzy matching - a process that compares two strings of text and gives a distance between them.Choosing the optimal distance and thresholds is up to the researcher and usually an iterative process. Fuzzy matching, however, is not a panacea as the algorithm will show small distances between distinct entities (e.g. JP Morgan and Morgan Stanley) and it cannot separate multiple organizations with the same acronym (e.g. ABA).
+\indent After obtaining comment data, scholars must choose how they want to preprocess the names of the organizations that comment.  This step is vital as organizations such as Goldman Sachs and the American Bar Association, for example, submit comments using multiple versions of their names. These decisions can have a substantial impact on the analysis as misidentifying organizations may result in them being dropped or double-counted.  Scholars can ameliorate this issue by using fuzzy matching - a process that compares two strings of text and gives a distance between them. Choosing the optimal distance and thresholds is up to the researcher and usually an iterative process. Fuzzy matching, however, is not a panacea as the algorithm will show small distances between distinct entities (e.g., JP Morgan and Morgan Stanley), and it cannot separate multiple organizations with the same acronym (e.g., ABA).
 
 
 <!--
@@ -159,10 +159,7 @@ If a coalition of the Bank of America and Wells Fargo comment on a rule, should 
 
 # Who writes rules?
 
-Although political scientists have long used personal identity and social networks to understand political outcomes, with regard to rulemaking, such studies have only recently become possible. New data sources have made it easier to learn about rulewriters' identities and networks. Some of the most important data sources in this regard are the U.S. Office of Personnel Management's (OPM) data on government employees [e.g., @BoltonAMP2018],^[Note that the dataset @BoltonAMP2018 used is not public.] Open Secrets' lobbying [e.g., @Baumgartner2009] and revolving door databases [e.g.,  @VidalAER2012;@BertrandAER2014], machine-readable lobbying disclosure act reports [e.g.,  @BoehmkeJPP2013;@YouJOP2017;@Dwidar2019SPSA], meeting logs [@LibgoberQJPS], and datasets of corporate board membership such as Boardex [e.g., @ShiveROF2016].
-
-Scholars can also study the identities of policymakers through the creative use of longstanding data sources such as the *Federal Register* or the Unified Agenda.
-@CarriganPAR2019 find that the number of job functions of the bureaucrats who write the rules is associated with both decreases in the time an agency takes to promulgate a rule and increases in the probability that the rule will be overturned in court. @ChenJTP2015 link OPM data to Bonica's DIME database in order to classify the ideology of agencies over time and apply these measures to study unionization. These early efforts suggest that opportunities to study who writes the rules and how it matters are prevalent. We expect such analyses to be a growth area for years to come.
+Political scientists have long used personal identity and social networks to understand political outcomes. New data sources have made it easier to learn about rulewriters' identities and networks. Some of the most important data sources in this regard are the U.S. Office of Personnel Management's (OPM) data on government employees [e.g., @BoltonAMP2018],^[Note that the dataset @BoltonAMP2018 used is not public.] Open Secrets' lobbying [e.g., @Baumgartner2009] and revolving door databases [e.g.,  @VidalAER2012;@BertrandAER2014], machine-readable lobbying disclosure act reports [e.g.,  @BoehmkeJPP2013;@YouJOP2017;@Dwidar2019SPSA], meeting logs [@LibgoberQJPS], and datasets of corporate board membership such as Boardex [e.g., @ShiveROF2016]. @CarriganPAR2019 illustrate the possibilities of these new data sources. They find that the number of job functions of the bureaucrats who write the rules is associated with both decreases in the time an agency takes to promulgate a rule and increases in the probability that the rule will be overturned in court. In another innovative study, @ChenJTP2015 link OPM data to Bonica's DIME database in order to classify the ideology of agency staff over time and apply these measures to study unionization. These early efforts suggest that opportunities to study who writes the rules and how it matters are prevalent. We expect such analyses to be a growth area for years to come.
 
 
 <!-- Lobbying also increases the time it takes for agencies to discover corporate malfeasance [@YuJFQA2011].
