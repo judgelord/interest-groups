@@ -396,19 +396,18 @@ websites.\footnote{For example, the Federal Energy Regulatory Commission
   of these agencies on \url{https://github.com/libgober/regdata}.}
 
 \indent After obtaining comment data, scholars must choose how they want
-to preprocess the names of the organizations that comment.\\
-This step is vital as organizations such as Goldman Sachs and the
-American Bar Association, for example, submit comments using multiple
-versions of their names. These decisions can have a substantial impact
-on the analysis as misidentifying organizations may result in them being
-dropped or double-counted.\\
-Scholars can ameliorate this issue by using fuzzy matching - a process
-that compares two strings of text and gives a distance between them.
-Choosing the optimal distance and thresholds is up to the researcher and
-usually an iterative process. Fuzzy matching, however, is not a panacea
-as the algorithm will show small distances between distinct entities
-(e.g.~JP Morgan and Morgan Stanley) and it cannot separate multiple
-organizations with the same acronym (e.g.~ABA).
+to preprocess the names of the organizations that comment. This step is
+vital as organizations such as Goldman Sachs and the American Bar
+Association, for example, submit comments using multiple versions of
+their names. These decisions can have a substantial impact on the
+analysis as misidentifying organizations may result in them being
+dropped or double-counted. Scholars can ameliorate this issue by using
+fuzzy matching - a process that compares two strings of text and gives a
+distance between them.Choosing the optimal distance and thresholds is up
+to the researcher and usually an iterative process. Fuzzy matching,
+however, is not a panacea as the algorithm will show small distances
+between distinct entities (e.g.~JP Morgan and Morgan Stanley) and it
+cannot separate multiple organizations with the same acronym (e.g.~ABA).
 
 \hypertarget{who-writes-rules}{%
 \section{Who writes rules?}\label{who-writes-rules}}
@@ -451,17 +450,16 @@ titles, and demographic data from 1973 through 2016.\footnote{Available
   at
   \url{https://archive.org/details/opm-federal-employment-data/page/n1}.
   Updated personnel files are available through 2018 from the OPM itself
-  here: \url{https://www.fedscope.opm.gov/datadefn/index.asp}}. These
-are the most comprehensive personnel records publicly available, but
-they have significant limitations. First, not all agencies and
-occupations are a part of this release.\footnote{The list includes at
-  least 16 agencies and, within the covered agencies, law enforcement
-  officers, nuclear engineers, and certain investigators
-  \citet{Singer-Vine2017}.} Second, some of the employees in these data
-do not have unique identification numbers. This means that common names
-such as `John Smith' match multiple employees; the Veterans Health
-Administration employed 24 John Smiths in 2014, five with the same
-middle initial.
+  here: \url{https://www.fedscope.opm.gov/datadefn/index.asp}} These are
+the most comprehensive personnel records publicly available, but they
+have significant limitations. First, not all agencies and occupations
+are a part of this release.\footnote{The list includes at least 16
+  agencies and, within the covered agencies, law enforcement officers,
+  nuclear engineers, and certain investigators \citet{Singer-Vine2017}.}
+Second, some of the employees in these data do not have unique
+identification numbers. This means that common names such as `John
+Smith' match multiple employees; the Veterans Health Administration
+employed 24 John Smiths in 2014, five with the same middle initial.
 
 To obtain machine-readable data on the identities of domestic lobbyists,
 scholars use two databases from Open Secrets -- a nonprofit that tracks
@@ -498,7 +496,7 @@ SEC.\footnote{See
 In addition to the participants, the reports also contain the nature of
 the contact and the specific officials contacted. The data are
 astonishingly complete - the website contains all 6264 FARA registrants
-and their foreign contacts since 1942.\footnote{\url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::}\\
+and their foreign contacts since 1942.\footnote{\url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::}
 Unlike other data discussed in this essay, the FARA data is \emph{not}
 all in machine-readable form.\footnote{Only the metadata (e.g.~names)
   are machine readable.} Consequently, scholars using the data only
@@ -513,14 +511,12 @@ process. While record-keeping practices for these meetings vary
 considerably, they are often publicly available on agency
 websites\footnote{Note that available does not mean conspicuous, as
   these logs are often hard to find by directly navigating the agency
-  homepage.}
-
-Because meetings data are held in different places on each agency's
-website, obtaining these data requires writing a web scraper for each
-agency. As there are no uniform standards for reporting meeting data,
-these data differ substantially from agency to agency in both content
-and organization. The Federal Reserve, for example, groups meetings by
-subject but not by rule,\footnote{\url{https://www.federalreserve.gov/regreform/communications-with-public.htm}}
+  homepage.} Because meetings data are held in different places on each
+agency's website, obtaining these data requires writing a web scraper
+for each agency. As there are no uniform standards for reporting meeting
+data, these data differ substantially from agency to agency in both
+content and organization. The Federal Reserve, for example, groups
+meetings by subject but not by rule,\footnote{\url{https://www.federalreserve.gov/regreform/communications-with-public.htm}}
 the SEC groups meetings by rule, and the CFTC and FCC has all their
 meetings in one place.\footnote{See
   \url{https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
@@ -538,7 +534,7 @@ missingness varies by agency.
 The literature on rulemaking in political science and public
 administration has focused on whether public participation influences
 the content of rules
-\citetext{\citealp[e.g.,][]{BallaAPSR1998}; \citealp{CuellarALR2005}; \citealp{YackeeJOP2006}; \citealp{NaughtonJPAM2009}; \citealp[\citet{HaederAPSR2015}]{Wagner_ALR_2011}; \citealp[\citet{GordonRashinJOP}]{HaederJPART2018}}.
+\citep[e.g.,][]{BallaAPSR1998, CuellarALR2005, YackeeJOP2006, NaughtonJPAM2009, Wagner_ALR_2011, HaederAPSR2015, HaederJPART2018, GordonRashinJOP}.
 Crucial to such commenter influence studies is knowing what the rules
 say and how these texts have changed from proposal to finalization.
 Especially useful to scholars is the rule's preamble, which describes in
@@ -547,8 +543,7 @@ with stakeholders. The legally operative text is often less useful to
 social scientists since interpreting legal text often requires
 substantial domain expertise. However, where interpretation is
 straightforward, such as rate-setting, scholars can capture variation in
-legally operative texts \citep[ and
-\citet{GordonRashinJOP}]{BallaAPSR1998}.
+legally operative texts \citep{BallaAPSR1998, GordonRashinJOP}.
 
 \hypertarget{obtaining-and-working-with-data-on-rule-text}{%
 \subsection{Obtaining and Working with Data on Rule

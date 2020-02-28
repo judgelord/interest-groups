@@ -147,12 +147,7 @@ The OCC, for example, allows confidential business information to be withheld wh
 ^[We recommend using rvest if coding in R and Scrapy in Python.
 We have tutorials on how to scrape comments from regulations.gov and FERC.]
 -->
-\indent After obtaining comment data, scholars must choose how they want to preprocess the names of the organizations that comment.  
-This step is vital as organizations such as Goldman Sachs and the American Bar Association, for example, submit comments using multiple versions of their names. 
-These decisions can have a substantial impact on the analysis as misidentifying organizations may result in them being dropped or double-counted.  
-Scholars can ameliorate this issue by using fuzzy matching - a process that compares two strings of text and gives a distance between them.
-Choosing the optimal distance and thresholds is up to the researcher and usually an iterative process.
-Fuzzy matching, however, is not a panacea as the algorithm will show small distances between distinct entities (e.g. JP Morgan and Morgan Stanley) and it cannot separate multiple organizations with the same acronym (e.g. ABA).
+\indent After obtaining comment data, scholars must choose how they want to preprocess the names of the organizations that comment.  This step is vital as organizations such as Goldman Sachs and the American Bar Association, for example, submit comments using multiple versions of their names. These decisions can have a substantial impact on the analysis as misidentifying organizations may result in them being dropped or double-counted.  Scholars can ameliorate this issue by using fuzzy matching - a process that compares two strings of text and gives a distance between them.Choosing the optimal distance and thresholds is up to the researcher and usually an iterative process. Fuzzy matching, however, is not a panacea as the algorithm will show small distances between distinct entities (e.g. JP Morgan and Morgan Stanley) and it cannot separate multiple organizations with the same acronym (e.g. ABA).
 
 
 <!--
@@ -175,7 +170,7 @@ Scholars can also study the identities of policymakers through the creative use 
 
 ## Obtaining and working with personnel and lobbying data
 
-Scholars can obtain data on agency personnel from the BuzzFeed personnel data release, which contains information such as employee salaries, job titles, and demographic data from 1973 through 2016.^[Available at https://archive.org/details/opm-federal-employment-data/page/n1. Updated personnel files are available through 2018 from the OPM itself here: https://www.fedscope.opm.gov/datadefn/index.asp].  These are the most comprehensive personnel records publicly available, but they have significant limitations.
+Scholars can obtain data on agency personnel from the BuzzFeed personnel data release, which contains information such as employee salaries, job titles, and demographic data from 1973 through 2016.^[Available at https://archive.org/details/opm-federal-employment-data/page/n1. Updated personnel files are available through 2018 from the OPM itself here: https://www.fedscope.opm.gov/datadefn/index.asp]  These are the most comprehensive personnel records publicly available, but they have significant limitations.
 First, not all agencies and occupations are a part of this release.^[The list includes at least 16 agencies and, within the covered agencies, law enforcement officers, nuclear engineers, and certain investigators @Singer-Vine2017.]  Second, some of the employees in these data do not have unique identification numbers. This means that common names such as 'John Smith' match multiple employees; the Veterans Health Administration employed 24 John Smiths in 2014, five with the same middle initial.
 
 To obtain machine-readable data on the identities of domestic lobbyists, scholars use two databases from Open Secrets -- a nonprofit that tracks spending on politics -- on administrative and Congressional lobbying.
@@ -186,21 +181,18 @@ Open Secrets also has a database on revolving door employees that shows the care
 
 Lobbyists advocating for foreign clients are required to disclose these contacts under the Foreign Agent Registration Act.
 Foreign agents often lobby bureaucratic agencies; Israel, for example, retained law firm Arnold & Porter for advice on registering securities with the SEC.^[See https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf]  In addition to the participants, the reports also contain the nature of the contact and the specific officials contacted.
-The data are astonishingly complete - the website contains all 6264 FARA registrants and their foreign contacts since  1942.^[https://efile.fara.gov/ords/f?p=1381:1:13132679194789:::::]  
-Unlike other data discussed in this essay, the FARA data is *not* all in machine-readable form.^[Only the metadata (e.g. names) are machine readable.] 
+The data are astonishingly complete - the website contains all 6264 FARA registrants and their foreign contacts since  1942.^[https://efile.fara.gov/ords/f?p=1381:1:13132679194789:::::]  Unlike other data discussed in this essay, the FARA data is *not* all in machine-readable form.^[Only the metadata (e.g. names) are machine readable.] 
 Consequently, scholars using the data only focus on a subset such as @You2019 who focuses on lobbying activities by Colombia, Panama, and South Korea.
 We caution users that the same participant can be listed under multiple names.
 
 Corporate executives, lawyers, and lobbyists often have contacts with agency officials, called *ex parte* communications [@Lubbers2012], to discuss rules outside of the public comment process.
-While record-keeping practices for these meetings vary considerably, they are often publicly available on agency websites^[Note that available does not mean conspicuous, as these logs are often hard to find by directly navigating the agency homepage.]
-
-Because meetings data are held in different places on each agency's website, obtaining these data requires writing a web scraper for each agency.
+While record-keeping practices for these meetings vary considerably, they are often publicly available on agency websites^[Note that available does not mean conspicuous, as these logs are often hard to find by directly navigating the agency homepage.] Because meetings data are held in different places on each agency's website, obtaining these data requires writing a web scraper for each agency.
 As there are no uniform standards for reporting meeting data, these data differ substantially from agency to agency in both content and organization.
 The Federal Reserve, for example, groups meetings by subject but not by rule,^[https://www.federalreserve.gov/regreform/communications-with-public.htm] the SEC groups meetings by rule, and the CFTC and FCC has all their meetings in one place.^[See https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6 and https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings] Meeting participants are typically individually identified, but some agencies only report the names of the organization represented, and others report meeting topics but not participants. No study evaluates the comprehensiveness of these record disclosures. We suspect that missingness varies by agency.
 
 # What do the rules say?
 
-The literature on rulemaking in political science and public administration has focused on whether public participation influences the content of rules [e.g., @BallaAPSR1998;@CuellarALR2005;@YackeeJOP2006;@NaughtonJPAM2009;@Wagner_ALR_2011,@HaederAPSR2015;@HaederJPART2018,@GordonRashinJOP]. Crucial to such commenter influence studies is knowing what the rules say and how these texts have changed from proposal to finalization. Especially useful to scholars is the rule's preamble, which describes in detail what the agency has tried to accomplish and how it has engaged with stakeholders. The legally operative text is often less useful to social scientists since interpreting legal text often requires substantial domain expertise. However, where interpretation is straightforward, such as rate-setting, scholars can capture variation in legally operative texts [@BallaAPSR1998 and @GordonRashinJOP].
+The literature on rulemaking in political science and public administration has focused on whether public participation influences the content of rules [e.g., @BallaAPSR1998;@CuellarALR2005;@YackeeJOP2006;@NaughtonJPAM2009;@Wagner_ALR_2011;@HaederAPSR2015;@HaederJPART2018;@GordonRashinJOP]. Crucial to such commenter influence studies is knowing what the rules say and how these texts have changed from proposal to finalization. Especially useful to scholars is the rule's preamble, which describes in detail what the agency has tried to accomplish and how it has engaged with stakeholders. The legally operative text is often less useful to social scientists since interpreting legal text often requires substantial domain expertise. However, where interpretation is straightforward, such as rate-setting, scholars can capture variation in legally operative texts [@BallaAPSR1998;  @GordonRashinJOP].
 
 <!--
 ^[However, see @GoldenJPART1998 and @ElliottDLJ1992 for evidence that rules do not change substantially.]
