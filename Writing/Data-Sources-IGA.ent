@@ -35,6 +35,16 @@ page:
 {https://github.com/libgober/regdata/blob/master/README.md}.
 \@endanenote 
 \@doanenote {3}
+macro:->This
+working
+paper
+can
+be
+found
+\href
+{https://libgober.files.wordpress.com/2018/09/libgober-and-carpenter-unblinded-what-at-stake-in-rulemaking.pdf}{here}
+\@endanenote 
+\@doanenote {4}
 macro:->An
 API
 is
@@ -76,7 +86,7 @@ of
 those
 websites.
 \@endanenote 
-\@doanenote {4}
+\@doanenote {5}
 macro:->By
 emailing
 \href
@@ -130,7 +140,7 @@ they
 were
 deactivated.
 \@endanenote 
-\@doanenote {5}
+\@doanenote {6}
 macro:->The
 difference
 between
@@ -158,7 +168,7 @@ being
 grouped
 together.
 \@endanenote 
-\@doanenote {6}
+\@doanenote {7}
 macro:->See
 e.g.,
 \citet
@@ -167,7 +177,7 @@ and
 \url
 {https://www.regulations.gov/userNotice}.
 \@endanenote 
-\@doanenote {7}
+\@doanenote {8}
 macro:->Regulations.gov
 is
 subject
@@ -232,7 +242,7 @@ the
 linked
 file.
 \@endanenote 
-\@doanenote {8}
+\@doanenote {9}
 macro:->Some
 agencies
 have
@@ -337,12 +347,12 @@ a
 temporary
 ban.
 \@endanenote 
-\@doanenote {9}
+\@doanenote {10}
 macro:->See
 \url
 {https://www.sec.gov/comments/s7-03-10/s70310-43.pdf}.
 \@endanenote 
-\@doanenote {10}
+\@doanenote {11}
 macro:->Note
 that
 the
@@ -362,7 +372,7 @@ we
 discuss
 below.
 \@endanenote 
-\@doanenote {11}
+\@doanenote {12}
 macro:->Available
 at
 \url
@@ -374,7 +384,7 @@ is
 over
 30GB).
 \@endanenote 
-\@doanenote {12}
+\@doanenote {13}
 macro:->Updated
 personnel
 files
@@ -390,7 +400,7 @@ here:
 \url
 {https://www.fedscope.opm.gov/datadefn/index.asp}
 \@endanenote 
-\@doanenote {13}
+\@doanenote {14}
 macro:->The
 list
 includes
@@ -417,14 +427,14 @@ See
 \url
 {https://www.buzzfeednews.com/article/jsvine/sharing-hundreds-of-millions-of-federal-payroll-records}
 \@endanenote 
-\@doanenote {14}
+\@doanenote {15}
 macro:->See
 \url
 {https://lobbyingdisclosure.house.gov/ldaguidance.pdf}
 for
 details.
 \@endanenote 
-\@doanenote {15}
+\@doanenote {16}
 macro:->Note
 that
 the
@@ -447,19 +457,19 @@ here:
 \url
 {https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}
 \@endanenote 
-\@doanenote {16}
+\@doanenote {17}
 macro:->See
 \url
 {https://www.gao.gov/assets/700/698103.pdf}
 \@endanenote 
-\@doanenote {17}
+\@doanenote {18}
 macro:->See
 \url
 {https://www.opensecrets.org/revolving/methodology.php}
 for
 details.
 \@endanenote 
-\@doanenote {18}
+\@doanenote {19}
 macro:->Note
 that
 they
@@ -479,16 +489,16 @@ scraping
 their
 database.
 \@endanenote 
-\@doanenote {19}
+\@doanenote {20}
 macro:->See
 \url
 {https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}
 \@endanenote 
-\@doanenote {20}
+\@doanenote {21}
 macro:->\url
 {https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::
 \@endanenote 
-\@doanenote {21}
+\@doanenote {22}
 macro:->The
 metadata
 -
@@ -511,11 +521,11 @@ data
 downloads
 page.
 \@endanenote 
-\@doanenote {22}
+\@doanenote {23}
 macro:->\url
 {https://www.federalreserve.gov/regreform/communications-with-public.htm}
 \@endanenote 
-\@doanenote {23}
+\@doanenote {24}
 macro:->See
 \url
 {https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
@@ -523,7 +533,7 @@ and
 \url
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
-\@doanenote {24}
+\@doanenote {25}
 macro:->For
 issues
 from
@@ -551,7 +561,7 @@ a
 readable
 format.
 \@endanenote 
-\@doanenote {25}
+\@doanenote {26}
 macro:->However
 we
 still
@@ -566,7 +576,7 @@ server
 with
 requests.
 \@endanenote 
-\@doanenote {26}
+\@doanenote {27}
 macro:->We
 note
 that
@@ -604,7 +614,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {27}
+\@doanenote {28}
 macro:->The
 Unified
 Agenda
@@ -620,7 +630,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {28}
+\@doanenote {29}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}

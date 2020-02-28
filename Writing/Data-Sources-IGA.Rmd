@@ -75,7 +75,7 @@ Because interest groups seek to influence rules, scholars are interested in patt
 For example, @YouJOP2017 finds that half of all spending on lobbying legislation occurs *after* a bill becomes law.
 Participation in this process can begin even before a proposed rule is issued.
 @deFigureidoKimICC2004 show that meetings between agency officials and firms spike before an agency issues a policy.
-@LibgoberQJPS finds that firms that meet with federal regulators before a rule is issued may receive abnormally high stock market returns upon its release. Leveraging high-frequency trading data, Libgober shows that in the minutes and hours following the publication of proposed rules at the Federal Reserve, the firms that met with the Board during rule-development significantly outperformed matched market competitors that did not obtain such early access. These findings are consistent with the analysis of qualitative researchers that commenters who participate early in the rulemaking process can shape the content of the rule [@NaughtonJPAM2009].
+@LibgoberQJPS finds that firms that meet with federal regulators before a rule is issued may receive abnormally high stock market returns upon its release. Leveraging high-frequency trading data, Libgober shows that in the minutes and hours following the publication of proposed rules at the Federal Reserve, the firms that met with the Board during rule-development significantly outperformed matched market competitors that did not obtain such early access.^[This working paper can be found [here](https://libgober.files.wordpress.com/2018/09/libgober-and-carpenter-unblinded-what-at-stake-in-rulemaking.pdf)] These findings are consistent with the analysis of qualitative researchers that commenters who participate early in the rulemaking process can shape the content of the rule [@NaughtonJPAM2009].
 Interest groups and firms may even initiate a rulemaking process through a petition for rulemaking under 5 U.S.C. § 553(e).
 
 Scholars are also interested in how participation in rulemaking may affect a rule's ultimate fate when it is sent to the White House Office of Management and Budget (OMB) or in judicial review. 
@@ -159,7 +159,7 @@ In fact, when a former Senate aide becomes a lobbyist, the Senator's retirement 
  
 -->
 
-## Obtaining and Working with personnel and lobbying data
+## Obtaining and working with personnel and lobbying data
 
 Scholars can obtain data on agency personnel from the BuzzFeed personnel data release. The BuzzFeed personnel data^[Available at https://archive.org/details/opm-federal-employment-data/page/n1.
 (The complete dataset is over 30GB).] contains information on federal employees such as their salaries, job titles, and basic demographic data from 1973 through 2016.^[Updated personnel files are available through 2018 from the OPM itself here: https://www.fedscope.opm.gov/datadefn/index.asp]  
@@ -219,13 +219,13 @@ Second, scholars must decide whether, and to what extent, they should preprocess
 ^[See, for example, the prudential standards rule issued by the Federal Reserve to improve financial stability.] 
 -->
 
-# Rule metadata 
+# Obtaining and working with rule metadata 
 
 Rulemaking metadata, such as the time rules are released, allow scholars to answer questions about factors that affect the rulemaking environment.
 Scholars have exploited this data to study questions about regulatory delay, agenda-setting, and the financial impact of rules.
 Often lengthy delays between statutory promulgation and the issuance of regulations are the subject of recent empirical scholarly interest.
-Scholars attribute various causes to regulatory delay including auditing [@ACSPSQ2013]; outside contacts [@BallaALR2011]; the political climate [@PotterJOP2017;@ThrowerPSQ2018]; personnel types [@CarriganPAR2019]; ossification [@YackeeGWLR2012]; deadlines [@LavertuJPART2012;@CarpenterAJPS2011;@BertelliPAR2019]; staffing levels [@BoltonJLEO2015].
-These scholars relied on data from OIRA [@ACSPSQ2013;@BallaALR2011;@BoltonJLEO2015;@CarriganPAR2019], the Unified Agenda [@BertelliPAR2019;@PotterJOP2017;@LavertuJPART2012;@Potter2019], the *Federal Register* [@YackeeGWLR2012;@ThrowerPSQ2018], and FDA's drug approval and postmarket experience [@CarpenterAJPS2011].
+Scholars attribute various causes to regulatory delay including auditing [@ACSPSQ2013]; outside contacts [@BallaALR2011]; the political climate [@PotterJOP2017;@ThrowerPSQ2018]; personnel types [@CarriganPAR2019]; ossification [@YackeeGWLR2012]; deadlines [@LavertuJPART2012;@CarpenterAJPS2011;@BertelliPAR2019]; and staffing levels [@BoltonJLEO2015].
+These scholars relied on data from the Office of Information and Regulatory Affairs (OIRA) [@ACSPSQ2013;@BallaALR2011;@BoltonJLEO2015;@CarriganPAR2019], the Unified Agenda [@BertelliPAR2019;@PotterJOP2017;@LavertuJPART2012;@Potter2019], the *Federal Register* [@YackeeGWLR2012;@ThrowerPSQ2018], and FDA's drug approval and postmarket experience [@CarpenterAJPS2011].
 Scholars have also exploited rule metadata to show that publicly-traded banks that submit comments account for $7 billion in excess returns [@Libgober2018].
 
 
@@ -235,17 +235,20 @@ Scholars have also exploited the Unified Agenda to study agenda setting.
 Notably, @Workman2015 coded approximately 220,000 regulations by issue area; he exploits this novel dataset to advance a theory of the "dual dynamics" of the administrative state where agenda-setting over the rulemaking process is a function of information generated by bureaucrats and Congressional "tuning" of the information.
 @WestJPART2012 assess the influences on agency discretion using a survey of bureaucratic "contact officers" and the Unified Agenda; they find that most agency decisions to issue rules "are made in the context of ongoing program implementation." 
 -->
-
-## Obtaining and working with the Unified Agenda and Press releases
-    
-Obtaining data from the Unified Agenda is relatively straightforward as all issues since 1995 are available online in machine-readable form.^[The Unified Agenda from 1983 through 1994 is available in the *Federal Register*.]. 
-The Unified Agenda contains many of the proposed regulations an agency plans to issue in the near future, making it an extremely useful data source for studying questions about agenda setting and timing (for example, see @Potter2019).
+\bigskip
+\noindent 
+**The Unified Agenda**: Obtaining data from the Unified Agenda is relatively straightforward as all of these documents since 1995 are available online in machine-readable form.^[The Unified Agenda from 1983 through 1994 is available in the *Federal Register*.]
+The Unified Agenda contains many of the proposed regulations an agency plans to issue in the near future, making it an extremely useful data source for studying questions about agenda setting and timing (e.g., @Potter2019).
 There are, however, significant limitations to these data.
 First, agencies report their early-stage rulemaking to the Unified Agenda strategically [@NouSCLR2016].
 Second, agencies do not list all "failed" rules that did not become final rules in the Unified Agenda [@YackeeGWLR2012].
 Third, @CoglianeseALR2016 note that the Unified Agenda misses much of the regulatory agency's work, including enforcement actions, adjudicatory actions, and decisions not to act. 
-
-In addition to disclosures mandated by law, agencies often issue press releases for agency actions.
+\bigskip
+\noindent 
+**Office of Management and Budget (OMB) data:** As is covered elsewhere in this issue [NOTE: reference to OMB article here], many rules, especially rules that are controversial or economically significant, are reviewed by OMB's Office of Information and Regulatory Affairs (ORIA). Obtaining ORIA data is relatively straightforward, as all of these documents since 1981 are available online in machine-readable form. These data include the date on which ORIA received the rule from the agency, whether the review was expedited, and whether the rule is determined to by "economically significant" or affect "Federalism."
+\bigskip
+\noindent 
+**Press releases**: In addition to disclosures mandated by law, agencies often issue press releases for agency actions.
 Much like the meetings data discussed above, policies regarding the storage and dissemination of press releases differ from agency to agency.
 The Federal Reserve, for example, lists all press releases since 1996 on their website, while the SEC only has them from 2012.^[See https://www.federalreserve.gov/newsevents/pressreleases.htm and https://www.sec.gov/news/pressreleases]  When working with press releases, scholars often need data on the exact time documents were made available to the general public [see, e.g., @LibgoberJOP].
 Press release metadata, such as the exact time a press release becomes public, can often be extracted from Really Simple Syndication (RSS) feeds.
