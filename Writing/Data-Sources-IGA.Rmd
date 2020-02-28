@@ -160,13 +160,9 @@ If a coalition of the Bank of America and Wells Fargo comment on a rule, should 
 
 # Who writes rules?
 
-<<<<<<< HEAD
-Although political scientists have long used personal identity and social networks to understand political outcomes, with regard to rulemaking, such studies have only recently become possible. New data sources have made it easier to learn about rulewriters' identities and networks. Some of the most important data sources in this regard are the U.S. Office of Personnel Management's (OPM) data on government employees [e.g., @BoltonAMP2018],^[Note that the dataset @BoltonAMP2018 used is not public like the similar BuzzFeed data we discuss below.] Open Secrets' lobbying [e.g., @Baumgartner2009] and revolving door databases [e.g.,  @VidalAER2012;@BertrandAER2014], machine-readable lobbying disclosure act reports [e.g.,  @BoehmkeJPP2013;@YouJOP2017;@Dwidar2019SPSA], meeting logs [@LibgoberQJPS], and datasets of corporate board membership such as Boardex [e.g., @ShiveROF2016].
-=======
-Although political scientists have long used personal identity and social networks to understand political outcomes [@Dahl,@Padget], with regard to rulemaking, such studies have only recently become possible. New data sources have made it easier to learn about rulewriters' identities and networks. Some of the most important data sources in this regard are the U.S. Office of Personnel Management's (OPM) data on government employees [e.g., @BoltonAMP2018],<!--^[Note that the dataset @BoltonAMP2018 used is not public like the similar BuzzFeed data we discuss below.] --> 
-Open Secrets' lobbying [e.g., @Baumgartner2009] and revolving door databases [e.g.,  @VidalAER2012;@BertrandAER2014], machine-readable lobbying disclosure act reports [e.g.,  @BoehmkeJPP2013;@YouJOP2017;@Dwidar2019SPSA], meeting logs [@LibgoberQJPS], and datasets of corporate board membership such as Boardex [e.g., @ShiveROF2016].
->>>>>>> f51e593e0a551be29dab4f1f90ca85e1148a3a16
-Scholars have also been able to study the identities of policymakers through the creative use of longstanding data sources such as the *Federal Register* or the Unified Agenda.
+Although political scientists have long used personal identity and social networks to understand political outcomes, with regard to rulemaking, such studies have only recently become possible. New data sources have made it easier to learn about rulewriters' identities and networks. Some of the most important data sources in this regard are the U.S. Office of Personnel Management's (OPM) data on government employees [e.g., @BoltonAMP2018],^[Note that the dataset @BoltonAMP2018 used is not public.] Open Secrets' lobbying [e.g., @Baumgartner2009] and revolving door databases [e.g.,  @VidalAER2012;@BertrandAER2014], machine-readable lobbying disclosure act reports [e.g.,  @BoehmkeJPP2013;@YouJOP2017;@Dwidar2019SPSA], meeting logs [@LibgoberQJPS], and datasets of corporate board membership such as Boardex [e.g., @ShiveROF2016].
+
+Scholars can also study the identities of policymakers through the creative use of longstanding data sources such as the *Federal Register* or the Unified Agenda.
 @CarriganPAR2019 find that the number of job functions of the bureaucrats who write the rules is associated with both decreases in the time an agency takes to promulgate a rule and increases in the probability that the rule will be overturned in court. @ChenJTP2015 link OPM data to Bonica's DIME database in order to classify the ideology of agencies over time and apply these measures to study unionization. These early efforts suggest that opportunities to study who writes the rules and how it matters are prevalent. We expect such analyses to be a growth area for years to come. 
 
 
@@ -194,13 +190,9 @@ In the absence of a completely digitized archive, scholars can exploit the searc
 Similar to the discussion of the diversity of names above, the same actor can participate under different names.
 For example, the Embassy of the Islamic Republic of Afghanistan and the Embassy of Afghanistan are designated as separate entities under FARA.
 
-<<<<<<< HEAD
 Corporate executives, lawyers, and lobbyists often have contacts with agency officials, called *ex parte* communications [@Lubbers2012], to discuss rules outside of the public comment process.
 While record-keeping practices for these meetings vary considerably, they are often publicly available on agency websites^[Note that available does not mean conspicuous, as these logs are often hard to find by directly navigating the agency homepage.]
-=======
-Corporate executives, lawyers, and lobbyists often have contacts with agency officials, called *ex parte* communications [@BonStefalli], to discuss rules outside of the public comment process.
-While record-keeping practices for these meetings vary considerably, they are often available, though perhaps hard to find, on agency websites.
->>>>>>> f51e593e0a551be29dab4f1f90ca85e1148a3a16
+
 Because meetings data are held in different places on each agency's website, obtaining these data requires writing a web scraper for each agency.
 As there are no uniform standards for reporting meeting data, these data differ substantially from agency to agency in both content and organization.
 The Federal Reserve, for example, groups meetings by subject but not by rule,^[https://www.federalreserve.gov/regreform/communications-with-public.htm] the SEC groups meetings by rule, and the CFTC and FCC has all their meetings in one place.^[See https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6 and https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings] Meeting participants are typically individually identified, but some agencies only report the names of the organization represented, and others report meeting topics but not participants. No study evaluates the comprehensiveness of these record disclosures. We suspect that missingness varies by agency.

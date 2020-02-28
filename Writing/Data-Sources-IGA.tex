@@ -1,0 +1,732 @@
+\documentclass[
+      12pt,
+        ]{article}
+
+
+
+
+
+
+% --- type and typeface? -----------------------
+\usepackage{lmodern}
+
+% input
+\usepackage[utf8]{inputenc}
+\usepackage{upquote}
+% typography
+\usepackage{microtype}
+
+
+\usepackage[T1]{fontenc}
+
+
+% text block
+\usepackage{setspace}
+\usepackage[              left = 1in,top = 1in,right = 1in,bottom = 1in             ]{geometry}
+
+\usepackage{enumitem}
+  \setlist{noitemsep}
+
+
+
+% decimal numbering for appendix figs and tabs
+
+
+% Deletes section counters
+% \setcounter{secnumdepth}{0}
+
+
+
+
+
+
+
+
+
+  \usepackage{natbib}
+  \bibliographystyle{agsm}
+  % protect underscores in most circumstances
+  % \usepackage[strings]{underscore} 
+
+    % to allow underscores in labels (e.g. citesO 
+
+\usepackage[english]{babel}
+
+
+% 
+
+% \newtheorem{hypothesis}{Hypothesis}
+
+\makeatletter
+  \@ifpackageloaded{hyperref}{}{%
+    \ifxetex
+      % page size defined by xetex
+      % unicode breaks when used with xetex
+      \PassOptionsToPackage{hyphens}{url}\usepackage[setpagesize = false, 
+                                                     unicode = false, 
+                                                     xetex]{hyperref}
+    \else
+      \PassOptionsToPackage{hyphens}{url}\usepackage[unicode = true]{hyperref}
+    \fi
+  }
+
+  \@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+  }{
+    \usepackage[usenames,dvipsnames]{color}
+  }
+\makeatother
+
+\hypersetup{breaklinks = true,
+            bookmarks = true,
+            pdfauthor = {Daniel Carpenter (Harvard University) and Devin Judge-Lord (University of Wisconsin) and Brian Libgober (Yale University) and Steven Rashin (New York University)},
+             pdfkeywords  =  {Interest groups, rulemaking, lobbying, bureaucratic politics, data
+sources},  
+            pdftitle = {Data and Methods for Analyzing Special Interest Influence in Rulemaking},
+            colorlinks = true,
+            citecolor = blue,
+            urlcolor = blue,
+            linkcolor = magenta,
+            pdfborder = {0 0 0}}
+
+\urlstyle{same}  % don't use monospace font for urls
+
+
+% set default figure placement to htbp
+\makeatletter
+  \def\fps@figure{hbtp}
+\makeatother
+
+
+% optional footnotes as endnotes
+  \usepackage{endnotes}
+  \renewcommand{\enotesize}{\normalsize}
+  \let\footnote = \endnote
+
+
+% ----- Pandoc wants this tightlist command ----------
+\providecommand{\tightlist}{
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+}
+
+
+
+
+
+% --- title & section styles -----------------------
+
+
+% title, author, date
+  \title{Data and Methods for Analyzing Special Interest Influence in Rulemaking}
+
+  \author{ % author, option footnote, optional affiliation
+            Daniel Carpenter  \\ \emph{Harvard University} 
+             \and 
+           % author, option footnote, optional affiliation
+            Devin Judge-Lord  \\ \emph{University of Wisconsin} 
+             \and 
+           % author, option footnote, optional affiliation
+            Brian Libgober  \\ \emph{Yale University} 
+             \and 
+           % author, option footnote, optional affiliation
+            Steven Rashin\footnote{Corresponding Author:
+\href{mailto:Steven.Rashin@NYU.edu}{\nolinkurl{Steven.Rashin@NYU.edu}},
+19 West 4th St, 2nd Floor, New York, NY 10012}  \\ \emph{New York University} 
+            }
+
+% auto-format date?
+  \date{\today}
+
+
+% abstract
+\usepackage{abstract}
+  \renewcommand{\abstractname}{}    % clear the title
+  \renewcommand{\absnamepos}{empty} % originally center
+
+ % \newcommand*{\authorfont}{\sffamily\selectfont}
+
+
+% section titles
+\usepackage[small, bf, sc]{titlesec}
+  % \titleformat*{\subsection}{\itshape}
+  \titleformat*{\subsubsection}{\itshape} 
+  \titleformat*{\paragraph}{\itshape} 
+  \titleformat*{\subparagraph}{\itshape}
+
+
+
+
+\usepackage{floatrow}
+\floatsetup[figure]{capposition=top}
+\floatsetup[table]{capposition=top}
+\usepackage{multirow}
+\usepackage{rotating} 
+\usepackage{caption}
+
+
+
+
+\begin{document}
+ 
+
+% --- PAGE: title and abstract -----------------------
+
+  \maketitle
+
+  \pagenumbering{gobble}
+
+
+
+  \begin{abstract}
+    \noindent The United States government creates astonishingly complete records
+relevant to policy creation in executive agencies. In this article, we
+describe the major kinds of data that have proven useful to scholars
+studying interest group behavior in bureaucratic politics, how to obtain
+them, and challenges that we as users have encountered in working with
+these data. We discuss established databases such as regulations.gov,
+which contains comments on draft rules proposed by executive branch
+agencies, and new sources of data, such as ex-parte meeting logs, which
+describe the interest groups and individual lobbyists that bureaucrats
+are meeting face-to-face about proposed policies. One challenge is that
+some of these data are not machine-readable. We argue that a productive
+way forward is to invest in making all the datasets machine-readable and
+to create a consistent way to link them to each other as well as to
+other databases. 
+
+          \hfill \\ 
+      \noindent \emph{Keywords}: Interest groups, rulemaking, lobbying, bureaucratic politics, data
+sources 
+    
+  \end{abstract}
+
+
+
+% --- PAGE: contents -----------------------
+
+
+
+
+% --- PAGE: body -----------------------
+
+
+  \newpage
+  \pagenumbering{arabic}
+
+\noindent 
+      \doublespacing 
+    \noindent Submission ID: IGAD-D-19-00044
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+If the U.S. federal government is unquestionably good at one thing, it
+is pushing out paper. In theory, governmental records relevant to the
+creation of regulatory policy via rulemaking have long been available to
+researchers. Particularly when compared with adjudication, enforcement,
+or other forms of individualized decision-making such as awarding grants
+or contracts, public rulemaking is supposed to be transparent and
+visible. The need for transparency in this quasi-legislative activity is
+all the higher given that roughly ten times as many rules are enacted as
+laws every year. Nevertheless, practically speaking, obtaining
+information on what is happening during rulemaking has been a costly and
+challenging undertaking. In the 1990s and early 2000s, leading research
+was limited to data on just a few rules \citep[e.g.,][]{GoldenJPART1998}
+or using surveys \citep[e.g.,][]{FurlongJPART2004}. Since 1994, when the
+government first released the \emph{Federal Register} online, access to
+data on the notice-and-comment has become increasingly detailed, and now
+include data on draft policies, the activities of policymakers, and
+interest group advocacy \citep[see][ for a recent review]{Yackee2019}.
+
+In this article, we describe data sources that have proven useful to
+scholars studying interest group lobbying of federal agencies, how to
+obtain them, and also challenges in working with these data. Some of the
+data sources we discuss are machine-readable records of all agency rules
+published in the \emph{Federal Register}, comments posted on
+regulations.gov, metadata about rules contained in the Unified Agenda,
+and Office of Management and Budget (OMB) reports. We also describe
+sources that have become more available in recent years, such as
+ex-parte meeting logs and individually-identified personnel records of
+nearly all federal employees since 1973 \citep{Singer-Vine2017}.
+
+These data sources do not exhaust the kinds of records relevant to
+researchers. They reflect what is available at present, but new data
+sources emerge constantly. Thus, we also highlight sources of data where
+complete datasets may soon become available, perhaps after enterprising
+researchers submit the necessary Freedom Of Information Act (FOIA)
+requests. Examples include agency press releases \citep[see,
+e.g.,][]{LibgoberJOP, Libgober2018} and the Foreign Agents Registration
+Act (FARA) reports \citep{ShepherdAPSR2019}.\footnote{We link to more
+  relevant data sources on our GitHub page:
+  \url{https://github.com/libgober/regdata/blob/master/README.md}.} To
+orient potential students of agency policymaking to available sources of
+data, we identify four units of analysis: (1) participants, (2)
+policymakers, (3) policy texts, and (4) metadata such as policy timing.
+We describe where to find data on each in roughly the order that they
+appear in the process of developing a rule.
+
+\hypertarget{background-rulemaking-and-the-administrative-procedures-act}{%
+\subsection{Background: Rulemaking and the Administrative Procedures
+Act}\label{background-rulemaking-and-the-administrative-procedures-act}}
+
+For decades, the volume of legal requirements emerging from executive
+agencies has dwarfed the lawmaking activity of Congress, the Supreme
+Court, and the Presidency. Each year, agencies publish three thousand or
+more regulations. In doing so, agencies typically follow a process
+prescribed by the Administrative Procedures Act (APA), 5 U.S.C. §
+553(c). For each rule, agencies create a collection of documents at each
+stage of their policymaking process. Section 553 requires agencies to
+issue a Notice of Proposed Rulemaking (NPRM) in the \emph{Federal
+Register} to notify potentially affected parties that the regulatory
+environment or program administration may change. Following the NPRM,
+agencies post these proposed regulations on regulations.gov or their own
+websites, where they also host the comments from interested stakeholders
+and individuals. Agencies are required to consider public comments but
+are not required to alter the rules based on them. These documents are
+organized in a `docket' folder with a unique name and ID number. Once
+kept in literal folders in each agency's `docket room', where visitors
+could make photocopies, these documents are now online. For example, a
+recent Centers for Medicare \& Medicaid Services Rulemaking docket on
+health plans disclosing costs can be found at
+regulations.gov/docket?D=CMS-2019-0163. The fact that the APA requires
+agencies to assemble a comprehensive record of who sought to influence
+the policymaking process, and that such records are relatively complete,
+is unusual for federal policymaking, which makes agency policymaking
+particularly exciting for interest group scholars.
+
+\hypertarget{who-participates-in-the-rulemaking-process}{%
+\section{Who participates in the rulemaking
+process?}\label{who-participates-in-the-rulemaking-process}}
+
+Public attention in rulemaking is remarkably skewed. A few rules, such
+as the Federal Communication Commission's rules on net neutrality,
+receive millions of comments. In contrast, half of the proposed rules
+open for comment on regulations.gov received no comments at all
+\citep{LibgoberJOP}. Even the median rule designated as `economically
+significant' -- rules projected to have an annual economic impact of
+over \$100 million -- receives fewer than ten comments
+\citep{judgelord2019SPSA}. Such dramatic variation in public
+participation makes it difficult to think about the representative rule
+or rulemaking participant. Clearly, important participants include
+businesses, public interest groups, trade associations, unions, law
+firms, and academics \citep{CuellarALR2005, YackeeJOP2006}. While
+businesses seem to be the most consistent and influential participants
+in most rulemakings \citep{YackeeJOP2006, LibgoberJOP}, most comments
+are part of public pressure campaigns and target a relatively small
+number of rules. Indeed, at least 39 million of the 48 million comments
+on proposed rules on regulations.gov were mobilized by just 100 advocacy
+organizations such as the Sierra Club \citep{judgelord2019SPSA}.
+
+Because interest groups seek to influence rules, scholars are interested
+in patterns of participation in rulemaking. For example,
+\citet{YouJOP2017} finds that half of all spending on lobbying
+legislation occurs \emph{after} a bill becomes law. Participation in
+this process can begin even before a proposed rule is issued.
+\citet{deFigureidoKimICC2004} show that meetings between agency
+officials and firms spike before an agency issues a policy.
+\citet{LibgoberQJPS} finds that firms that meet with federal regulators
+before a rule is issued may receive abnormally high stock market returns
+upon its release. Leveraging high-frequency trading data, Libgober shows
+that in the minutes and hours following the publication of proposed
+rules at the Federal Reserve, the firms that met with the Board during
+rule-development significantly outperformed matched market competitors
+that did not obtain such early access. These findings are consistent
+with the analysis of qualitative researchers that commenters who
+participate early in the rulemaking process can shape the content of the
+rule \citep{NaughtonJPAM2009}.
+
+Scholars are also interested in how participation in rulemaking may
+affect a rule's ultimate fate when it is sent to the White House Office
+of Management and Budget (OMB) or in judicial review. Interest groups
+lobby successfully in OMB review \citep{HaederAPSR2015}. Interest groups
+also use the rulemaking record to build a case for litigation. Yet,
+there are few large-N studies linking lobbying in rulemaking to
+litigation or court decisions. \citet{LibgoberRashin2018SPSA} analyzed
+comments submitted to financial regulators and found that threats of
+litigation were rare, and even comments that seemed to ``threaten''
+litigation rarely culminated in a judicial decision. That said, the
+overwhelming majority of court decisions involving challenges to rules
+were preceded by comments that threatened litigation.
+\citet{judgelord2016MPSA} found no relationship between the number of
+comments and the likelihood that the Supreme Court upheld or struck down
+an agency rule and, like \citet{SchuckElliott1990}, found that the court
+is more likely to strike down agency policies made through the notice
+and comment process.
+
+To analyze patterns of participation, scholars use data from a variety
+of sources. Sources for data on participation are agency rulemaking
+dockets
+\citep{GoldenJPART1998, YackeeJPART2006, YoungBP2017, BanBP2019}, the
+\emph{Federal Register} \citep{BallaAPSR1998, WestPAR2004}, and
+regulations.gov \citep{BallaPI2019, GordonRashinJOP}. Though commenters
+are not generally required to disclose their names and affiliations,
+many do. The best current data sources for obtaining the names of the
+organizations that submit comments on federal regulations are
+regulations.gov and the websites of the independent agencies themselves.
+
+\hypertarget{obtaining-and-working-with-data-on-comment-participants}{%
+\subsection{Obtaining and working with data on comment
+participants}\label{obtaining-and-working-with-data-on-comment-participants}}
+
+Scholars wishing to obtain data on comments and commenters from
+executive agencies generally use the website regulations.gov. Actually
+obtaining the data requires overcoming a number of technical and
+bureaucratic hurdles. First, bulk data from the website can only be
+accessed via an Application Programming Interface (API).\footnote{An API
+  is a set of procedures that allow a user to access data from a website
+  in a structured way. Some websites, like regulations.gov, limit API
+  usage by requiring users to get an API key.} Second, obtaining an
+accurate count of comments is not straightforward as agencies have
+different policies regarding duplicated comments\footnote{The difference
+  between the total number of reported comments and the number of
+  comments on regulations.gov is often because mass comment campaigns
+  are grouped together.} and confidential business information
+\citep{Lubbers2012}. Third, obtaining the data is time-consuming.
+Regulations.gov is subject to a rate limit of 1,000 queries per hour
+which is especially problematic for scholars seeking to analyze the full
+text of comments, many of which are included only as attachments.
+Downloading an individual document requires calling the API twice, once
+for the docket information, which includes the attachment URL(s), and
+then a second time to download the linked file. As of October 4, 2019,
+Regulations.gov has 11,238,958 public submission documents representing
+over 70 million public comments and almost 1.5 million rules and other
+documents. Not all federal agencies post rulemaking documents to
+regulations.gov. Scholars studying participation in these agencies can
+often obtain data on participation in rulemaking from the agency
+websites.\footnote{For example, the Federal Energy Regulatory Commission
+  has posted all comments they receive on their eLibrary website, but
+  not all of these appear on regulations.gov. Unlike regulations.gov,
+  most agency sites do not have an API and thus requre bespoke web
+  scrapers. We have examples of scrapers for regulations.gov and several
+  of these agencies on \url{https://github.com/libgober/regdata}.}
+
+\indent In addition to the challenges of obtaining the data, scholars
+also must choose how they want to preprocess the data before analyzing
+it. These decisions can have a substantial impact on the analysis as
+they affect the organizations that appear in the analysis. For example,
+to answer questions about the types of organizations that participate in
+rulemaking, scholars first need to accurately identify these
+organizations so that they can be assigned the correct covariate data.
+This process, however, is not trivial as the same firm can be identified
+in numerous ways. For example, Goldman Sachs submitted comments as The
+Goldman Sachs Group, Inc, Goldman Sachs Co.~LLC, Goldman Sachs Bank USA,
+Goldman, Sachs \& Co., Goldman Sachs Execution \& Clearing, LP, among
+other identifiers. All of these entities must be accurately matched to
+Goldman Sachs, including the Goldman Sachs Execution \& Clearing comment
+which is on Goldman Sachs letterhead. The problem can be more acute with
+associations such as the American Bar Association (ABA) sometimes
+commenting as itself and other times as individual sections of the ABA.
+One way scholars have been able to get around this problem is to use
+fuzzy matching. Fuzzy matching is a process that compares two strings of
+text and gives a distance between them. This procedure will assign a
+small distance between Goldman Sachs and Goldman, Sachs \& Co.~and a
+larger distance between Goldman Sachs and Merrill Lynch. The distances
+and optimal thresholds depend on the algorithm used. Fuzzy matching,
+however, is not a panacea as the same procedure will also show a small
+distance between JP Morgan and Morgan Stanley, which are two separate
+entities. It will also not reveal whether an ABA letter is from the
+American Banker's Association or the American Bar Association. Many
+organizations active on similar rulemaking issues share acronyms or have
+similar names.
+
+\hypertarget{who-writes-rules}{%
+\section{Who writes rules?}\label{who-writes-rules}}
+
+Although political scientists have long used personal identity and
+social networks to understand political outcomes, with regard to
+rulemaking, such studies have only recently become possible. New data
+sources have made it easier to learn about rulewriters' identities and
+networks. Some of the most important data sources in this regard are the
+U.S. Office of Personnel Management's (OPM) data on government employees
+\citep[e.g.,][]{BoltonAMP2018},\footnote{Note that the dataset
+  \citet{BoltonAMP2018} used is not public.} Open Secrets' lobbying
+\citep[e.g.,][]{Baumgartner2009} and revolving door databases
+\citep[e.g.,][]{VidalAER2012, BertrandAER2014}, machine-readable
+lobbying disclosure act reports
+\citep[e.g.,][]{BoehmkeJPP2013, YouJOP2017, Dwidar2019SPSA}, meeting
+logs \citep{LibgoberQJPS}, and datasets of corporate board membership
+such as Boardex \citep[e.g.,][]{ShiveROF2016}.
+
+Scholars can also study the identities of policymakers through the
+creative use of longstanding data sources such as the \emph{Federal
+Register} or the Unified Agenda. \citet{CarriganPAR2019} find that the
+number of job functions of the bureaucrats who write the rules is
+associated with both decreases in the time an agency takes to promulgate
+a rule and increases in the probability that the rule will be overturned
+in court. \citet{ChenJTP2015} link OPM data to Bonica's DIME database in
+order to classify the ideology of agencies over time and apply these
+measures to study unionization. These early efforts suggest that
+opportunities to study who writes the rules and how it matters are
+prevalent. We expect such analyses to be a growth area for years to
+come.
+
+\hypertarget{obtaining-and-working-with-personnel-and-lobbying-data}{%
+\subsection{Obtaining and working with personnel and lobbying
+data}\label{obtaining-and-working-with-personnel-and-lobbying-data}}
+
+Scholars can obtain data on agency personnel from the BuzzFeed personnel
+data release, which contains information such as employee salaries, job
+titles, and demographic data from 1973 through 2016.\footnote{Available
+  at
+  \url{https://archive.org/details/opm-federal-employment-data/page/n1}.
+  Updated personnel files are available through 2018 from the OPM itself
+  here: \url{https://www.fedscope.opm.gov/datadefn/index.asp}}. These
+are the most comprehensive personnel records publicly available, but
+they have significant limitations. First, not all agencies and
+occupations are a part of this release.\footnote{The list includes at
+  least 16 agencies and, within the covered agencies, law enforcement
+  officers, nuclear engineers, and certain investigators
+  \citet{Singer-Vine2017}.} Second, some of the employees in these data
+do not have unique identification numbers. This means that common names
+such as `John Smith' match multiple employees; the Veterans Health
+Administration employed 24 John Smiths in 2014, five with the same
+middle initial.
+
+To obtain machine-readable data on the identities of domestic lobbyists,
+scholars use two databases from Open Secrets -- a nonprofit that tracks
+spending on politics -- on administrative and Congressional lobbying.
+Downloading the lobbying data is straightforward; it only requires an
+account to access the `bulk data' page. The lobbying data comes from the
+required disclosures under the Lobbying Disclosure Act of 1995 (LDA).
+Note that the reporting threshold varies by type of firm (in-house have
+a higher minimum reporting threshold than lobbying firms) and over
+time.\footnote{See
+  \url{https://lobbyingdisclosure.house.gov/ldaguidance.pdf} for
+  details.} The lobbying data covers 1999 through 2018 and is broken up
+into seven machine-readable tables.\footnote{These data can be
+  downloaded here:
+  \url{https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}}
+However, these data does not contain exact monetary amounts and some
+lobbyists do not disclose required contacts.\footnote{See
+  \url{https://www.gao.gov/assets/700/698103.pdf}} Open Secret's
+database is easier to use than the raw data. Open Secrets also has a
+database on revolving door employees that shows the career paths or
+federal government workers that went to the private sector and are
+employed in some capacity where their work depends on interacting with
+the federal government.\footnote{See
+  \url{https://www.opensecrets.org/revolving/methodology.php}} Unlike
+their lobbying database, this one must be scraped as there is no option
+to download it using bulk data.
+
+Lobbyists advocating for foreign clients are required to disclose these
+contacts under the Foreign Agent Registration Act. Foreign agents often
+lobby bureaucratic agencies; for example, the state Israel retained law
+firm, Arnold \& Porter, for advice on, among other issues, registering
+securities with the SEC.\footnote{See
+  \url{https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}}
+The reports contain a multitude of data including the names of foreign
+entities, the firms representing them, the nature of the contact, and
+the specific officials contacted. The data are astonishingly complete -
+the website contains all 6264 FARA registrants and their foreign
+contacts since July 3, 1942. The FARA data can be accessed online
+through the Department of Justice.\footnote{\url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::}
+Unlike other data discussed in this essay, the FARA data is \emph{not}
+all in machine-readable form;\footnote{The metadata - e.g., dates,
+  registratrants, clients - are available in machine-readable form
+  through the API or bulk data downloads page.} converting from PDF to a
+machine-readable format (e.g., .csv) is neither easy nor error-free. As
+a result, scholars using the data only focus on a subset such as
+\citet{You2019} who focuses on lobbying activities by the governments of
+Colombia, Panama, and South Korea on their free trade agreements from
+2003 through 2012. In the absence of a completely digitized archive,
+scholars can exploit the search functions to search by lobbying
+registrant (e.g., lobbying firm Squire Patton Boggs) or foreign
+principal (e.g., the government of Afghanistan). Similar to the
+discussion of the diversity of names above, the same actor can
+participate under different names. For example, the Embassy of the
+Islamic Republic of Afghanistan and the Embassy of Afghanistan are
+designated as separate entities under FARA.
+
+Corporate executives, lawyers, and lobbyists often have contacts with
+agency officials, called \emph{ex parte} communications
+\citep{Lubbers2012}, to discuss rules outside of the public comment
+process. While record-keeping practices for these meetings vary
+considerably, they are often publicly available on agency
+websites\footnote{Note that available does not mean conspicuous, as
+  these logs are often hard to find by directly navigating the agency
+  homepage.}
+
+Because meetings data are held in different places on each agency's
+website, obtaining these data requires writing a web scraper for each
+agency. As there are no uniform standards for reporting meeting data,
+these data differ substantially from agency to agency in both content
+and organization. The Federal Reserve, for example, groups meetings by
+subject but not by rule,\footnote{\url{https://www.federalreserve.gov/regreform/communications-with-public.htm}}
+the SEC groups meetings by rule, and the CFTC and FCC has all their
+meetings in one place.\footnote{See
+  \url{https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
+  and
+  \url{https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}}
+Meeting participants are typically individually identified, but some
+agencies only report the names of the organization represented, and
+others report meeting topics but not participants. No study evaluates
+the comprehensiveness of these record disclosures. We suspect that
+missingness varies by agency.
+
+\hypertarget{what-do-the-rules-say}{%
+\section{What do the rules say?}\label{what-do-the-rules-say}}
+
+The literature on rulemaking in political science and public
+administration has focused on whether public participation influences
+the content of rules
+\citetext{\citealp[e.g.,][]{BallaAPSR1998}; \citealp{CuellarALR2005}; \citealp{YackeeJOP2006}; \citealp{NaughtonJPAM2009}; \citealp[\citet{HaederAPSR2015}]{Wagner_ALR_2011}; \citealp[\citet{GordonRashinJOP}]{HaederJPART2018}}.
+Crucial to such commenter influence studies is knowing what the rules
+say and how these texts have changed from proposal to finalization.
+Especially useful to scholars is the rule's preamble, which describes in
+detail what the agency has tried to accomplish and how it has engaged
+with stakeholders. The legally operative text is often less useful to
+social scientists since interpreting legal text often requires
+substantial domain expertise. However, where interpretation is
+straightforward, such as rate-setting, scholars can capture variation in
+legally operative texts \citep[ and
+\citet{GordonRashinJOP}]{BallaAPSR1998}.
+
+\hypertarget{obtaining-and-working-with-data-on-rule-text}{%
+\subsection{Obtaining and Working with Data on Rule
+Text}\label{obtaining-and-working-with-data-on-rule-text}}
+
+The federal government publishes all rules in the \emph{Federal
+Register}, accessible via FederalRegister.gov. This database is
+comprehensive and has machine-readable records of all regulations
+published after 1994 and optical versions form 1939-1993
+(\url{https://www.govinfo.gov/app/collection/fr/}). The \emph{Federal
+Register} API does not have any rate limits. The Federal Register office
+assigns every regulatory action a document number. In our experience,
+this `FR Doc Number' is the only truly unique and consistently
+maintained identifier for proposed and final rules.
+
+While the raw text of rules is relatively straightforward to obtain,
+there are several thorny theoretical and methodological issues that
+scholars must overcome.\footnote{We note that raw texts of rules are not
+  available from regulations.gov or the independent agencies themselves.
+  As these rules are often in PDF form, converting them to .txt for
+  analysis introduces errors into the text.} First, the standard path
+from notice of proposed rulemaking (NPRM) to public comments to a final
+rule is not always straightforward. Some rules are withdrawn before a
+final rule. Other agencies issue interim final rules subject to
+comments. For studies that seek to compare the proposed and final rules,
+the most problematic rules are the ones where one proposed rule gets
+broken up into a few smaller final rules or the reverse, where small
+rules become bundled into one final rule. These rules pose challenges
+for inference as the processes that lead to amalgamation or separation
+are not well understood. Second, scholars must decide whether, and to
+what extent, they should preprocess the rulemaking data before feeding
+the data to a text analysis algorithm.
+
+\hypertarget{obtaining-and-working-with-rule-metadata}{%
+\section{Obtaining and working with rule
+metadata}\label{obtaining-and-working-with-rule-metadata}}
+
+Rulemaking metadata, such as the time rules are released, allow scholars
+to answer questions about factors that affect the rulemaking
+environment. Scholars have exploited this data to study questions about
+regulatory delay, agenda-setting, and the financial impact of rules.
+Often lengthy delays between statutory promulgation and the issuance of
+regulations are the subject of recent empirical scholarly interest.
+Scholars attribute various causes to regulatory delay including auditing
+\citep{ACSPSQ2013}; outside contacts \citep{BallaALR2011}; the political
+climate \citep{PotterJOP2017, ThrowerPSQ2018}; personnel types
+\citep{CarriganPAR2019}; ossification \citep{YackeeGWLR2012}; deadlines
+\citep{LavertuJPART2012, CarpenterAJPS2011, BertelliPAR2019}; and
+staffing levels \citep{BoltonJLEO2015}. These scholars relied on data
+from the Office of Information and Regulatory Affairs (OIRA)
+\citep{ACSPSQ2013, BallaALR2011, BoltonJLEO2015, CarriganPAR2019}, the
+Unified Agenda
+\citep{BertelliPAR2019, PotterJOP2017, LavertuJPART2012, Potter2019},
+the \emph{Federal Register} \citep{YackeeGWLR2012, ThrowerPSQ2018}, and
+FDA's drug approval and postmarket experience \citep{CarpenterAJPS2011}.
+Scholars have also exploited rule metadata to show that publicly-traded
+banks that submit comments account for \$7 billion in excess returns
+\citep{Libgober2018}.
+
+Obtaining data from the Unified Agenda is relatively straightforward as
+all of these documents since 1995 are available online in
+machine-readable form.\footnote{The Unified Agenda from 1983 through
+  1994 is available in the \emph{Federal Register}.} The Unified Agenda
+contains many of the proposed regulations an agency plans to issue in
+the near future, making it an extremely useful data source for studying
+questions about agenda setting and timing \citep[e.g.,][]{Potter2019}.
+There are, however, significant limitations to these data. First,
+agencies report their early-stage rulemaking to the Unified Agenda
+strategically \citep{NouSCLR2016}. Second, agencies do not list all
+`failed' rules that did not become final rules in the Unified Agenda
+\citep{YackeeGWLR2012}. Third, \citet{CoglianeseALR2016} note that the
+Unified Agenda misses much of the regulatory agency's work, including
+enforcement actions, adjudicatory actions, and decisions not to act.
+
+As addressed elsewhere in this issue {[}NOTE: reference to OMB article
+here{]}, many rules, especially rules that are controversial or deemed
+economically significant, are reviewed by OMB's Office of Information
+and Regulatory Affairs (OIRA). Obtaining OIRA data is relatively
+straightforward, as all of these documents since 1981 are available
+online in machine-readable form. These data include the date on which
+OIRA received the rule from the agency, whether the review was
+expedited, and whether the rule is determined to by `economically
+significant' or affect `federalism'.
+
+In addition to disclosures mandated by law, agencies often issue press
+releases for agency actions. Much like the meetings data discussed
+above, policies regarding the storage and dissemination of press
+releases differ from agency to agency. The Federal Reserve, for example,
+lists all press releases since 1996 on their website, while the SEC only
+has them from 2012.\footnote{See
+  \url{https://www.federalreserve.gov/newsevents/pressreleases.htm} and
+  \url{https://www.sec.gov/news/pressreleases}} When working with press
+releases, scholars often need data on the exact time documents were made
+available to the general public \citep[see, e.g.,][]{LibgoberJOP}. Press
+release metadata, such as the exact time a press release becomes public,
+can often be extracted from Really Simple Syndication (RSS) feeds.
+
+Each data source has different types of missingness and different
+limitations regarding the information it contains about each rule. For
+example, data from the Office of Information and Regulatory Affairs
+(OIRA) only contains rules reviewed by OMB. The Unified Agenda (UA)
+covers a broader scope of policies, but due to strategic reporting and
+frequent reporting errors, desired cases may be missing. For published
+rules, these missing cases may be found in a more reliable source like
+the \emph{Federal Register}, which is more reliable than the UA, OIRA
+reports, or regulations.gov, and thus the best source for rule texts.
+However, the Federal Register contains the least amount of rule metadata
+and only published drafts and rules. This means that some rulemaking
+projects that were never finalized may be missing from all datasets.
+More importantly, the diversity of these data sources means that, for a
+given query, one source will often include cases that a second does not,
+while the second source includes variables that first does not.
+
+\hypertarget{discussion-assembling-complete-databases}{%
+\section{Discussion: Assembling Complete
+Databases}\label{discussion-assembling-complete-databases}}
+
+The United States government releases troves of data on rulemaking but
+in forms that require substantial effort from scholars to be useful for
+research. Scholars working on bureaucratic politics face two primary
+data challenges going forward: assembling complete, machine-readable
+datasets of agency rulemaking activity and linking observations across
+datasets. We see four fruitful data projects which could increase
+researcher efficiency by preventing duplicated efforts to download and
+clean data. First, a complete database is needed to link commenting
+activity throughout the Federal government. Researchers should be able
+to download these data in bulk, including comment text and metadata.
+Second, a comprehensive database could link revolving door rulemakers
+from the OPM personnel records, LDA disclosure forms, and FARA data.
+This database would be significantly improved by the addition of data
+from LinkedIn, but those data are not currently public. Third, creating
+a database of all meeting activities throughout the federal government.
+Finally, unique identifiers for each commenter would allow researchers
+to link commenting behavior to organizations across datasets. These
+projects, once completed, will allow scholars to pursue novel research
+on political participation, influence, and public management.
+
+\hypertarget{conflicts-of-interest}{%
+\section{Conflicts of Interest}\label{conflicts-of-interest}}
+
+On behalf of all authors, the corresponding author states that there is
+no conflict of interest.
+% --- PAGE: endnotes -----------------------
+  \newpage 
+  \theendnotes
+% --- PAGE: refs -----------------------
+\newpage
+\singlespacing 
+          \bibliography{dataig.bib} 
+  \end{document}

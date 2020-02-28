@@ -137,6 +137,18 @@ on
 {https://github.com/libgober/regdata}.
 \@endanenote 
 \@doanenote {5}
+macro:->Note
+that
+the
+dataset
+\citet
+{BoltonAMP2018}
+used
+is
+not
+public.
+\@endanenote 
+\@doanenote {6}
 macro:->Available
 at
 \url
@@ -156,7 +168,7 @@ here:
 \url
 {https://www.fedscope.opm.gov/datadefn/index.asp}
 \@endanenote 
-\@doanenote {6}
+\@doanenote {7}
 macro:->The
 list
 includes
@@ -180,14 +192,14 @@ investigators
 \citet
 {Singer-Vine2017}.
 \@endanenote 
-\@doanenote {7}
+\@doanenote {8}
 macro:->See
 \url
 {https://lobbyingdisclosure.house.gov/ldaguidance.pdf}
 for
 details.
 \@endanenote 
-\@doanenote {8}
+\@doanenote {9}
 macro:->These
 data
 can
@@ -197,26 +209,26 @@ here:
 \url
 {https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}
 \@endanenote 
-\@doanenote {9}
+\@doanenote {10}
 macro:->See
 \url
 {https://www.gao.gov/assets/700/698103.pdf}
 \@endanenote 
-\@doanenote {10}
+\@doanenote {11}
 macro:->See
 \url
 {https://www.opensecrets.org/revolving/methodology.php}
 \@endanenote 
-\@doanenote {11}
+\@doanenote {12}
 macro:->See
 \url
 {https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}
 \@endanenote 
-\@doanenote {12}
+\@doanenote {13}
 macro:->\url
 {https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::
 \@endanenote 
-\@doanenote {13}
+\@doanenote {14}
 macro:->The
 metadata
 -
@@ -239,11 +251,34 @@ data
 downloads
 page.
 \@endanenote 
-\@doanenote {14}
+\@doanenote {15}
+macro:->Note
+that
+available
+does
+not
+mean
+conspicuous,
+as
+these
+logs
+are
+often
+hard
+to
+find
+by
+directly
+navigating
+the
+agency
+homepage.
+\@endanenote 
+\@doanenote {16}
 macro:->\url
 {https://www.federalreserve.gov/regreform/communications-with-public.htm}
 \@endanenote 
-\@doanenote {15}
+\@doanenote {17}
 macro:->See
 \url
 {https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
@@ -251,7 +286,7 @@ and
 \url
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
-\@doanenote {16}
+\@doanenote {18}
 macro:->We
 note
 that
@@ -289,7 +324,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {17}
+\@doanenote {19}
 macro:->The
 Unified
 Agenda
@@ -305,7 +340,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {18}
+\@doanenote {20}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}
