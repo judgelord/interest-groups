@@ -507,10 +507,33 @@ downloads
 page.
 \@endanenote 
 \@doanenote {23}
+macro:->Note
+that
+available
+does
+not
+mean
+conspicuous,
+as
+these
+logs
+are
+often
+hard
+to
+find
+by
+directly
+navigating
+the
+agency
+homepage.
+\@endanenote 
+\@doanenote {24}
 macro:->\url
 {https://www.federalreserve.gov/regreform/communications-with-public.htm}
 \@endanenote 
-\@doanenote {24}
+\@doanenote {25}
 macro:->See
 \url
 {https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
@@ -518,7 +541,7 @@ and
 \url
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
-\@doanenote {25}
+\@doanenote {26}
 macro:->For
 issues
 from
@@ -546,7 +569,7 @@ a
 readable
 format.
 \@endanenote 
-\@doanenote {26}
+\@doanenote {27}
 macro:->However
 we
 still
@@ -561,7 +584,7 @@ server
 with
 requests.
 \@endanenote 
-\@doanenote {27}
+\@doanenote {28}
 macro:->We
 note
 that
@@ -599,7 +622,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {28}
+\@doanenote {29}
 macro:->The
 Unified
 Agenda
@@ -615,7 +638,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {29}
+\@doanenote {30}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}
