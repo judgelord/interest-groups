@@ -77,7 +77,7 @@ Section 553 requires agencies to issue a Notice of Proposed Rulemaking (NPRM) in
 Following the NPRM, agencies solicit comments on these regulations through regulations.gov (for executive agencies) or the agency websites themselves (for independent agencies).
 Agencies are required to consider public comments but are not required to alter the rules based on them.
 These documents are organized in a 'docket' folder with a unique name and ID number. Once kept in literal folders in each agency's 'docket room', where visitors could make photocopies, these documents are now online.
-For example, a recent Centers for Medicare & Medicaid Services Rulemaking docket on health plans disclosing health care costs can be found at regulations.gov/docket?D=CMS-2019-0163.
+For example, a recent Centers for Medicare & Medicaid Services Rulemaking docket on health plans disclosing costs can be found at regulations.gov/docket?D=CMS-2019-0163.
 The fact that the APA requires agencies to assemble a comprehensive record of who sought to influence the policymaking process, and that such records are relatively complete, is highly unusual and makes the agency policymaking particularly exciting for interest group scholars.
 
 # Who participates in the rulemaking process?
@@ -89,7 +89,10 @@ For example, @YouJOP2017 finds that half of all spending on lobbying legislation
 Participation in this process can begin even before a proposed rule is issued.
 @deFigureidoKimICC2004 show that meetings between agency officials and firms spike before an agency issues a policy.
 @LibgoberQJPS finds that firms that meet with federal regulators before a rule is issued may receive abnormally high stock market returns upon its release. Leveraging high-frequency trading data, Libgober shows that in the minutes and hours following the publication of proposed rules at the Federal Reserve, the firms that met with the Board during rule-development significantly outperformed matched market competitors that did not obtain such early access.^[This working paper can be found [here](https://libgober.files.wordpress.com/2018/09/libgober-and-carpenter-unblinded-what-at-stake-in-rulemaking.pdf)] These findings are consistent with the analysis of qualitative researchers that commenters who participate early in the rulemaking process can shape the content of the rule [@NaughtonJPAM2009].
+
+<!--
 Interest groups and firms may even initiate a rulemaking process through a petition for rulemaking under 5 U.S.C. § 553(e).
+-->
 
 Scholars are also interested in how participation in rulemaking may affect a rule's ultimate fate when it is sent to the White House Office of Management and Budget (OMB) or in judicial review.
 Interest groups lobby successfully in OMB review [@HaederAPSR2015].  Interest groups also use the rulemaking record to build a case for litigation.
@@ -115,16 +118,16 @@ Actually obtaining the data requires overcoming a number of technical and bureau
 First, bulk data from the website can only be accessed via an Application Programming Interface (API).^[An API is a set of procedures that allow a user to access data from a website in a structured way.
 Some websites limit API usage by requiring users to get an API key; regulations.gov is one of those websites.]  This requires requesting an API key.^[By emailing regulations@erulemakinghelpdesk.com with 'your name, email address, organization, and intended use of the API'.  See https://regulationsgov.github.io/developers/ for more details.
 Approval of API keys takes several days. We caution prospective users of the site that these keys can be deactivated without warning or acknowledgment of why they were deactivated.] Second, obtaining an accurate count of comments is not straightforward as agencies have different policies regarding duplicated comments^[The difference between the total number of reported comments and the number of comments on regulations.gov is often due to mass comment campaigns being grouped together.] and confidential business information.^[See e.g., @Lubbers2012 and https://www.regulations.gov/userNotice.] Third, obtaining the data is time-consuming.^[Regulations.gov is subject to a rate limit of 1,000 queries per hour which is especially problematic for scholars seeking to analyze the full text of comments, many of which are included only as attachments. Downloading an individual document requires calling the API twice, once for the docket information, which includes the attachment URL(s), and then a second time to download the linked file.]
-As of October 4, 2019, Regulations.gov has 11,238,958 public submission documents representing over 70 million public comments and almost 1.5 million rules and other documents.    
+As of October 4, 2019, Regulations.gov has 11,238,958 public submission documents representing over 70 million public comments and almost 1.5 million rules and other documents.  Not all federal agencies post rulemaking documents to regulations.gov.
+Scholars studying participation in these agencies can often obtain data on participation in rulemaking from the agency websites.^[For example, the Federal Energy Regulatory Commission posts all comments they receive on their eLibrary website but only posts some on regulations.gov. 
+Unlike regulations.gov, most agency sites do not have an API and thus require scholars to use bespoke web scrapers.
+We have examples of scrapers for several of these agencies on https://github.com/libgober/regdata.
+While these websites are not rate-limited or gated with API keys, we recommend caution with the rate at which scholars solicit information from the servers to avoid security protocols that trigger a temporary ban.]  
 <!--
 For example, on an EPA rule on clean water, regulations.gov notes that 1,123,388 million comments were submitted, but only 20,594 are available on the website itself.
 FDA is famous for this as well. Susan got them from FOIA.
 -->  
-Not all federal agencies post rulemaking documents to regulations.gov.
-Scholars studying participation in these agencies can often obtain data on participation in rulemaking from the agency websites.^[Some agencies have only some records on regulations.gov. For example, the Federal Energy Regulatory Commission has posted proposed rules on regulations.gov, but directed comments to be submitted by email and then posted them on its eLibrary website.
-Unlike regulations.gov, most agency sites do not have an API and thus require scholars to use bespoke web scrapers.
-We have examples of scrapers for several of these agencies on https://github.com/libgober/regdata.
-While these websites are not rate-limited or gated with API keys, we recommend caution with the rate at which scholars solicit information from the servers to avoid security protocols that trigger a temporary ban.]
+
 
 <!--
 Based on experience, we have found that attachments cannot be downloaded at a rate of 1,000 per hour as some documents will fail to download or download as files with 0 bytes.
