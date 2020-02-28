@@ -1,25 +1,4 @@
 \@doanenote {1}
-macro:->These
-logs
-record
-who
-participated
-in
-face-to-face
-or
-telephone
-meetings
-between
-interest
-groups
-and
-bureaucrats,
-often
-including
-individual
-names.
-\@endanenote 
-\@doanenote {2}
 macro:->We
 link
 to
@@ -34,17 +13,7 @@ page:
 \url
 {https://github.com/libgober/regdata/blob/master/README.md}.
 \@endanenote 
-\@doanenote {3}
-macro:->This
-working
-paper
-can
-be
-found
-\href
-{https://libgober.files.wordpress.com/2018/09/libgober-and-carpenter-unblinded-what-at-stake-in-rulemaking.pdf}{here}
-\@endanenote 
-\@doanenote {4}
+\@doanenote {2}
 macro:->An
 API
 is
@@ -67,7 +36,9 @@ a
 structured
 way.
 Some
-websites
+websites,
+like
+regulations.gov,
 limit
 API
 usage
@@ -78,69 +49,9 @@ to
 get
 an
 API
-key;
-regulations.gov
-is
-one
-of
-those
-websites.
+key.
 \@endanenote 
-\@doanenote {5}
-macro:->By
-emailing
-\href
-{mailto:regulations@erulemakinghelpdesk.com}{\nolinkurl
-{regulations@erulemakinghelpdesk.com}}
-with
-`your
-name,
-email
-address,
-organization,
-and
-intended
-use
-of
-the
-API'.
-See
-\url
-{https://regulationsgov.github.io/developers/}
-for
-more
-details.
-Approval
-of
-API
-keys
-takes
-several
-days.
-We
-caution
-prospective
-users
-of
-the
-site
-that
-these
-keys
-can
-be
-deactivated
-without
-warning
-or
-acknowledgment
-of
-why
-they
-were
-deactivated.
-\@endanenote 
-\@doanenote {6}
+\@doanenote {3}
 macro:->The
 difference
 between
@@ -167,81 +78,7 @@ are
 grouped
 together.
 \@endanenote 
-\@doanenote {7}
-macro:->See
-e.g.,
-\citet
-{Lubbers2012}
-and
-\url
-{https://www.regulations.gov/userNotice}.
-\@endanenote 
-\@doanenote {8}
-macro:->Regulations.gov
-is
-subject
-to
-a
-rate
-limit
-of
-1,000
-queries
-per
-hour
-which
-is
-especially
-problematic
-for
-scholars
-seeking
-to
-analyze
-the
-full
-text
-of
-comments,
-many
-of
-which
-are
-included
-only
-as
-attachments.
-Downloading
-an
-individual
-document
-requires
-calling
-the
-API
-twice,
-once
-for
-the
-docket
-information,
-which
-includes
-the
-attachment
-URL(s),
-and
-then
-a
-second
-time
-to
-download
-the
-linked
-file.
-\@endanenote 
-\@doanenote {9}
+\@doanenote {4}
 macro:->For
 example,
 the
@@ -279,10 +116,7 @@ an
 API
 and
 thus
-require
-scholars
-to
-use
+requre
 bespoke
 web
 scrapers.
@@ -292,6 +126,8 @@ examples
 of
 scrapers
 for
+regulations.gov
+and
 several
 of
 these
@@ -299,80 +135,13 @@ agencies
 on
 \url
 {https://github.com/libgober/regdata}.
-While
-these
-websites
-are
-not
-rate-limited
-or
-gated
-with
-API
-keys,
-we
-recommend
-caution
-with
-the
-rate
-at
-which
-scholars
-solicit
-information
-from
-the
-servers
-to
-avoid
-security
-protocols
-that
-trigger
-a
-temporary
-ban.
 \@endanenote 
-\@doanenote {10}
-macro:->See
-\url
-{https://www.sec.gov/comments/s7-03-10/s70310-43.pdf}.
-\@endanenote 
-\@doanenote {11}
-macro:->Note
-that
-the
-dataset
-\citet
-{BoltonAMP2018}
-used
-is
-not
-public
-like
-the
-similar
-BuzzFeed
-data
-we
-discuss
-below.
-\@endanenote 
-\@doanenote {12}
+\@doanenote {5}
 macro:->Available
 at
 \url
 {https://archive.org/details/opm-federal-employment-data/page/n1}.
-(The
-complete
-dataset
-is
-over
-30GB).
-\@endanenote 
-\@doanenote {13}
-macro:->Updated
+Updated
 personnel
 files
 are
@@ -387,7 +156,7 @@ here:
 \url
 {https://www.fedscope.opm.gov/datadefn/index.asp}
 \@endanenote 
-\@doanenote {14}
+\@doanenote {6}
 macro:->The
 list
 includes
@@ -411,78 +180,43 @@ investigators
 \citet
 {Singer-Vine2017}.
 \@endanenote 
-\@doanenote {15}
+\@doanenote {7}
 macro:->See
 \url
 {https://lobbyingdisclosure.house.gov/ldaguidance.pdf}
 for
 details.
 \@endanenote 
-\@doanenote {16}
-macro:->Note
-that
-the
-raw
+\@doanenote {8}
+macro:->These
 data
 can
 be
 downloaded
-from
-the
-Secretary
-of
-the
-Senate's
-Office
-of
-Public
-Records
 here:
 \url
 {https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}
 \@endanenote 
-\@doanenote {17}
+\@doanenote {9}
 macro:->See
 \url
 {https://www.gao.gov/assets/700/698103.pdf}
 \@endanenote 
-\@doanenote {18}
+\@doanenote {10}
 macro:->See
 \url
 {https://www.opensecrets.org/revolving/methodology.php}
-for
-details.
 \@endanenote 
-\@doanenote {19}
-macro:->Note
-that
-they
-promote
-academic
-work
-using
-their
-database,
-so
-they
-do
-not
-actively
-discourage
-scraping
-their
-database.
-\@endanenote 
-\@doanenote {20}
+\@doanenote {11}
 macro:->See
 \url
 {https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}
 \@endanenote 
-\@doanenote {21}
+\@doanenote {12}
 macro:->\url
 {https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::
 \@endanenote 
-\@doanenote {22}
+\@doanenote {13}
 macro:->The
 metadata
 -
@@ -505,34 +239,11 @@ data
 downloads
 page.
 \@endanenote 
-\@doanenote {23}
-macro:->Note
-that
-available
-does
-not
-mean
-conspicuous,
-as
-these
-logs
-are
-often
-hard
-to
-find
-by
-directly
-navigating
-the
-agency
-homepage.
-\@endanenote 
-\@doanenote {24}
+\@doanenote {14}
 macro:->\url
 {https://www.federalreserve.gov/regreform/communications-with-public.htm}
 \@endanenote 
-\@doanenote {25}
+\@doanenote {15}
 macro:->See
 \url
 {https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
@@ -540,7 +251,7 @@ and
 \url
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
-\@doanenote {26}
+\@doanenote {16}
 macro:->We
 note
 that
@@ -578,7 +289,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {27}
+\@doanenote {17}
 macro:->The
 Unified
 Agenda
@@ -594,7 +305,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {28}
+\@doanenote {18}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}
