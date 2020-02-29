@@ -301,21 +301,8 @@ macro:->See
 {https://www.govinfo.gov/app/collection/fr/}
 \@endanenote 
 \@doanenote {18}
-macro:->The
-raw
-texts
-of
-rules
-are
-not
-on
-regulations.gov
-or
-the
-independent
-agencies
-themselves.
-Because
+macro:->However,
+because
 rules
 are
 usually
@@ -325,14 +312,12 @@ PDFs,
 converting
 them
 to
-.txt
+raw
+text
 for
 analysis
 introduces
-errors
-into
-the
-text.
+errors.
 \@endanenote 
 \@doanenote {19}
 macro:->The
