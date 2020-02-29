@@ -44,7 +44,7 @@
 
 
   \usepackage{natbib}
-  \bibliographystyle{apsr2}
+  \bibliographystyle{agsm.bst}
   % protect underscores in most circumstances
   % \usepackage[strings]{underscore} 
 
@@ -407,11 +407,9 @@ vital as organizations such as Goldman Sachs and the American Bar
 Association, for example, submit comments using multiple versions of
 their names. These decisions can have a substantial impact on the
 analysis as misidentifying organizations may result in them being
-dropped or double-counted. Scholars can ameliorate this issue by using
-fuzzy matching - a process that compares two strings of text and gives a
-distance between them. Choosing the optimal distance and thresholds is
-up to the researcher and usually an iterative process. Fuzzy matching,
-however, is not a panacea as the algorithm will show small distances
+dropped or double-counted. Fuzzy matching, using an algorithm to
+identify the similarity (or "distance) between two strings of text can
+help but is not a panacea. The algorithm will show small distances
 between distinct entities (e.g., JP Morgan and Morgan Stanley), and it
 cannot separate multiple organizations with the same acronym (e.g.,
 ABA).
@@ -455,14 +453,14 @@ titles, and demographic data from 1973 through 2016.\footnote{Available
   Updated personnel files are available through 2018 from the OPM itself
   here: \url{https://www.fedscope.opm.gov/datadefn/index.asp}} These are
 the most comprehensive personnel records publicly available, but they
-have significant limitations. First, not all agencies and occupations
-are a part of this release.\footnote{The list includes at least 16
-  agencies and, within the covered agencies, law enforcement officers,
-  nuclear engineers, and certain investigators \citet{Singer-Vine2017}.}
-Second, some of the employees in these data do not have unique
-identification numbers. This means that common names such as `John
-Smith' match multiple employees; the Veterans Health Administration
-employed 24 John Smiths in 2014, five with the same middle initial.
+have limitations. First, not all agencies and occupations are a part of
+this release.\footnote{These data exclude at least 16 agencies and,
+  within the covered agencies, law enforcement officers, nuclear
+  engineers, and certain investigators \citet{Singer-Vine2017}.} Second,
+some of the employees in these data do not have unique identification
+numbers. This means that common names such as `John Smith' match
+multiple employees; the Veterans Health Administration employed 24 John
+Smiths in 2014, five with the same middle initial.
 
 To obtain machine-readable data on the identities of domestic lobbyists,
 scholars use two databases from Open Secrets -- a nonprofit that tracks

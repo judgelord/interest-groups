@@ -190,9 +190,9 @@ here:
 {https://www.fedscope.opm.gov/datadefn/index.asp}
 \@endanenote 
 \@doanenote {7}
-macro:->The
-list
-includes
+macro:->These
+data
+exclude
 at
 least
 16

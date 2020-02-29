@@ -27,7 +27,7 @@ output:
       citation_package: natbib
       fig_caption: true
 spacing: doublespacing
-biblio-style: apsr2
+biblio-style: agsm.bst
 bibliography: dataig.bib
 endnotes: true # CHANGE THIS TO true BEFORE SUBMISSION
 frontpage: true
