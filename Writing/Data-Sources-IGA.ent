@@ -11,7 +11,7 @@ our
 GitHub
 page:
 \url
-{https://github.com/libgober/regdata/blob/master/README.md}.
+{https://github.com/libgober/regdata/blob/master/README.md.}
 \@endanenote 
 \@doanenote {2}
 macro:->An
@@ -253,7 +253,7 @@ their
 lobbying
 database,
 this
-one
+dataset
 has
 no
 bulk
@@ -270,8 +270,9 @@ macro:->See
 {https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}
 \@endanenote 
 \@doanenote {13}
-macro:->\url
-{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::
+macro:->See
+\url
+{https://efile.fara.gov/ords/f?p=1381:1:13132679194789:::::}
 \@endanenote 
 \@doanenote {14}
 macro:->Only
@@ -295,31 +296,32 @@ and
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
 \@doanenote {17}
-macro:->We
-note
-that
+macro:->See
+\url
+{https://www.govinfo.gov/app/collection/fr/}
+\@endanenote 
+\@doanenote {18}
+macro:->The
 raw
 texts
 of
 rules
 are
 not
-available
-from
+on
 regulations.gov
 or
 the
 independent
 agencies
 themselves.
-As
-these
+Because
 rules
 are
-often
-in
-PDF
-form,
+usually
+published
+as
+PDFs,
 converting
 them
 to
@@ -332,7 +334,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {18}
+\@doanenote {19}
 macro:->The
 Unified
 Agenda
@@ -348,7 +350,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {19}
+\@doanenote {20}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}

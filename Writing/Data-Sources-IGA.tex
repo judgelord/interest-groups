@@ -190,8 +190,8 @@ agencies, and new sources of data, such as ex-parte meeting logs, which
 describe the interest groups and individual lobbyists that bureaucrats
 are meeting face-to-face about proposed policies. One challenge is that
 some of these data are not machine-readable. We argue that a productive
-way forward is to invest in making all the datasets machine-readable and
-to create a consistent way to link them to each other as well as to
+way forward is to invest in making all these datasets machine-readable
+and to create a consistent way to link them to each other as well as to
 other databases. 
 
           \hfill \\ 
@@ -238,9 +238,9 @@ advocacy \citep[see][ for a recent review]{Yackee2019}.
 
 In this article, we describe data sources that have proven useful to
 scholars studying interest group lobbying of federal agencies, how to
-obtain them, and also challenges in working with these data. Some of the
-data sources we discuss are machine-readable records of all agency rules
-published in the \emph{Federal Register}, comments posted on
+obtain them, and also challenges in working with these data. Some of
+these data sources we discuss are machine-readable records of all agency
+rules published in the \emph{Federal Register}, comments posted on
 regulations.gov, metadata about rules contained in the Unified Agenda,
 and Office of Management and Budget (OMB) reports. We also describe
 sources that have become more available in recent years, such as
@@ -258,7 +258,7 @@ requests. Examples include agency press releases \citep[see,
 e.g.,][]{LibgoberQJPS, Libgober2018} and the Foreign Agents Registration
 Act (FARA) reports \citep{ShepherdAPSR2019}.\footnote{We link to more
   relevant data sources on our GitHub page:
-  \url{https://github.com/libgober/regdata/blob/master/README.md}.} To
+  \url{https://github.com/libgober/regdata/blob/master/README.md.}} To
 orient potential students of agency policymaking to available sources of
 data, we identify four units of analysis: (1) participants, (2)
 policymakers, (3) policy texts, and (4) metadata (e.g., policy timing).
@@ -379,7 +379,7 @@ agencies have different policies regarding duplicated comments\footnote{The
   comments on regulations.gov are duplicates posted in error. To resolve
   a discrepancy, we recommend searching the agency's website or
   contacting the agency directly.} and confidential business information
-\citep{Lubbers2012}. Third, obtaining the data is time-consuming.
+\citep{Lubbers2012}. Third, obtaining these data is time-consuming.
 Regulations.gov is subject to a rate limit of 1,000 queries per hour,
 problematic for scholars seeking to analyze the full text of comments,
 many of which are as attachments. Downloading an individual document
@@ -417,7 +417,7 @@ ABA).
 \section{Who writes rules?}\label{who-writes-rules}}
 
 Political scientists have long used personal identity and social
-networks to understand political outcomes. New data sources have made it
+networks to understand political outcomes. New data sources make it
 easier to learn about rulewriters' identities and networks. Some of the
 most important data sources in this regard are the U.S. Office of
 Personnel Management's (OPM) data on government employees
@@ -436,9 +436,8 @@ a rule and increases in the probability that the rule will be struck
 down in court. In an innovative study of unionization,
 \citet{ChenJTP2015} link OPM data to DIME ideology scores to classify
 the ideology of agency staff over time. These early efforts suggest that
-opportunities to study who writes the rules and how it matters are
-prevalent. We expect such analyses to be a growth area for years to
-come.
+there are exciting opportunities to study who writes the rules and how
+it matters.
 
 \hypertarget{obtaining-and-working-with-personnel-and-lobbying-data}{%
 \subsection{Obtaining and working with personnel and lobbying
@@ -482,8 +481,8 @@ database on revolving door employees that shows the career paths or
 federal government workers that went to the private sector work that
 depends on interacting with the federal government.\footnote{See
   \url{https://www.opensecrets.org/revolving/methodology.php}. Unlike
-  their lobbying database, this one has no bulk data option and must be
-  scraped.}
+  their lobbying database, this dataset has no bulk data option and must
+  be scraped.}
 
 Lobbyists advocating for foreign clients are required to disclose these
 contacts under the Foreign Agent Registration Act. Foreign agents often
@@ -492,15 +491,15 @@ Arnold \& Porter for advice on registering securities with the
 SEC.\footnote{See
   \url{https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}}
 In addition to the participants, the reports also contain the nature of
-the contact and the specific officials contacted. The data are
+the contact and the specific officials contacted. These data are
 astonishingly complete - the website contains all 6264 FARA registrants
-and their foreign contacts since 1942.\footnote{\url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789}:::::}
-Unlike other data discussed in this essay, the FARA data is \emph{not}
-all in machine-readable form.\footnote{Only the metadata (e.g., names)
-  are machine-readable.} Consequently, scholars using the data only
-focus on a subset such as \citet{You2019} who focuses on lobbying
-activities by Colombia, Panama, and South Korea. We caution users that
-the same participant may appear under multiple names.
+and their foreign contacts since 1942.\footnote{See
+  \url{https://efile.fara.gov/ords/f?p=1381:1:13132679194789:::::}} The
+FARA data is \emph{not} all in machine-readable form.\footnote{Only the
+  metadata (e.g., names) are machine-readable.} Consequently, scholars
+using these data only focus on a subset such as \citet{You2019} who
+focuses on lobbying activities by Colombia, Panama, and South Korea. We
+caution users that the same participant may appear under multiple names.
 
 Corporate executives, lawyers, and lobbyists often have contacts with
 agency officials, called \emph{ex parte} communications
@@ -550,8 +549,8 @@ Text}\label{obtaining-and-working-with-data-on-rule-text}}
 The federal government publishes all rules in the \emph{Federal
 Register}, accessible via FederalRegister.gov. This database is
 comprehensive and has machine-readable records of all regulations
-published after 1994 and optical versions form 1939-1993
-(\url{https://www.govinfo.gov/app/collection/fr/}). The \emph{Federal
+published after 1994 and optical versions form 1939-1993.\footnote{See
+  \url{https://www.govinfo.gov/app/collection/fr/}}. The \emph{Federal
 Register} API does not have any rate limits. The Federal Register office
 assigns every regulatory action a document number. In our experience,
 this `FR Doc Number' is the only truly unique and consistently
@@ -559,20 +558,20 @@ maintained identifier for proposed and final rules.
 
 While the raw text of rules is relatively straightforward to obtain,
 there are several thorny theoretical and methodological issues that
-scholars must overcome.\footnote{We note that raw texts of rules are not
-  available from regulations.gov or the independent agencies themselves.
-  As these rules are often in PDF form, converting them to .txt for
-  analysis introduces errors into the text.} First, the standard path
-from notice of proposed rulemaking (NPRM) to public comments to a final
-rule is not always straightforward. Some rules are withdrawn before a
-final rule. Other agencies issue interim final rules subject change. For
-studies that seek to compare the proposed and final rules, the most
-problematic rules are the ones where one proposed rule gets broken up
-into a few smaller final rules or the reverse, where small rules become
-bundled into one final rule. These rules pose challenges for inference
-as the processes that lead to amalgamation or separation may not be well
+scholars must overcome.\footnote{The raw texts of rules are not on
+  regulations.gov or the independent agencies themselves. Because rules
+  are usually published as PDFs, converting them to .txt for analysis
+  introduces errors into the text.} First, the standard path from notice
+of proposed rulemaking (NPRM) to public comments to a final rule is not
+always straightforward. Some rules are withdrawn before a final rule.
+Other agencies issue interim final rules subject change. For studies
+that seek to compare the proposed and final rules, the most problematic
+rules are the ones where one proposed rule gets broken up into a few
+smaller final rules or the reverse, where small rules become bundled
+into one final rule. These rules pose challenges for inference as the
+processes that lead to amalgamation or separation may not be well
 understood. Second, scholars must determine how to preprocess the
-rulemaking data before feeding the data to a text analysis algorithm.
+rulemaking data before feeding these data to a text analysis algorithm.
 
 \hypertarget{obtaining-and-working-with-rule-metadata}{%
 \section{Obtaining and working with rule
