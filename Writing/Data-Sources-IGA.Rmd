@@ -81,7 +81,7 @@ The fact that the APA requires agencies to assemble a comprehensive record of wh
 
 # Who participates in the rulemaking process?
 
-Public attention in rulemaking is remarkably skewed. A few rules, such as the Federal Communication Commission's rules on net neutrality, receive millions of comments. In contrast, half of the proposed rules open for comment on regulations.gov received no comments at all [@LibgoberJOP]. Such dramatic variation in public participation challenges the idea of a "typical" rule or rulemaking participant. Participants include businesses, public interest groups, trade associations, unions, law firms, and academics [@CuellarALR2005;@YackeeJOP2006]. While businesses are the most consistent and influential participants in most rulemakings [@YackeeJOP2006;@LibgoberJOP], most comments come from public pressure campaigns targeting a relatively small number of rules -- at least 39 million of the 48 million comments on proposed rules on regulations.gov were mobilized by just 100 advocacy organizations such as the Sierra Club [@judgelord2019SPSA].
+Public attention in rulemaking is remarkably skewed. A few rules, such as the Federal Communication Commission's rules on net neutrality, receive millions of comments. In contrast, half of the proposed rules open for comment on regulations.gov received no comments at all [@LibgoberJOP]. Such dramatic variation in public participation challenges the idea of a "typical" rule or rulemaking participant. Participants include businesses, public interest groups, trade associations, unions, law firms, and academics [@CuellarALR2005;@YackeeJOP2006]. While businesses are the most consistent and influential participants in most rulemakings [@YackeeJOP2006;@LibgoberJOP], most comments come from public pressure campaigns targeting a relatively small number of rules; at least 39 million of the 48 million comments on proposed rules on regulations.gov were mobilized by just 100 advocacy organizations such as the Sierra Club [@judgelord2019SPSA].
 
 <!--
 Even the median rule designated as 'economically significant' -- rules projected to have an annual economic impact of over $100 million -- receives fewer than ten comments [@judgelord2019SPSA].
@@ -98,7 +98,7 @@ Interest groups and firms may even initiate a rulemaking process through a petit
 -->
 
 Scholars are also interested in how participation in rulemaking may affect a rule's ultimate fate when it is sent to the White House Office of Management and Budget (OMB) or in judicial review.
-Interest groups lobby successfully in OMB review [@HaederAPSR2015].  Interest groups also use the rulemaking record to build a case for litigation.
+Interest groups can secure policy concessions by lobbying during OMB review [@HaederAPSR2015].  They also use the rulemaking record to build a case for litigation.
 Yet, there are few large-N studies linking lobbying in rulemaking to litigation or court decisions.
 @LibgoberRashin2018SPSA analyzed comments submitted to financial regulators and found that threats of litigation were rare, and even comments that seemed to "threaten" litigation rarely culminated in a judicial decision. Yet, most court decisions involving challenges to rules did follow comments that threatened litigation.
 @judgelord2016MPSA found no relationship between the number of comments and the likelihood that the Supreme Court upheld or struck down an agency rule.
@@ -122,15 +122,22 @@ Stuff removed for length
 
 Scholars wishing to obtain data on comments and commenters from executive agencies generally use the website \href{regulations.gov}{regulations.gov}.
 Obtaining these data requires overcoming several technical and bureaucratic hurdles.
-First, retrieving bulk data from regulations.gov requires an Application Programming Interface (API).^[An API is a set of procedures that allow a user to access data from a website in a structured way.
+First, retrieving bulk data from regulations.gov requires the use of an Application Programming Interface (API).^[An API is a set of procedures that allow a user to access data from a website in a structured way.
 Some websites, like regulations.gov, limit API usage by requiring users to get an API key, see <https://regulationsgov.github.io/developers/>.]
 <!---
 ^[By emailing regulations@erulemakinghelpdesk.com with 'your name, email address, organization, and intended use of the API'.  
 Approval of API keys takes several days. We caution prospective users of the site that regulations.gove may deactivate these keys without warning or explanation.]
 -->
-Second, obtaining an accurate count of comments is not straightforward as agencies have different policies regarding duplicated comments^[The difference between the number of reported comments and the number of comments on regulations.gov is often because some agencies group mass-comment campaigns into a single document. A small number of comments on regulations.gov are duplicates posted in error. To resolve a discrepancy, we recommend searching the agency's website or contacting the agency directly.] and confidential business information [@Lubbers2012]. Third, obtaining these data is time-consuming. Regulations.gov is subject to a rate limit of 1,000 queries per hour,  problematic for scholars seeking to analyze the full text of comments, many of which are as attachments. Downloading an individual document requires calling the API twice, once for the docket information, which includes the attachment URL(s), and then a second time to download the linked file.
+Second, getting an accurate count of comments is not straightforward as agencies have different policies regarding duplicated comments^[The difference between the number of reported comments and the number of comments on regulations.gov is often because some agencies group mass-comment campaigns into a single document. A small number of comments on regulations.gov are duplicates posted in error. To resolve a discrepancy, we recommend searching the agency's website or contacting the agency directly.] and confidential business information [@Lubbers2012].  
 
-As of February 29, 2020, Regulations.gov has 12,227,522 public submission documents representing over 70 million public comments, over 80 thousand rules, and nearly 1.5 million other documents.  Not all federal agencies post rulemaking documents to regulations.gov.
+Third, downloading these data can be time-consuming.
+As of February 29, 2020, Regulations.gov has 12,227,522 public submission documents representing over 70 million public comments, over 80 thousand rules, and nearly 1.5 million other documents. 
+Regulations.gov is subject to a rate limit of 1,000 queries per hour, making it difficult for scholars seeking to analyze rules with tens of thousands of comments. 
+This limit is particularly problematic for rules where the majority of comments are attachments, as downloading an individual document requires calling the API twice (once for the docket information, which includes the attachment URL(s), and then a second time to download the linked file).
+<!---
+problematic for scholars seeking to analyze the full text of comments, many of which are as attachments. Downloading an individual document requires calling the API twice, once for the docket information, which includes the attachment URL(s), and then a second time to download the linked file.
+--->
+Fourth, not all federal agencies post rulemaking documents to regulations.gov. 
 For these agencies, scholars studying participation in rulemaking can often obtain data from the agency's website.^[For example, the Federal Energy Regulatory Commission has posted all comments they receive on their eLibrary website, but not all of these appear on regulations.gov.
 Unlike regulations.gov, most agency sites do not have an API and thus require bespoke web scrapers.
 We offer examples of scrapers for regulations.gov and several of these agencies on <https://github.com/libgober/regdata>.]
@@ -149,7 +156,7 @@ The OCC, for example, withholds confidential business information while HHS and 
 We have tutorials on how to scrape comments from regulations.gov and FERC.]
 -->
 
-\indent After obtaining comment data, scholars must choose how they want to preprocess the names of the organizations that comment.  This step is vital as organizations such as Goldman Sachs and the American Bar Association, for example, submit comments using multiple versions of their names. These decisions can have a substantial impact on the analysis as misidentifying organizations may result in them being dropped or double-counted.  Fuzzy matching, using an algorithm to identify the similarity (or "distance) between two strings of text can help but is not a panacea. The algorithm will show small distances between distinct entities (e.g., JP Morgan and Morgan Stanley), and it cannot separate multiple organizations with the same acronym (e.g., ABA). 
+\indent After obtaining comment data, scholars must choose how they want to preprocess the names of the organizations that comment.  This step is vital as organizations such as Goldman Sachs and the American Bar Association, for example, submit comments using multiple versions of their names. These decisions can have a substantial impact on the analysis as misidentifying organizations may result in them being dropped or double-counted.  Fuzzy matching, using an algorithm to identify the similarity (or "distance") between two strings of text, can help but is not a panacea. The algorithm will show small distances between distinct entities (e.g., JP Morgan and Morgan Stanley), and it cannot separate multiple organizations with the same acronym (e.g., ABA). 
 
 
 <!--
