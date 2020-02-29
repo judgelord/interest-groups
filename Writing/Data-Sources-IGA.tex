@@ -410,22 +410,24 @@ their names. These decisions can have a substantial impact on the
 analysis as misidentifying organizations may result in them being
 dropped or double-counted. Fuzzy matching, using an algorithm to
 identify the similarity (or ``distance'') between two strings of text,
-can help but is not a panacea. The algorithm will show small distances
-between distinct entities (e.g., JP Morgan and Morgan Stanley), and it
-cannot separate multiple organizations with the same acronym (e.g.,
-ABA).
+can help but is not a panacea. For example, the algorithm will show a
+small distance between Goldman Sachs and Goldman Sachs \& Co but can
+show similarly small distances between distinct entities and it cannot
+separate multiple organizations with the same acronym (e.g., the
+American Bankers' Association and American Bar Association both comment
+as the ABA).
 
 \hypertarget{who-writes-rules}{%
 \section{Who writes rules?}\label{who-writes-rules}}
 
 Political scientists have long used personal identity and social
-networks to understand political outcomes. New data sources make it
-easier to learn about rulewriters' identities and networks. Some of the
-most important data sources in this regard are the U.S. Office of
-Personnel Management's (OPM) data on government employees
-\citep[e.g.,][]{BoltonAMP2018},\footnote{Note that the dataset
-  \citet{BoltonAMP2018} used is not public.} Open Secrets' lobbying
-\citep[e.g.,][]{Baumgartner2009} and revolving door databases
+networks to understand political outcomes. In the last decade, the
+emergence of new data sources made it easier to learn about rulewriters'
+identities and networks. Some of the most important data sources in this
+regard are the U.S. Office of Personnel Management's (OPM) data on
+government employees \citep[e.g.,][]{BoltonAMP2018},\footnote{Note that
+  the dataset \citet{BoltonAMP2018} used is not public.} Open Secrets'
+lobbying \citep[e.g.,][]{Baumgartner2009} and revolving door databases
 \citep[e.g.,][]{VidalAER2012, BertrandAER2014}, machine-readable
 lobbying disclosure act reports
 \citep[e.g.,][]{BoehmkeJPP2013, YouJOP2017, Dwidar2019SPSA}, meeting
@@ -436,10 +438,10 @@ the number of job functions of the bureaucrats who write the rules is
 associated with both decreases in the time an agency takes to promulgate
 a rule and increases in the probability that the rule will be struck
 down in court. In an innovative study of unionization,
-\citet{ChenJTP2015} link OPM data to DIME ideology scores to classify
-the ideology of agency staff over time. These early efforts suggest that
-there are exciting opportunities to study who writes the rules and how
-it matters.
+\citet{ChenJTP2015} link OPM data to Adam Bonica's DIME ideology scores
+to classify the ideology of agency staff over time. These early efforts
+suggest that there are exciting opportunities to study who writes the
+rules and how it matters.
 
 \hypertarget{obtaining-and-working-with-personnel-and-lobbying-data}{%
 \subsection{Obtaining and working with personnel and lobbying
@@ -458,9 +460,9 @@ this release.\footnote{These data exclude at least 16 agencies and,
   within the covered agencies, law enforcement officers, nuclear
   engineers, and certain investigators \citet{Singer-Vine2017}.} Second,
 some of the employees in these data do not have unique identification
-numbers, and common names such as `John Smith' match multiple employees;
-the Veterans Health Administration employed 24 John Smiths in 2014, five
-with the same middle initial.
+numbers, and common names such as `John Smith' match multiple employees.
+For example, the Veterans Health Administration employed 24 John Smiths
+in 2014, five with the same middle initial.
 
 To obtain machine-readable data on the identities of domestic lobbyists,
 scholars use two databases from Open Secrets -- a nonprofit that tracks
@@ -474,14 +476,16 @@ time.\footnote{See
   \url{https://lobbyingdisclosure.house.gov/ldaguidance.pdf} for
   details.} The lobbying data covers 1999 through 2018 and is broken up
 into seven machine-readable tables.\footnote{These data are here:
-  \url{https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}}
-However, these data do not contain exact monetary amounts, and some
-lobbyists do not disclose required contacts.\footnote{See
-  \url{https://www.gao.gov/assets/700/698103.pdf}} Open Secret's
-database is easier to use than the raw data. Open Secrets also has a
-database on revolving door employees that shows the career paths or
-federal government workers that went to the private sector work that
-depends on interacting with the federal government.\footnote{See
+  \url{https://www.opensecrets.org/bulk-data/download?f=Lobby.zip}} We
+prefer the Open Secrets data to the raw Senate data as the Open Secrets
+version contains more machine-readable information. Lobbying data is
+subject to several limitations; the reports do not contain exact
+monetary amounts and some lobbyists do not disclose required
+contacts.\footnote{See \url{https://www.gao.gov/assets/700/698103.pdf}}
+Open Secrets also has a database on revolving door employees that shows
+the career paths or federal government workers that went to the private
+sector work that depends on interacting with the federal
+government.\footnote{See
   \url{https://www.opensecrets.org/revolving/methodology.php}. Unlike
   their lobbying database, this dataset has no bulk data option and must
   be scraped.}
@@ -490,7 +494,7 @@ Lobbyists advocating for foreign clients are required to disclose these
 contacts under the Foreign Agent Registration Act. Foreign agents often
 lobby bureaucratic agencies; Israel, for example, retained law firm
 Arnold \& Porter for advice on registering securities with the
-SEC.\footnote{See
+Securities and Exchange Commission.\footnote{See
   \url{https://efile.fara.gov/docs/1750-Supplemental-Statement-20110729-13.pdf}}
 In addition to the participants, the reports also contain the nature of
 the contact and the specific officials contacted. These data are
@@ -514,10 +518,9 @@ agency. As there are no uniform standards for reporting meeting data,
 these data differ substantially from agency to agency in both content
 and organization. The Federal Reserve, for example, groups meetings by
 subject, not by rule,\footnote{\url{https://www.federalreserve.gov/regreform/communications-with-public.htm}}
-the Securities and Exchange Commission (SEC) groups meetings by rule,
-and the Commodity Futures Trading Commission (CFTC) and Federal
-Communication Commission (FCC) meeting records are not grouped at
-all.\footnote{See
+the SEC groups meetings by rule, and the Commodity Futures Trading
+Commission (CFTC) and Federal Communication Commission (FCC) meeting
+records are not grouped at all.\footnote{See
   \url{https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
   and
   \url{https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}}
@@ -552,7 +555,7 @@ The federal government publishes all rules in the \emph{Federal
 Register}, accessible via FederalRegister.gov. This database is
 comprehensive and has machine-readable records of all regulations
 published after 1994 and optical versions form 1939-1993.\footnote{See
-  \url{https://www.govinfo.gov/app/collection/fr/}}. The \emph{Federal
+  \url{https://www.govinfo.gov/app/collection/fr/}} The \emph{Federal
 Register} API does not have any rate limits. The Federal Register office
 assigns every regulatory action a document number. In our experience,
 this `FR Doc Number' is the only truly unique and consistently
@@ -562,17 +565,17 @@ While the raw text of rules is relatively straightforward to obtain,
 there are several thorny theoretical and methodological issues that
 scholars must overcome.\footnote{However, because rules are usually
   published as PDFs, converting them to raw text for analysis introduces
-  errors.} First, the standard path from notice of proposed rulemaking
-(NPRM) to public comments to a final rule is not always straightforward.
-Some rules are withdrawn before a final rule. Other agencies issue
-interim final rules subject change. For studies that seek to compare the
-proposed and final rules, the most problematic rules are the ones where
-one proposed rule gets broken up into a few smaller final rules or the
-reverse, where short rules become bundled into one final rule. These
-rules pose challenges for inference as the processes that lead to
-amalgamation or separation may not be well understood. Second, scholars
-must determine how to preprocess the rulemaking data before feeding
-these data to a text analysis algorithm.
+  errors.} First, the standard path from NPRM to public comments to
+final rule is not always straightforward. Some rules are withdrawn
+before a final rule. Other agencies issue interim final rules subject
+change. For studies that seek to compare the proposed and final rules,
+the most problematic rules are the ones where one proposed rule gets
+broken up into a few smaller final rules or the reverse, where short
+rules become bundled into one final rule. These rules pose challenges
+for inference as the processes that lead to amalgamation or separation
+are not well understood. Second, scholars must determine how to
+preprocess the rulemaking data before feeding these data to a text
+analysis algorithm.
 
 \hypertarget{obtaining-and-working-with-rule-metadata}{%
 \section{Obtaining and working with rule
@@ -588,8 +591,9 @@ impact of rules \citep[e.g.,][]{LibgoberQJPS}. These scholars relied on
 data from the Office of Information and Regulatory Affairs (OIRA)
 \citep{ACSPSQ2013, CarriganPAR2019}, the Unified Agenda
 \citep{CoglianeseALR2016, PotterJOP2017}, the \emph{Federal Register}
-\citep{ThrowerPSQ2018}, press releases \citep{Libgober2018}, and FDA's
-drug approval and postmarket experience \citep{CarpenterAJPS2011}.
+\citep{ThrowerPSQ2018}, press releases \citep{Libgober2018}, and the
+Food and Drug Administration's drug approval and postmarket experience
+database \citep{CarpenterAJPS2011}.
 
 Obtaining data from the Unified Agenda is relatively straightforward as
 all of these documents since 1995 are available online in
@@ -608,13 +612,12 @@ enforcement actions, adjudicatory actions, and decisions not to act.
 
 As addressed elsewhere in this issue {[}NOTE: reference to OMB article
 here{]}, many rules, especially rules that are controversial or deemed
-economically significant, are reviewed by OMB's Office of Information
-and Regulatory Affairs (OIRA). Obtaining OIRA data is relatively
-straightforward, as all of these documents since 1981 are available
-online in machine-readable form. These data include the date on which
-OIRA received the draft rule from the agency, whether the review was
-expedited, and whether the rule is determined to be `economically
-significant' or affect `federalism'.
+economically significant, are reviewed by OIRA (a subagency of OMB).
+Obtaining OIRA data is relatively straightforward, as all of these
+documents since 1981 are available online in machine-readable form.
+These data include the date on which OIRA received the draft rule from
+the agency, whether the review was expedited, and whether the rule is
+determined to be `economically significant' or affect `federalism'.
 
 In addition to disclosures mandated by law, agencies often issue press
 releases for agency actions. Much like the meetings data discussed
@@ -631,15 +634,14 @@ can often be extracted from Really Simple Syndication (RSS) feeds.
 
 Each data source has different types of missingness and different
 limitations regarding the information it contains about each rule. For
-example, data from the Office of Information and Regulatory Affairs
-(OIRA) only contains rules reviewed by OMB. The Unified Agenda (UA)
-covers a broader scope of policies, but due to strategic reporting and
-frequent reporting errors, desired cases may be missing. For published
-draft and final rules, these missing cases may be found in a more
-reliable source like the \emph{Federal Register}, OIRA reports, or
-regulations.gov. The \emph{Federal Register} is the most reliable source
-for rule texts but contains the least amount of rule metadata and only
-includes \emph{published} draft and final rules. Some rulemaking
+example, data from OIRA only contains rules reviewed by OMB. The Unified
+Agenda covers a broader scope of policies, but due to strategic
+reporting and frequent reporting errors, desired cases may be missing.
+For published draft and final rules, these missing cases may be found in
+a more reliable source like the \emph{Federal Register}, OIRA reports,
+or regulations.gov. The \emph{Federal Register} is the most reliable
+source for rule texts but contains the least amount of rule metadata and
+only includes \emph{published} draft and final rules. Some rulemaking
 projects that did not reach the published draft (NPRM) stage may be
 missing from all datasets. More importantly, the diversity of these data
 sources means that, for a given query, one source will often include
