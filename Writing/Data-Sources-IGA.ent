@@ -77,6 +77,27 @@ campaigns
 are
 grouped
 together.
+Occasionally,
+comments
+on
+regulations.gov
+are
+duplicated.
+To
+resolve
+a
+discrepancy,
+we
+recommend
+searching
+the
+agency's
+website
+or
+contacting
+the
+agency
+directly.
 \@endanenote 
 \@doanenote {4}
 macro:->For
@@ -232,10 +253,10 @@ macro:->\url
 macro:->Only
 the
 metadata
-(e.g.~names)
+(e.g.,
+names)
 are
-machine
-readable.
+machine-readable.
 \@endanenote 
 \@doanenote {15}
 macro:->Note
