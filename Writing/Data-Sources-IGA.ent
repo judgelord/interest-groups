@@ -49,14 +49,16 @@ to
 get
 an
 API
-key.
+key,
+see
+\url
+{https://regulationsgov.github.io/developers/}.
 \@endanenote 
 \@doanenote {3}
 macro:->The
 difference
 between
 the
-total
 number
 of
 reported
@@ -71,18 +73,27 @@ regulations.gov
 is
 often
 because
-mass
-comment
+some
+agencies
+group
+mass-comment
 campaigns
-are
-grouped
-together.
-Occasionally,
+into
+a
+single
+document.
+A
+small
+number
+of
 comments
 on
 regulations.gov
 are
-duplicated.
+duplicates
+posted
+in
+error.
 To
 resolve
 a
@@ -142,7 +153,7 @@ bespoke
 web
 scrapers.
 We
-have
+offer
 examples
 of
 scrapers
@@ -223,9 +234,7 @@ details.
 \@doanenote {9}
 macro:->These
 data
-can
-be
-downloaded
+are
 here:
 \url
 {https://www.senate.gov/legislative/Public_Disclosure/LDA_reports.htm}
@@ -238,7 +247,22 @@ macro:->See
 \@doanenote {11}
 macro:->See
 \url
-{https://www.opensecrets.org/revolving/methodology.php}
+{https://www.opensecrets.org/revolving/methodology.php}.
+Unlike
+their
+lobbying
+database,
+this
+one
+has
+no
+bulk
+data
+option
+and
+must
+be
+scraped.
 \@endanenote 
 \@doanenote {12}
 macro:->See
@@ -259,33 +283,10 @@ are
 machine-readable.
 \@endanenote 
 \@doanenote {15}
-macro:->Note
-that
-available
-does
-not
-mean
-conspicuous,
-as
-these
-logs
-are
-often
-hard
-to
-find
-by
-directly
-navigating
-the
-agency
-homepage.
-\@endanenote 
-\@doanenote {16}
 macro:->\url
 {https://www.federalreserve.gov/regreform/communications-with-public.htm}
 \@endanenote 
-\@doanenote {17}
+\@doanenote {16}
 macro:->See
 \url
 {https://www.cftc.gov/LawRegulation/DoddFrankAct/ExternalMeetings?page=6}
@@ -293,7 +294,7 @@ and
 \url
 {https://www.fcc.gov/proceedings-actions/ex-parte/archive-of-filings}
 \@endanenote 
-\@doanenote {18}
+\@doanenote {17}
 macro:->We
 note
 that
@@ -331,7 +332,7 @@ into
 the
 text.
 \@endanenote 
-\@doanenote {19}
+\@doanenote {18}
 macro:->The
 Unified
 Agenda
@@ -347,7 +348,7 @@ the
 {Federal
 Register}.
 \@endanenote 
-\@doanenote {20}
+\@doanenote {19}
 macro:->See
 \url
 {https://www.federalreserve.gov/newsevents/pressreleases.htm}
