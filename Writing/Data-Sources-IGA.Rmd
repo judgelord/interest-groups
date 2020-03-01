@@ -215,7 +215,7 @@ Rule preambles, which describe what the agency has tried to accomplish and how i
 ## Obtaining and Working with Data on Rule Text
 
 The federal government publishes all rules in the *Federal Register*, accessible via FederalRegister.gov.
-This database is comprehensive and has machine-readable records of all regulations published after 1994 and optical versions form 1939-1993.^[See <https://www.govinfo.gov/app/collection/fr/>] The *Federal Register* API does not have any rate limits.
+This database is comprehensive and has machine-readable records of all regulations published after 1994 and optical versions from 1939-1993.^[See <https://www.govinfo.gov/app/collection/fr/>] The *Federal Register* API does not have any rate limits.
 The Federal Register office assigns every regulatory action a document number. In our experience, this `FR Doc Number' is the only truly unique and consistently maintained identifier for proposed and final rules.
 
 While the raw text of rules is relatively straightforward to obtain, there are several thorny theoretical and methodological issues that scholars must overcome.^[However, because rules are usually published as PDFs, converting them to raw text for analysis introduces errors.]  First, the standard path from NPRM to public comments to final rule is not always straightforward.
