@@ -69,7 +69,7 @@ These data sources do not exhaust the kinds of records relevant to researchers. 
 
 ## Background: Rulemaking and the Administrative Procedures Act
 
-For decades, the volume of legal requirements emerging from executive agencies has dwarfed the lawmaking activity of Congress, the Supreme Court, and the Presidency.
+For decades, the volume of legal requirements emerging from executive agencies has dwarfed the lawmaking activity of Congress.
 Each year, agencies publish three thousand or more regulations. In doing so, agencies must generally follow a process prescribed by the Administrative Procedures Act (APA), 5 U.S.C. § 553(c).
 For each rule, agencies create a collection of documents at each stage of their policymaking process.
 Section 553 requires agencies to issue a Notice of Proposed Rulemaking (NPRM) in the *Federal Register* to notify potentially affected parties that the regulatory environment or program administration may change.
