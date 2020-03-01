@@ -232,7 +232,7 @@ Second, scholars must determine how to preprocess the rulemaking data before fee
 # Obtaining and working with rule metadata
 
 Rulemaking metadata, such as the time rules are released, allow scholars to answer questions about factors that affect the rulemaking environment.
-Scholars use this data to study questions about regulatory delay [e.g., @ACSPSQ2013;@ThrowerPSQ2018;@PotterJOP2017;@CarriganPAR2019;@CarpenterAJPS2011], agenda-setting[e.g., @CoglianeseALR2016], and the financial impact of rules [e.g., @LibgoberQJPS]. These scholars relied on data from the Office of Information and Regulatory Affairs (OIRA) [@ACSPSQ2013;@CarriganPAR2019], the Unified Agenda [@CoglianeseALR2016;@PotterJOP2017], the *Federal Register* [@ThrowerPSQ2018], press releases [@Libgober2018], and the Food and Drug Administration's drug approval and postmarket experience database [@CarpenterAJPS2011].
+Scholars use this data to study questions about regulatory delay [e.g., @ACSPSQ2013;@ThrowerPSQ2018;@PotterJOP2017;@CarriganPAR2019;@CarpenterAJPS2011], agenda-setting [e.g., @CoglianeseALR2016], and the financial impact of rules [e.g., @LibgoberQJPS]. These scholars relied on data from the Office of Information and Regulatory Affairs (OIRA) [@ACSPSQ2013;@CarriganPAR2019], the Unified Agenda [@CoglianeseALR2016;@PotterJOP2017], the *Federal Register* [@ThrowerPSQ2018], press releases [@Libgober2018], and the Food and Drug Administration's drug approval and postmarket experience database [@CarpenterAJPS2011].
 
 
 <!--
