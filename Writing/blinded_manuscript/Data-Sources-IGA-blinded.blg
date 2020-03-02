@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Data-Sources-IGA-blinded.aux
+The style file: agsm.bst.bst
+Database file #1: dataig.bib
+Warning--empty booktitle in Dwidar2019SPSA
+Warning--empty booktitle in judgelord2016MPSA
+Warning--empty booktitle in judgelord2019SPSA
+Warning--empty booktitle in LibgoberQJPS
+Warning--empty note in Libgober2018
+Warning--empty booktitle in LibgoberRashin2018SPSA
+Warning--empty booktitle in Rashin2019
+You've used 47 entries,
+            2896 wiz_defined-function locations,
+            937 strings with 12382 characters,
+and the built_in function-call counts, 153797 in all, are:
+= -- 24606
+> -- 2061
+< -- 0
++ -- 11382
+- -- 616
+* -- 13060
+:= -- 31622
+add.period$ -- 48
+call.type$ -- 47
+change.case$ -- 655
+chr.to.int$ -- 47
+cite$ -- 54
+duplicate$ -- 726
+empty$ -- 1555
+format.name$ -- 791
+if$ -- 27493
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 47
+newline$ -- 147
+num.names$ -- 479
+pop$ -- 202
+preamble$ -- 1
+purify$ -- 705
+quote$ -- 0
+skip$ -- 574
+stack$ -- 0
+substring$ -- 34303
+swap$ -- 102
+text.length$ -- 658
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 180
+warning$ -- 7
+while$ -- 1038
+width$ -- 0
+write$ -- 586
+(There were 7 warnings)
