@@ -12,8 +12,8 @@ author:
   affiliation: Yale University
 #  footnote: 115 Prospect Street, Room 113, New Haven, CT 06520
 - name: Steven Rashin
-  affiliation: New York University
-  footnote: "Corresponding Author: Steven.Rashin@NYU.edu, 19 West 4th St, 2nd Floor, New York, NY 10012"
+  affiliation: Harvard University
+  footnote: "Corresponding Author: [steven\_rashin@radcliffe.harvard.edu](mailto:steven_rashin@radcliffe.harvard.edu), 1737 Cambridge Street, Room 423, Cambridge, Massachusetts 02138"
 
 abstract: The United States government creates astonishingly complete records of policy creation in executive agencies. In this article, we describe the major kinds of data that have proven useful to scholars studying interest group behavior and influence in bureaucratic politics, how to obtain them, and challenges that we as users have encountered in working with these data. We discuss established databases such as regulations.gov, which contains comments on draft agency rules, and newer sources of data, such as ex-parte meeting logs, which describe the interest groups and individual lobbyists that bureaucrats are meeting face-to-face about proposed policies. One challenge is that much of these data are not machine-readable. We argue that scholars should invest in several projects to make these datasets machine-readable and to link them to each other as well as to other databases.
 
@@ -269,7 +269,7 @@ First, a complete database is needed to link commenting activity throughout the 
 Second, a comprehensive database could link observations of the revolving door for rulewriters and participants across OPM personnel records, LDA disclosure forms, and FARA data.
 This database could be augmented with data from networking sites like LinkedIn.
 Third, a database could link all meeting activities throughout the federal government.
-Finally, unique identifiers for each commenter and organization would allow researchers to link commenting behavior across datasets and to other information about these organizations.
+Finally, creating unique identifiers for each commenter would allow researchers to link commenting behavior across datasets and to other information about these individuals and organizations.
 These projects would allow scholars to pursue novel research on political participation, influence, and public management.
 
 # Conflicts of Interest
